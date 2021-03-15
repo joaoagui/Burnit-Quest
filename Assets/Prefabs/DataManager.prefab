@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6929272235812748763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4509241553952836125}
+  - component: {fileID: 5191881185672797713}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4509241553952836125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929272235812748763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.67, y: 1.2400001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5191881185672797713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929272235812748763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a652773ac70f9b41b556669e2375c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    stepsNumber: 0
+    Squats: 0
+    stageCalories: 0
+    totalCalories: 0
+    punches: 0
+    currentStage: 0
+    numOfHearts: 3
+    stageComplete: 0
+    totalCoins: 0
+    heartPieces: 0
+    speedSkill: 1
+    jumpSkill: 0
+    damageSkill: 3
+    shieldSphere: 0
+    multishots: 0
+    magnetRange: 2
+    superJump: 0
+    punchCombo: 0
+    altar1: 0
+    altar2: 0
+    altar3: 0
+    altar4: 0
+    altar5: 0
+    altar6: 0
+    altar7: 0
+    altar8: 0
+    altar9: 0
+    altar10: 0
+    Cutscene1: 0
+    Cutscene2: 0
+    Cutscene3: 0
+    Cutscene4: 0
+    Cutscene5: 0
+    Cutscene6: 0
+    Cutscene7: 0
+    Cutscene8: 0
+    Cutscene9: 0
+    Cutscene10: 0
+    Trophy1: 0
+    Trophy2: 0
+    Trophy3: 0
+    Trophy4: 0
+    Trophy5: 0

@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4992957871569491094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4992957871569491092}
+  - component: {fileID: 4992957871569491095}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4992957871569491092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4992957871569491094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.6622734, y: 2.3456616, z: -215.96747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4992957871569491095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4992957871569491094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211cbe55487615842b508fff5bb22038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: ouch
+    clip: {fileID: 8300000, guid: 732b4cf912cb7cc469c39252e777a76a, type: 3}
+    volume: 0.333
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pop
+    clip: {fileID: 8300000, guid: 28bbcceec770f0b4db18f6d5958315e3, type: 3}
+    volume: 0.525
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: sporDie
+    clip: {fileID: 8300000, guid: ae01dba943e88784bae09903ecfee873, type: 3}
+    volume: 0.424
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: theme
+    clip: {fileID: 8300000, guid: ed0314697dcf53048b7afee0ef497a7a, type: 3}
+    volume: 0.291
+    pitch: 1
+    randomPitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: birdFly
+    clip: {fileID: 8300000, guid: 7d63ac6b8b54acc43a59485bd5a03ad1, type: 3}
+    volume: 0.748
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: hup
+    clip: {fileID: 8300000, guid: 5ec748c17c8a0764c80e1d7bceedd676, type: 3}
+    volume: 0.641
+    pitch: 1.14
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Select
+    clip: {fileID: 8300000, guid: 89078cb2c9098b644a00ce1974a4ea7c, type: 3}
+    volume: 0.641
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: TrophyGet
+    clip: {fileID: 8300000, guid: 531ba98e52747f84482782fc9098b4cf, type: 3}
+    volume: 0.857
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: heal
+    clip: {fileID: 8300000, guid: 3357835f874928a42b6faf8fc381f465, type: 3}
+    volume: 0.776
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: gateClose
+    clip: {fileID: 8300000, guid: ac8290eedd1c5114da4a09907f95bef8, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: chest
+    clip: {fileID: 8300000, guid: 8f2232b2ed64c7e45849147216c9a1a5, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: key
+    clip: {fileID: 8300000, guid: db59ff223d0b95a4a9f6735210c5ecd2, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: amulet
+    clip: {fileID: 8300000, guid: b837e9513dec25d4ba1a7875be7f070a, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  audioMixer: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e, type: 2}

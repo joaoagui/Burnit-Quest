@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Props
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 121b650f2177ded4d96fe16126f9a2aa, type: 3}
+    totalSpriteSurfaceArea: 9031115
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b055c220a85314e4392c717a7241d130, type: 3}
+  - {fileID: 21300000, guid: be8aeb2030d9f90439384bea43fdd94c, type: 3}
+  - {fileID: 21300000, guid: 1640b2509c70d2c45bb3821f62abbf7e, type: 3}
+  - {fileID: 21300000, guid: 086a0b50e437da94eb5484c409926141, type: 3}
+  - {fileID: 21300000, guid: e46d5e707376a66498983627055a5586, type: 3}
+  - {fileID: 21300000, guid: a2c1889058dc5ec4d914ec984b32b809, type: 3}
+  - {fileID: 21300000, guid: dee45eb0724b13840a28fb509e419d09, type: 3}
+  - {fileID: 21300000, guid: 79931531a0f624c44b3fdc22a5c959d3, type: 3}
+  - {fileID: 21300000, guid: 18c21731b01fedd43b720faf1d1aa3fd, type: 3}
+  - {fileID: 21300000, guid: e8107b4165b172341bca4b2348b2d109, type: 3}
+  - {fileID: 21300000, guid: 872f9181765928e4e991b0dbd59f2dd2, type: 3}
+  - {fileID: 21300000, guid: 755e5781fb4b4f04f81e11bb3a852671, type: 3}
+  - {fileID: 21300000, guid: dde496d189437184d98fd758ce773935, type: 3}
+  - {fileID: 21300000, guid: af18e4020b172ed4681fb2bcc03d2f5d, type: 3}
+  - {fileID: 21300000, guid: baad6a624fff3194e93cbc165bff6001, type: 3}
+  - {fileID: 21300000, guid: 76da72d249005764d8f1728750c287a4, type: 3}
+  - {fileID: 21300000, guid: 6a0e3cf230cb55d458f088b7e2e41376, type: 3}
+  - {fileID: 21300000, guid: 88c5e51347fce5e44a0172d188cf632c, type: 3}
+  - {fileID: 21300000, guid: c14fa223ad2daca48be367f9bbfc5576, type: 3}
+  - {fileID: 21300000, guid: 3d1d8f3366569934db64fd41c6ee9ff8, type: 3}
+  - {fileID: 21300000, guid: 4bb9de438c83be04d9584f55bd80c981, type: 3}
+  - {fileID: 21300000, guid: c5e9095342585e94cbc174a6173548d2, type: 3}
+  - {fileID: 21300000, guid: e4e19fa3f0d28404880f1ed566ae8a6e, type: 3}
+  - {fileID: 21300000, guid: 57fa23c3a2952874e9eb39cc527f1357, type: 3}
+  - {fileID: 21300000, guid: 25a92cc3124d53f4b8e6a8e4b40402ff, type: 3}
+  - {fileID: 21300000, guid: 53bfc0d307517e6418d973f201fe1bc8, type: 3}
+  - {fileID: 21300000, guid: d5d88504c15cb98429c9ab74af04f530, type: 3}
+  - {fileID: 21300000, guid: 7ca5f80406cd6964a9033e63a5582cd8, type: 3}
+  - {fileID: 21300000, guid: 600b7a14860e5014c80db507e11ae210, type: 3}
+  - {fileID: 21300000, guid: 8c0ed83421662ec4c8d3720555aaf91c, type: 3}
+  - {fileID: 21300000, guid: 634da6748c0b8ea4e87b2d9c8847a850, type: 3}
+  - {fileID: 21300000, guid: c3dfc674c0ec69e46b404428552b01c3, type: 3}
+  - {fileID: 21300000, guid: 022fbdb455f251f48b42d8497964b2f1, type: 3}
+  - {fileID: 21300000, guid: 57eaf105dca4bc5428f383925d55a544, type: 3}
+  - {fileID: 21300000, guid: 5e76ce0592b494c4b9d6abc4ebf29022, type: 3}
+  - {fileID: 21300000, guid: 10ca272562f496245a7df9b7296e1877, type: 3}
+  - {fileID: 21300000, guid: c79bb23513f88894bad99fd78eb5cc4e, type: 3}
+  - {fileID: 21300000, guid: 6666b465338c0c341a339804e05809ec, type: 3}
+  - {fileID: 21300000, guid: cded6f36522b6754183334efe858458a, type: 3}
+  - {fileID: 21300000, guid: 0ae99256d3557694d89b1b57e2f3f686, type: 3}
+  - {fileID: 21300000, guid: b041fdb6e10e05048a49d5bbb679ae42, type: 3}
+  - {fileID: 21300000, guid: 9959fcc6c47383142a55c0cfc13c260d, type: 3}
+  - {fileID: 21300000, guid: 21e843177b5361b41b236864c9037966, type: 3}
+  - {fileID: 21300000, guid: dcd5e347ee840224ea511d15b7d41791, type: 3}
+  - {fileID: 21300000, guid: 4f0600777559d4b4390ee6f20fdf7860, type: 3}
+  - {fileID: 21300000, guid: e2525a7704a65bc438d73b96987e2013, type: 3}
+  - {fileID: 21300000, guid: 874efa77a27b20343adb96d8da78da3e, type: 3}
+  - {fileID: 21300000, guid: 86de7497ffb337249838f5db7dd9e33d, type: 3}
+  - {fileID: 21300000, guid: 5069259782296324685731c92e682334, type: 3}
+  - {fileID: 21300000, guid: 66d2470812ccc29419c323419a47a037, type: 3}
+  - {fileID: 21300000, guid: 85d85038dd7588b428a3a5fbbd7d1610, type: 3}
+  - {fileID: 21300000, guid: 79759b3826cc2f140a341615eade38e7, type: 3}
+  - {fileID: 21300000, guid: 9162c788c277a944faa5877d9ef6e517, type: 3}
+  - {fileID: 21300000, guid: a0f651d89ef2e06478a3a21621aeebae, type: 3}
+  - {fileID: 21300000, guid: b295ac09d69887c47b92bc2386b7fc84, type: 3}
+  - {fileID: 21300000, guid: 4aaeb519d91091d4d8f31d216d13efd1, type: 3}
+  - {fileID: 21300000, guid: 44157c49e8c3d31428e0371b91e5b2b6, type: 3}
+  - {fileID: 21300000, guid: ea4073694f77e1c428257c40bf6b56ef, type: 3}
+  - {fileID: 21300000, guid: cc23ea89513375d4ba63046010e0e4f0, type: 3}
+  - {fileID: 21300000, guid: d29a250ad09248147b4fe5eed8cd7344, type: 3}
+  - {fileID: 21300000, guid: 7409b63a053aa934da9aed5f67601a01, type: 3}
+  - {fileID: 21300000, guid: 5932c16a54e8f634a958449e5af3413e, type: 3}
+  - {fileID: 21300000, guid: 1471a8ea45ca7394187cfbb7c46f10f6, type: 3}
+  - {fileID: 21300000, guid: 8f943bea3cff71a4d860cf611e3fc924, type: 3}
+  - {fileID: 21300000, guid: e80d432b3ba24fd4c96f6a83062f8117, type: 3}
+  - {fileID: 21300000, guid: e3e8a4abc442c2e4589b14b6ab97ddec, type: 3}
+  - {fileID: 21300000, guid: 594f27abcd10ad4419f8b1d2de55445c, type: 3}
+  - {fileID: 21300000, guid: 81b9c5bbe633556429db4cd456c8044d, type: 3}
+  - {fileID: 21300000, guid: 5d37855cbe0d2d442b0a2010f8d370f1, type: 3}
+  - {fileID: 21300000, guid: 4957e2bc3a7748243a138dc2b8b73f84, type: 3}
+  - {fileID: 21300000, guid: b61f43dc92d4fa34db3954433ed79c23, type: 3}
+  - {fileID: 21300000, guid: baa88edcc7c2c2c4eb5d283c4d0873ac, type: 3}
+  - {fileID: 21300000, guid: 7a07b04d525aeca4584169b3387949ec, type: 3}
+  - {fileID: 21300000, guid: f5dc0e6d1b2d337489d65f552bdb0bc9, type: 3}
+  - {fileID: 21300000, guid: 1f2affadcd6ba4c4d9b2f7982884fb2a, type: 3}
+  - {fileID: 21300000, guid: ac1481dd19669a449ae82a25de537739, type: 3}
+  - {fileID: 21300000, guid: b3fab2ed692b4d047860c65308b4924f, type: 3}
+  - {fileID: 21300000, guid: 19b636fd407fea64ab89a76559cc81bd, type: 3}
+  - {fileID: 21300000, guid: 4060193e43079ef4eac6fa983864ccac, type: 3}
+  - {fileID: 21300000, guid: e32ab7fe7852ab74981995563a32f90a, type: 3}
+  - {fileID: 21300000, guid: c664cb3f8a8aefb429d579820581f8c0, type: 3}
+  - {fileID: 21300000, guid: 67fa827f3feab4d43835105c22e2c1d4, type: 3}
+  - {fileID: 21300000, guid: 98738c8f8d3907144b852cbb979cef30, type: 3}
+  - {fileID: 21300000, guid: 04863eaf92995d949ac6b9bab8d25eea, type: 3}
+  - {fileID: 21300000, guid: 24fb95bfdd0c1f144919aabdda2cf1b5, type: 3}
+  - {fileID: 21300000, guid: e7d2aecf83358d740b139ecdde3750a3, type: 3}
+  - {fileID: 21300000, guid: 3ae4eaffdb21a7f47bf5bd8fc59316b1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Bumper_00002
+  - Coin_00010
+  - Trophy_Gem
+  - Burnit_Chest_ChestTop2
+  - Coin_00009
+  - Burnit_Assets_DmgUp_particle
+  - Trophy_Face
+  - heart-77
+  - Coin_00000
+  - Bumper_00011
+  - Burnit_UI_Health+Amulet
+  - Bumper_00007
+  - Bumper_00008
+  - Trophy_Trophy1
+  - Trophy_HandleLeft
+  - heart-78
+  - heart-74
+  - BubblePop-21
+  - Bumper_00003
+  - Burnit_Assets_TrophyParticle2
+  - Coin_00006
+  - Coin_00002
+  - BubblePop-15
+  - BubblePop-18
+  - Trophy_Trophy6
+  - BubblePop-16
+  - Burnit_Assets_Flame3
+  - Trophy_HandleRight
+  - Burnit_Chest_ChestTop1
+  - heart-73
+  - Coin_00004
+  - Trophy_Bottom
+  - FitHeroesAssets_Bird_fly1
+  - Burnit_Assets_Trophy
+  - Burnit_Assets_Flame6
+  - Burnit_Chest_ChestTop5
+  - Burnit_Assets_AltarBack
+  - Trophy_Trophy2
+  - Coin_00001
+  - Burnit_Assets_Altar+front copy
+  - Trophy_Trophy4
+  - heart-76
+  - FitHeroesAssets_crate
+  - FitHeroesAssets_Bird2
+  - Burnit_Assets_Altar+front
+  - FitHeroesAssets_Bird_fly2
+  - Coin_00007
+  - Bumper_00000
+  - Burnit_Assets_Flame1
+  - heart-80
+  - Coin_00003
+  - Trophy_Trophy3
+  - Burnit_Assets_AuraDMG
+  - Burnit_Assets_Shine
+  - Burnit_Assets_Flame4
+  - BubblePop-19
+  - Coin_00011
+  - heart-75
+  - Burnit_Assets_TrophyParticle3
+  - Burnit_Chest_TreasureChest copy
+  - Burnit_Assets_HeartParticle
+  - Bumper_00005
+  - Bumper_00004
+  - Bumper_00006
+  - Burnit_Chest_ChestTop4
+  - BubblePop-20
+  - Burnit_Assets_TrophyParticle4
+  - Coin_00005
+  - Burnit_Assets_flame2
+  - Burnit_Assets_TrophyParticle1
+  - BubblePop-17
+  - Burnit_Chest_ChestTop3
+  - FitHeroesAssets_Threadmill_4x1
+  - Coin_00008
+  - heart-72
+  - Bumper_00010
+  - Burnit_Chest_Key
+  - Burnit_Assets_Flame5
+  - Burnit_Chest_ChestTop6
+  - heart-79
+  - FitHeroesAssets_Splinter1
+  - Bumper_00001
+  - FitHeroesAssets_Splinter3
+  - FitHeroesAssets_bird1
+  - FitHeroesAssets_Splinter2
+  - Bumper_00009
+  - Trophy_Trophy5
+  m_Tag: Props
+  m_IsVariant: 0

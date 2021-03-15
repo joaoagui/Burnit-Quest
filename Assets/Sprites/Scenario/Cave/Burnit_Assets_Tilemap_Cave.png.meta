@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 59c1207049fa9c04fa5efcd88c3a6f4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 961519258433936016
+    second: Burnit_Assets_Tilemap_Cave_0
+  - first:
+      213: 9165451045561520871
+    second: Burnit_Assets_Tilemap_Cave_1
+  - first:
+      213: 778945776429822889
+    second: Burnit_Assets_Tilemap_Cave_2
+  - first:
+      213: 7623543801250542983
+    second: Burnit_Assets_Tilemap_Cave_3
+  - first:
+      213: -1691301459983187232
+    second: Burnit_Assets_Tilemap_Cave_4
+  - first:
+      213: 3034314295884088787
+    second: Burnit_Assets_Tilemap_Cave_5
+  - first:
+      213: 4480659332402104809
+    second: Burnit_Assets_Tilemap_Cave_6
+  - first:
+      213: 3790210046243090154
+    second: Burnit_Assets_Tilemap_Cave_7
+  - first:
+      213: 229963783729333456
+    second: Burnit_Assets_Tilemap_Cave_8
+  - first:
+      213: 109953630736115753
+    second: Burnit_Assets_Tilemap_Cave_9
+  - first:
+      213: -3773665540325930253
+    second: Burnit_Assets_Tilemap_Cave_10
+  - first:
+      213: -5892989271012139218
+    second: Burnit_Assets_Tilemap_Cave_11
+  - first:
+      213: 2516123789051014366
+    second: Burnit_Assets_Tilemap_Cave_12
+  - first:
+      213: 2659780666155900943
+    second: Burnit_Assets_Tilemap_Cave_13
+  - first:
+      213: -2197011168871199103
+    second: Burnit_Assets_Tilemap_Cave_14
+  - first:
+      213: 7751774148985806645
+    second: Burnit_Assets_Tilemap_Cave_15
+  - first:
+      213: 7999217547665818158
+    second: Burnit_Assets_Tilemap_Cave_16
+  - first:
+      213: -4568624729570892749
+    second: Burnit_Assets_Tilemap_Cave_17
+  - first:
+      213: 1276563763868978619
+    second: Burnit_Assets_Tilemap_Cave_18
+  - first:
+      213: -8803752019233427552
+    second: Burnit_Assets_Tilemap_Cave_19
+  - first:
+      213: 4012644805045913385
+    second: Burnit_Assets_Tilemap_Cave_0
+  - first:
+      213: -3148467930752369504
+    second: Burnit_Assets_Tilemap_Cave_1
+  - first:
+      213: -2611766051167106611
+    second: Burnit_Assets_Tilemap_Cave_2
+  - first:
+      213: 4239159739791639502
+    second: Burnit_Assets_Tilemap_Cave_3
+  - first:
+      213: 8951102818839702726
+    second: Burnit_Assets_Tilemap_Cave_4
+  - first:
+      213: -2521822805403186763
+    second: Burnit_Assets_Tilemap_Cave_5
+  - first:
+      213: 4888671716955618906
+    second: Burnit_Assets_Tilemap_Cave_6
+  - first:
+      213: 6923610238990252714
+    second: Burnit_Assets_Tilemap_Cave_7
+  - first:
+      213: -7184569170406258083
+    second: Burnit_Assets_Tilemap_Cave_8
+  - first:
+      213: -1064052638257899553
+    second: Burnit_Assets_Tilemap_Cave_9
+  - first:
+      213: 6800623341121703648
+    second: Burnit_Assets_Tilemap_Cave_10
+  - first:
+      213: -8628411273116181868
+    second: Burnit_Assets_Tilemap_Cave_11
+  - first:
+      213: 773535147455040485
+    second: Burnit_Assets_Tilemap_Cave_12
+  - first:
+      213: -3559280382122404033
+    second: Burnit_Assets_Tilemap_Cave_13
+  - first:
+      213: 7087693473988080076
+    second: Burnit_Assets_Tilemap_Cave_14
+  - first:
+      213: 7327179554435460540
+    second: Burnit_Assets_Tilemap_Cave_15
+  - first:
+      213: -389676726991015687
+    second: Burnit_Assets_Tilemap_Cave_16
+  - first:
+      213: -8621315656788018707
+    second: Burnit_Assets_Tilemap_Cave_17
+  - first:
+      213: -3693462744860144542
+    second: Burnit_Assets_Tilemap_Cave_18
+  - first:
+      213: 3091297754558405298
+    second: Burnit_Assets_Tilemap_Cave_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9270496b037cfa730800000000000000
+      internalID: 4012644805045913385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acbbc829156e44d0800000000000000
+      internalID: -3148467930752369504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc982cb3d9421cbd0800000000000000
+      internalID: -2611766051167106611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec30b64c25584da30800000000000000
+      internalID: 4239159739791639502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc20f8b694b83c70800000000000000
+      internalID: 8951102818839702726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9c679058fa00dd0800000000000000
+      internalID: -2521822805403186763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e73a8760d08d340800000000000000
+      internalID: 4888671716955618906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa754a54da951060800000000000000
+      internalID: 6923610238990252714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a46bda7684b4c90800000000000000
+      internalID: -7184569170406258083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7125a53c9bb31f0800000000000000
+      internalID: -1064052638257899553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee0ac2c5eaa06e50800000000000000
+      internalID: 6800623341121703648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a1fe199a9b14880800000000000000
+      internalID: -8628411273116181868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb46554e162cba00800000000000000
+      internalID: 773535147455040485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37d39fa955ea9ec0800000000000000
+      internalID: -3559280382122404033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1f9e199ab8c5260800000000000000
+      internalID: 7087693473988080076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd61a3dbfe5fa560800000000000000
+      internalID: 7327179554435460540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0b676d417979af0800000000000000
+      internalID: -389676726991015687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9f2ac761fea5880800000000000000
+      internalID: -8621315656788018707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cc87dc33f2ebcc0800000000000000
+      internalID: -3693462744860144542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Assets_Tilemap_Cave_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba9a6bedee76ea20800000000000000
+      internalID: 3091297754558405298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

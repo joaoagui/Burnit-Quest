@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Particles
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 178f7b7ec7335634986894c1614fdc55, type: 3}
+    totalSpriteSurfaceArea: 262703
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d520e740103a4784382c3afac874dec5, type: 3}
+  - {fileID: 21300000, guid: 901cd4217563f264c95faf5301c0985f, type: 3}
+  - {fileID: 21300000, guid: 28ee1f4153643f34ab3aaaee68b16a4d, type: 3}
+  - {fileID: 21300000, guid: e8ec1de26dd003b4eb29846301b5f15d, type: 3}
+  - {fileID: 21300000, guid: cb42c19308600324c9a2cc6be919823f, type: 3}
+  - {fileID: 21300000, guid: c47949f4306a8d542b8bd76ddc88ef54, type: 3}
+  - {fileID: 21300000, guid: d1c19425bfd76bf4681406d9663fd16f, type: 3}
+  - {fileID: 21300000, guid: 0306a0355a9c65041a49bdc95eae8d85, type: 3}
+  - {fileID: 21300000, guid: f3d359665ee1aba4faa7eeee79d09e3e, type: 3}
+  - {fileID: 21300000, guid: cb0f00b680e4d3a4e897f040f18ea861, type: 3}
+  - {fileID: 21300000, guid: fc7286b6b1fd75f458f8d966a98715f5, type: 3}
+  - {fileID: 21300000, guid: 3c2248b6ead30c642a43cc1edb47cf99, type: 3}
+  - {fileID: 21300000, guid: bbbf7e1842834d54aa84a65e68043f53, type: 3}
+  - {fileID: 21300000, guid: 2be9a5290ead8e544ae4dd823e266e05, type: 3}
+  - {fileID: 21300000, guid: d5de5459a6761d347ac38768383cff3b, type: 3}
+  - {fileID: 21300000, guid: 8d5289c992b632743b11af5d90af578d, type: 3}
+  - {fileID: 21300000, guid: 2ff807f9a8eda4d47a6c45f11eb921c1, type: 3}
+  - {fileID: 21300000, guid: 78502b0b0488d3342881aabb6f30d2b1, type: 3}
+  - {fileID: 21300000, guid: 103aff1b5d47f9a4ab95e6bb5d99bf5e, type: 3}
+  - {fileID: 21300000, guid: 1298c32bffa4fa047a43850a89dfe2bc, type: 3}
+  - {fileID: 21300000, guid: 087a7b3bcc3081e47818191b671bf7bf, type: 3}
+  - {fileID: 21300000, guid: a4b0604bb7741644e828cf57f51ae1de, type: 3}
+  - {fileID: 21300000, guid: cd0b029c61543844dab0655b0c6d2af6, type: 3}
+  - {fileID: 21300000, guid: f19401ac1d8199e4abf62352ad6a511e, type: 3}
+  - {fileID: 21300000, guid: 5efc7a2dbf686b84b94b63e55466fd43, type: 3}
+  - {fileID: 21300000, guid: 9f11256d9619cce45b793f47c3437fff, type: 3}
+  - {fileID: 21300000, guid: 4070d60e1c485ae4f82bc57a8ec0ea40, type: 3}
+  - {fileID: 21300000, guid: faa5811f0c55125409084fee74717928, type: 3}
+  - {fileID: 21300000, guid: fc3de9af54c749b439a364b5e08893e9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Burnit_Juice&FX_JumpDust_6
+  - dust-10
+  - Burnit_Juice&FX_JumpDust_4
+  - Burnit_Juice&FX_JumpDust_3
+  - __partcile_leaf
+  - dust-14
+  - dust-12
+  - dust-04
+  - dust-13
+  - dust-08
+  - dust-02
+  - Burnit_Juice&FX_JumpDust_7
+  - dust-03
+  - Burnit_Juice&FX_JumpDust_5
+  - dust-07
+  - dust-01
+  - dust-11
+  - __particle_goo
+  - Burnit_Juice&FX_JumpDust_8
+  - dust-05
+  - Burnit_Juice&FX_JumpDust_2
+  - FitHeroesAssets_particle_shot
+  - Burnit_Juice&FX_JumpDust_1
+  - Burnit_Assets_HeartParticle
+  - dust-09
+  - Burnit_Assets_Dust
+  - Burnit_Juice&FX_JumpDust_9
+  - FitHeroesAssets-55
+  - dust-06
+  m_Tag: Particles
+  m_IsVariant: 0
