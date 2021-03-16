@@ -156,7 +156,7 @@ public class Yuxu : MonoBehaviour
 
     void Die()
     {
-        Instantiate(yuzuDie, transform.position, Quaternion.identity);
+        Instantiate(yuzuDie, new Vector2 (transform.position.x, transform.position.y -0.2f ) , Quaternion.identity);
         AudioSource.PlayOneShot(die, 0.7f);
         Destroy(gameObject);
     }

@@ -97,13 +97,13 @@ namespace EasyWiFi.ServerControls
             {
                 animator.SetFloat("Speed", 1f);
             }
-            if (Speed > 5 && Speed <= 8)
+            if (Speed > 5 && Speed <= 7)
             {                
                 animator.SetFloat("Speed", 1.5f);
             }
 
             //speed Particle system
-            if (Speed >= 5.5f)
+            if (Speed >= 5.0f)
             {
                 speedParticleTimer -= 1 * Time.deltaTime;
                 if(speedParticleTimer < 0f)
@@ -138,9 +138,9 @@ namespace EasyWiFi.ServerControls
                 timerStop = 0;
             }
 
-            if (Speed >= 8) //lock minimum speed at 8
+            if (Speed >= 7) //lock minimum speed at 8
             {
-                Speed = 8;
+                Speed = 7;
             }
 
             if (PunchTimer > 0) //punching cooldown

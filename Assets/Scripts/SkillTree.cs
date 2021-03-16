@@ -11,26 +11,6 @@ public class SkillTree : MonoBehaviour
 
     public GameObject NoMoneyPopup;
 
-    private int SpeedLvl1 =0;
-    private int SpeedLvl2 = 0;
-    private int SpeedLvl3 = 0;
-    private int JumpLvl1 = 0;
-    private int JumpLvl2 = 0;
-    private int SuperJumplvl1 = 0;
-
-    private int HealthLvl1 = 0;
-    private int HealthLvl2 = 0;
-    private int HealthLvl3 = 0;
-    private int MagnetLvl1 = 0;
-    private int MagnetLvl2 = 0;
-    private int ShieldSphereLvl1 = 0;
-
-    private int PunchLvl1 = 0;
-    private int PunchLvl2 = 0;
-    private int PunchLvl3 = 0;
-    private int MultiLvl1 = 0;
-    private int MultiLvl2 = 0;
-    private int ComboLvl1 = 0;
 
     //error sound
     [Header("Not enough bubbles")]
@@ -186,26 +166,6 @@ public class SkillTree : MonoBehaviour
 
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(FirstButton);
-
-        //Set variables to PlayerPrefs
-        SpeedLvl1 = PlayerPrefs.GetInt("SpeedLvl1");
-        SpeedLvl2 = PlayerPrefs.GetInt("SpeedLvl2");
-        SpeedLvl3 = PlayerPrefs.GetInt("SpeedLvl3");
-        JumpLvl1 = PlayerPrefs.GetInt("JumpLvl1");
-        JumpLvl2 = PlayerPrefs.GetInt("JumpLvl2");
-        SuperJumplvl1 = PlayerPrefs.GetInt("SuperJumplvl1");
-        HealthLvl1 = PlayerPrefs.GetInt("HealthLvl1");
-        HealthLvl2 = PlayerPrefs.GetInt("HealthLvl2");
-        HealthLvl3 = PlayerPrefs.GetInt("HealthLvl3");
-        MagnetLvl1 = PlayerPrefs.GetInt("MagnetLvl1");
-        MagnetLvl2 = PlayerPrefs.GetInt("MagnetLvl2");
-        ShieldSphereLvl1 = PlayerPrefs.GetInt("ShieldSphereLvl1");
-        PunchLvl1 = PlayerPrefs.GetInt("PunchLvl1");
-        PunchLvl2 = PlayerPrefs.GetInt("PunchLvl2");
-        PunchLvl3 = PlayerPrefs.GetInt("PunchLvl3");
-        MultiLvl1 = PlayerPrefs.GetInt("MultiLvl1");
-        MultiLvl2 = PlayerPrefs.GetInt("MultiLvl2");
-        ComboLvl1 = PlayerPrefs.GetInt("ComboLvl1");
     }
 
     private void Update()
@@ -214,117 +174,117 @@ public class SkillTree : MonoBehaviour
         TotalBubbles.text = "" +  DataManager.Instance.playerData.totalCoins;
 
         //speed skills set checks and locks
-        if (SpeedLvl1 == 2)
+        if (DataManager.Instance.playerData.SpeedLvl1 == 2)
         {
             Speedlvl1_check.SetActive(true);
             Speedlvl2_inactive.SetActive(false);
             Jumplvl1_inactive.SetActive(false);
         }
-        if (SpeedLvl2 == 2)
+        if (DataManager.Instance.playerData.SpeedLvl2 == 2)
         {
             Speedlvl2_check.SetActive(true);
             Speedlvl3_inactive.SetActive(false);
         }
-        if (SpeedLvl3 == 2)
+        if (DataManager.Instance.playerData.SpeedLvl3 == 2)
         {
             Speedlvl3_check.SetActive(true);
-            if (SpeedLvl3 == 2 && JumpLvl2 == 2)
+            if (DataManager.Instance.playerData.SpeedLvl3 == 2 && DataManager.Instance.playerData.JumpLvl2 == 2)
             {
                 SuperJump_inactive.SetActive(false);
             }
         }   
-        if (JumpLvl1 == 2)
+        if (DataManager.Instance.playerData.JumpLvl1 == 2)
         {
             Jumplvl1_check.SetActive(true);
             Jumplvl2_inactive.SetActive(false);
         }
-        if (JumpLvl2 == 2)
+        if (DataManager.Instance.playerData.JumpLvl2 == 2)
         {
             Jumplvl2_check.SetActive(true);
-            if (SpeedLvl3 == 2 && JumpLvl2 == 2)
+            if (DataManager.Instance.playerData.SpeedLvl3 == 2 && DataManager.Instance.playerData.JumpLvl2 == 2)
             {
                 SuperJump_inactive.SetActive(false);
             }
         }
-        if (SuperJumplvl1 == 2)
+        if (DataManager.Instance.playerData.SuperJumplvl1 == 2)
         {
             SuperJump_check.SetActive(true);
         }
 
         //defense skills set checks and locks
-        if (HealthLvl1 == 2)
+        if (DataManager.Instance.playerData.HealthLvl1 == 2)
         {
             Heartlvl1_check.SetActive(true);
             Heartlvl2_inactive.SetActive(false);
             Magnetlvl1_inactive.SetActive(false);
         }
-        if (HealthLvl2 == 2)
+        if (DataManager.Instance.playerData.HealthLvl2 == 2)
         {
             Heartlvl2_check.SetActive(true);
             Heartlvl3_inactive.SetActive(false);
         }
-        if (HealthLvl3 == 2)
+        if (DataManager.Instance.playerData.HealthLvl3 == 2)
         {
             Heartlvl3_check.SetActive(true);
-            if (HealthLvl3 == 2 && MagnetLvl2 == 2)
+            if (DataManager.Instance.playerData.HealthLvl3 == 2 && DataManager.Instance.playerData.MagnetLvl2 == 2)
             {
                 ShieldSphere_inactive.SetActive(false);
             }
         }
-        if (MagnetLvl1 == 2)
+        if (DataManager.Instance.playerData.MagnetLvl1 == 2)
         {
             Magnetlvl1_check.SetActive(true);
             Magnetlvl2_inactive.SetActive(false);
         }
-        if (MagnetLvl2 == 2)
+        if (DataManager.Instance.playerData.MagnetLvl2 == 2)
         {
             Magnetlvl2_check.SetActive(true);
-            if (HealthLvl3 == 2 && MagnetLvl2 == 2)
+            if (DataManager.Instance.playerData.HealthLvl3 == 2 && DataManager.Instance.playerData.MagnetLvl2 == 2)
             {
                 ShieldSphere_inactive.SetActive(false);
             }
         }
-        if (ShieldSphereLvl1 == 2)
+        if (DataManager.Instance.playerData.ShieldSphereLvl1 == 2)
         {
             ShieldSphere_check.SetActive(true);
 
         }
 
         //damage skills set checks and locks
-        if (PunchLvl1 == 2)
+        if (DataManager.Instance.playerData.PunchLvl1 == 2)
         {
             Punchlvl1_check.SetActive(true);
             Punchlvl2_inactive.SetActive(false);
             Multi1_inactive.SetActive(false);
         }
-        if (PunchLvl2 == 2)
+        if (DataManager.Instance.playerData.PunchLvl2 == 2)
         {
             Punchlvl2_check.SetActive(true);
             Punchlvl3_inactive.SetActive(false);
         }
-        if (PunchLvl3 == 2)
+        if (DataManager.Instance.playerData.PunchLvl3 == 2)
         {
             Punchlvl3_check.SetActive(true);
-            if (PunchLvl3 == 2 && MultiLvl2 == 2)
+            if (DataManager.Instance.playerData.PunchLvl3 == 2 && DataManager.Instance.playerData.MultiLvl2 == 2)
             {
                 PunchCombo_inactive.SetActive(false);
             }
         }
-        if (MultiLvl1 == 2)
+        if (DataManager.Instance.playerData.MultiLvl1 == 2)
         {
             Multi1_check.SetActive(true);
             Multil2_inactive.SetActive(false);
         }
-        if (MultiLvl2 == 2)
+        if (DataManager.Instance.playerData.MultiLvl2 == 2)
         {
             Multil2_check.SetActive(true);
-            if (PunchLvl3 == 2 && MultiLvl2 == 2)
+            if (DataManager.Instance.playerData.PunchLvl3 == 2 && DataManager.Instance.playerData.MultiLvl2 == 2)
             {
                 PunchCombo_inactive.SetActive(false);
             }
                 
         }
-        if (ComboLvl1 == 2)
+        if (DataManager.Instance.playerData.ComboLvl1 == 2)
         {
             PunchCombo_check.SetActive(true);
         }
@@ -332,12 +292,12 @@ public class SkillTree : MonoBehaviour
 
     public void BuySpeedLvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl1Cost && SpeedLvl1 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl1Cost && DataManager.Instance.playerData.SpeedLvl1 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= SpeedLvl1Cost;
-            SpeedLvl1 = 2;
-            SpeedLvl2 = 1;
-            JumpLvl1 = 1;
+            DataManager.Instance.playerData.SpeedLvl1 = 2;
+            DataManager.Instance.playerData.SpeedLvl2 = 1;
+            DataManager.Instance.playerData.JumpLvl1 = 1;
              DataManager.Instance.playerData.speedSkill = 1.25f;
             Instantiate(BuyEffect, Speedlvl1_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("SpeedLvl1", 2);
@@ -352,12 +312,12 @@ public class SkillTree : MonoBehaviour
 
     public void BuySpeedLvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl2Cost && SpeedLvl1 == 2 && SpeedLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl2Cost && DataManager.Instance.playerData.SpeedLvl1 == 2 && DataManager.Instance.playerData.SpeedLvl2 < 2)
         {
              DataManager.Instance.playerData.speedSkill = 1.5f;
              DataManager.Instance.playerData.totalCoins -= SpeedLvl2Cost;
-            SpeedLvl2 = 2;
-            SpeedLvl3 = 1;
+            DataManager.Instance.playerData.SpeedLvl2 = 2;
+            DataManager.Instance.playerData.SpeedLvl3 = 1;
             Instantiate(BuyEffect, Speedlvl2_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("SpeedLvl2", 2);
             PlayerPrefs.SetInt("SpeedLvl3", 1);
@@ -370,17 +330,17 @@ public class SkillTree : MonoBehaviour
 
     public void BuySpeedLvl3()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl3Cost && SpeedLvl2 == 2 && SpeedLvl3 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= SpeedLvl3Cost && DataManager.Instance.playerData.SpeedLvl2 == 2 && DataManager.Instance.playerData.SpeedLvl3 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= SpeedLvl3Cost;
-            SpeedLvl3 = 2;
+            DataManager.Instance.playerData.SpeedLvl3 = 2;
             Instantiate(BuyEffect, Speedlvl3_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("SpeedLvl3", 2);
             PlayerPrefs.SetInt("SuperJumplvl1", 1);
 
-            if (SuperJumplvl1<1)
+            if (DataManager.Instance.playerData.SuperJumplvl1 <1)
             {
-                SuperJumplvl1 = 1;
+                DataManager.Instance.playerData.SuperJumplvl1 = 1;
             }         
 
         }
@@ -390,11 +350,11 @@ public class SkillTree : MonoBehaviour
     }
     public void BuyJumpvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= JumpLvl1Cost && SpeedLvl1 == 2 && JumpLvl1 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= JumpLvl1Cost && DataManager.Instance.playerData.SpeedLvl1 == 2 && DataManager.Instance.playerData.JumpLvl1 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= JumpLvl1Cost;
-            JumpLvl1 = 2;
-             DataManager.Instance.playerData.jumpSkill += 2f;
+            DataManager.Instance.playerData.totalCoins -= JumpLvl1Cost;
+            DataManager.Instance.playerData.JumpLvl1 = 2;
+            DataManager.Instance.playerData.jumpSkill += 2f;
             Instantiate(BuyEffect, Jumplvl1_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("JumpLvl1", 2);
             PlayerPrefs.SetInt("JumpLvl2", 1);
@@ -407,18 +367,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyJumplvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= JumpLvl2Cost && JumpLvl1 == 2 && JumpLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= JumpLvl2Cost && DataManager.Instance.playerData.JumpLvl1 == 2 && DataManager.Instance.playerData.JumpLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= JumpLvl2Cost;
-            JumpLvl2 = 2;
-             DataManager.Instance.playerData.jumpSkill += 4f;
+            DataManager.Instance.playerData.totalCoins -= JumpLvl2Cost;
+            DataManager.Instance.playerData.JumpLvl2 = 2;
+            DataManager.Instance.playerData.jumpSkill += 4f;
             Instantiate(BuyEffect, Jumplvl2_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("JumpLvl2", 2);
             PlayerPrefs.SetInt("SuperJumplvl1", 1);
 
-            if (SuperJumplvl1 < 1)
+            if (DataManager.Instance.playerData.SuperJumplvl1 < 1)
             {
-                SuperJumplvl1 = 1;
+                DataManager.Instance.playerData.SuperJumplvl1 = 1;
             }
         }
         else
@@ -430,11 +390,12 @@ public class SkillTree : MonoBehaviour
 
     public void BuySuperJump()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= SuperJumpCost && SuperJumplvl1 < 2 && (SpeedLvl3 == 2 || JumpLvl2 == 2))
+        if ( DataManager.Instance.playerData.totalCoins >= SuperJumpCost && DataManager.Instance.playerData.SuperJumplvl1 < 2 && 
+            (DataManager.Instance.playerData.SpeedLvl3 == 2 || DataManager.Instance.playerData.JumpLvl2 == 2))
         {
-             DataManager.Instance.playerData.totalCoins -= SuperJumpCost;
-            SuperJumplvl1 = 2;
-             DataManager.Instance.playerData.superJump = 1;
+            DataManager.Instance.playerData.totalCoins -= SuperJumpCost;
+            DataManager.Instance.playerData.SuperJumplvl1 = 2;
+            DataManager.Instance.playerData.superJump = 1;
             Instantiate(BuyEffect, SuperJump_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("SuperJumplvl1", 2);
             PlayerPrefs.SetInt("superJump", 1);
@@ -450,19 +411,19 @@ public class SkillTree : MonoBehaviour
 
     public void BuyHeartLvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl1Cost  && HealthLvl1 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl1Cost && DataManager.Instance.playerData.HealthLvl1 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= HeartLvl1Cost;
-            HealthLvl1 = 2;
+            DataManager.Instance.playerData.HealthLvl1 = 2;
              DataManager.Instance.playerData.numOfHearts += 1;
             Instantiate(BuyEffect, Heartlvl1_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("HealthLvl1", 2);
             PlayerPrefs.SetInt("HealthLvl2", 1);
             PlayerPrefs.SetInt("MagnetLvl1", 1);
 
-            if (HealthLvl2 < 1)
+            if (DataManager.Instance.playerData.HealthLvl2 < 1)
             {
-                HealthLvl2 = 1;
+                DataManager.Instance.playerData.HealthLvl2 = 1;
             }
         }
         else
@@ -475,18 +436,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyHeartLvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl2Cost && HealthLvl1 == 2 && HealthLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl2Cost && DataManager.Instance.playerData.HealthLvl1 == 2 && DataManager.Instance.playerData.HealthLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= HeartLvl2Cost;
-            HealthLvl2 = 2;
-             DataManager.Instance.playerData.numOfHearts += 1;
+            DataManager.Instance.playerData.totalCoins -= HeartLvl2Cost;
+            DataManager.Instance.playerData.HealthLvl2 = 2;
+            DataManager.Instance.playerData.numOfHearts += 1;
             Instantiate(BuyEffect, Heartlvl2_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("HealthLvl2", 2);
             PlayerPrefs.SetInt("HealthLvl3", 1);
 
-            if (HealthLvl3 < 1)
+            if (DataManager.Instance.playerData.HealthLvl3 < 1)
             {
-                HealthLvl3 = 1;
+                DataManager.Instance.playerData.HealthLvl3 = 1;
             }
         }
         else
@@ -498,18 +459,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyHeartLvl3()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl3Cost && HealthLvl2 == 2 && HealthLvl3 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= HeartLvl3Cost && DataManager.Instance.playerData.HealthLvl2 == 2 && DataManager.Instance.playerData.HealthLvl3 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= HeartLvl3Cost;
-            HealthLvl3 = 2;
-             DataManager.Instance.playerData.numOfHearts += 1;
+            DataManager.Instance.playerData.totalCoins -= HeartLvl3Cost;
+            DataManager.Instance.playerData.HealthLvl3 = 2;
+            DataManager.Instance.playerData.numOfHearts += 1;
             Instantiate(BuyEffect, Heartlvl3_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("HealthLvl3", 2);
             PlayerPrefs.SetInt("ShieldSphereLvl1", 1);
 
-            if (ShieldSphereLvl1 < 1)
+            if (DataManager.Instance.playerData.ShieldSphereLvl1 < 1)
             {
-                ShieldSphereLvl1 = 1;
+                DataManager.Instance.playerData.ShieldSphereLvl1 = 1;
             }
         }
         else
@@ -521,18 +482,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyMagnetLvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= MagnetLvl1Cost && HealthLvl1 == 2 && MagnetLvl1 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= MagnetLvl1Cost && DataManager.Instance.playerData.HealthLvl1 == 2 && DataManager.Instance.playerData.MagnetLvl1 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= MagnetLvl1Cost;
-            MagnetLvl1 = 2;
-             DataManager.Instance.playerData.magnetRange = 4;
+            DataManager.Instance.playerData.MagnetLvl1 = 2;
+            DataManager.Instance.playerData.magnetRange = 4;
             Instantiate(BuyEffect, Magnetlvl1_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("MagnetLvl1", 2);
             PlayerPrefs.SetInt("MagnetLvl2", 1);
 
-            if (MagnetLvl2 < 1)
+            if (DataManager.Instance.playerData.MagnetLvl2 < 1)
             {
-                MagnetLvl2 = 1;
+                DataManager.Instance.playerData.MagnetLvl2 = 1;
             }
         }
         else
@@ -544,18 +505,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyMagnetLvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= MagnetLvl2Cost && MagnetLvl1 == 2 && MagnetLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= MagnetLvl2Cost && DataManager.Instance.playerData.MagnetLvl1 == 2 && DataManager.Instance.playerData.MagnetLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= MagnetLvl2Cost;
-            MagnetLvl2 = 2;
+            DataManager.Instance.playerData.totalCoins -= MagnetLvl2Cost;
+            DataManager.Instance.playerData.MagnetLvl2 = 2;
             Instantiate(BuyEffect, Magnetlvl2_check.transform.position, Quaternion.identity);
-             DataManager.Instance.playerData.magnetRange = 6;
+            DataManager.Instance.playerData.magnetRange = 6;
             PlayerPrefs.SetInt("MagnetLvl2", 2);
             PlayerPrefs.SetInt("ShieldSphereLvl1", 1);
 
-            if (ShieldSphereLvl1 < 1)
+            if (DataManager.Instance.playerData.ShieldSphereLvl1 < 1)
             {
-                ShieldSphereLvl1 = 1;
+                DataManager.Instance.playerData.ShieldSphereLvl1 = 1;
             }
         }
         else
@@ -568,11 +529,11 @@ public class SkillTree : MonoBehaviour
 
     public void BuyShieldSphere()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= ShieldSphereCost && (HealthLvl3 == 2 || MagnetLvl2 == 2))
+        if ( DataManager.Instance.playerData.totalCoins >= ShieldSphereCost && (DataManager.Instance.playerData.HealthLvl3 == 2 || DataManager.Instance.playerData.MagnetLvl2 == 2))
         {
-             DataManager.Instance.playerData.totalCoins -= ShieldSphereCost;
-            ShieldSphereLvl1 = 2;
-             DataManager.Instance.playerData.shieldSphere = 1;
+            DataManager.Instance.playerData.totalCoins -= ShieldSphereCost;
+            DataManager.Instance.playerData.ShieldSphereLvl1 = 2;
+            DataManager.Instance.playerData.shieldSphere = 1;
             Instantiate(BuyEffect, ShieldSphere_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("ShieldSphereLvl1", 2);
 
@@ -586,18 +547,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyPunchLvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl1Cost && PunchLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl1Cost && DataManager.Instance.playerData.PunchLvl2 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= PunchLvl1Cost;
-            PunchLvl1 = 2;
+            DataManager.Instance.playerData.PunchLvl1 = 2;
             Instantiate(BuyEffect, Punchlvl1_check.transform.position, Quaternion.identity);
              DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
             PlayerPrefs.SetInt("PunchLvl1", 2);
             PlayerPrefs.SetInt("PunchLvl2", 1);
 
-            if (PunchLvl2 < 1)
+            if (DataManager.Instance.playerData.PunchLvl2 < 1)
             {
-                PunchLvl2 = 1;
+                DataManager.Instance.playerData.PunchLvl2 = 1;
             }
         }
         else
@@ -609,18 +570,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyPunchLvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl2Cost && PunchLvl1 == 2 && PunchLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl2Cost && DataManager.Instance.playerData.PunchLvl1 == 2 && DataManager.Instance.playerData.PunchLvl2 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= PunchLvl2Cost;
-            PunchLvl2 = 2;
+            DataManager.Instance.playerData.PunchLvl2 = 2;
             Instantiate(BuyEffect, Punchlvl2_check.transform.position, Quaternion.identity);
              DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
             PlayerPrefs.SetInt("PunchLvl2", 2);
             PlayerPrefs.SetInt("PunchLvl3", 1);
 
-            if (PunchLvl3 < 1)
+            if (DataManager.Instance.playerData.PunchLvl3 < 1)
             {
-                PunchLvl3 = 1;
+                DataManager.Instance.playerData.PunchLvl3 = 1;
             }
         }
         else
@@ -632,18 +593,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyPunchLvl3()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl3Cost && PunchLvl2 == 2 && PunchLvl3 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= PunchLvl3Cost && DataManager.Instance.playerData.PunchLvl2 == 2 && DataManager.Instance.playerData.PunchLvl3 < 2)
         {
              DataManager.Instance.playerData.totalCoins -= PunchLvl3Cost;
-            PunchLvl3 = 2;
+            DataManager.Instance.playerData.PunchLvl3 = 2;
              DataManager.Instance.playerData.damageSkill = +3;
             Instantiate(BuyEffect, Punchlvl3_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("PunchLvl3", 2);
             PlayerPrefs.SetInt("ComboLvl1", 1);
 
-            if (ComboLvl1 < 1)
+            if (DataManager.Instance.playerData.ComboLvl1 < 1)
             {
-                ComboLvl1 = 1;
+                DataManager.Instance.playerData.ComboLvl1 = 1;
             }
         }
         else
@@ -656,18 +617,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyMultiLvl1()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= MultiLvl1Cost && PunchLvl1 == 2 && MultiLvl1 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= MultiLvl1Cost && DataManager.Instance.playerData.PunchLvl1 == 2 && DataManager.Instance.playerData.MultiLvl1 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= MultiLvl1Cost;
-            MultiLvl1 = 2;
-             DataManager.Instance.playerData.multishots = 1;
+            DataManager.Instance.playerData.totalCoins -= MultiLvl1Cost;
+            DataManager.Instance.playerData.MultiLvl1 = 2;
+            DataManager.Instance.playerData.multishots = 1;
             Instantiate(BuyEffect, Multi1_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("MultiLvl1", 2);
             PlayerPrefs.SetInt("MultiLvl2", 1);
 
-            if (PunchLvl3 < 1)
+            if (DataManager.Instance.playerData.PunchLvl3 < 1)
             {
-                PunchLvl3 = 1;
+                DataManager.Instance.playerData.PunchLvl3 = 1;
             }
         }
         else
@@ -679,18 +640,18 @@ public class SkillTree : MonoBehaviour
 
     public void BuyMultiLvl2()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= MultiLvl2Cost && MultiLvl1 == 2 && MultiLvl2 < 2)
+        if ( DataManager.Instance.playerData.totalCoins >= MultiLvl2Cost && DataManager.Instance.playerData.MultiLvl1 == 2 && DataManager.Instance.playerData.MultiLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= MultiLvl2Cost;
-            MultiLvl2 = 2;
-             DataManager.Instance.playerData.multishots = 2;
+            DataManager.Instance.playerData.totalCoins -= MultiLvl2Cost;
+            DataManager.Instance.playerData.MultiLvl2 = 2;
+            DataManager.Instance.playerData.multishots = 2;
             Instantiate(BuyEffect, Multil2_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("MultiLvl2", 2);
             PlayerPrefs.SetInt("ComboLvl1", 1);
 
-            if (ComboLvl1 < 1)
+            if (DataManager.Instance.playerData.ComboLvl1 < 1)
             {
-                ComboLvl1 = 1;
+                DataManager.Instance.playerData.ComboLvl1 = 1;
             }
         }
         else
@@ -702,11 +663,12 @@ public class SkillTree : MonoBehaviour
 
     public void BuyPunchCombo()
     {
-        if ( DataManager.Instance.playerData.totalCoins >= ComboCost && ComboLvl1 < 2 && (PunchLvl3 == 2 || MultiLvl2 == 2))
+        if ( DataManager.Instance.playerData.totalCoins >= ComboCost && DataManager.Instance.playerData.ComboLvl1 < 2 && 
+            (DataManager.Instance.playerData.PunchLvl3 == 2 || DataManager.Instance.playerData.MultiLvl2 == 2))
         {
-             DataManager.Instance.playerData.totalCoins -= ComboCost;
-            ComboLvl1 = 2;
-             DataManager.Instance.playerData.punchCombo = 1;
+            DataManager.Instance.playerData.totalCoins -= ComboCost;
+            DataManager.Instance.playerData.ComboLvl1 = 2;
+            DataManager.Instance.playerData.punchCombo = 1;
             Instantiate(BuyEffect, PunchCombo_check.transform.position, Quaternion.identity);
             PlayerPrefs.SetInt("ComboLvl1", 2);
         }

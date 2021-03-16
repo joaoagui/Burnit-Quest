@@ -70,12 +70,34 @@ public class EraseData : MonoBehaviour
          DataManager.Instance.playerData.Trophy4 = 0;
          DataManager.Instance.playerData.Trophy5 = 0;
 
+        DataManager.Instance.playerData.SpeedLvl1 = 0;
+        DataManager.Instance.playerData.SpeedLvl2 = 0;
+        DataManager.Instance.playerData.SpeedLvl3 = 0;
+        DataManager.Instance.playerData.JumpLvl1 = 0;
+        DataManager.Instance.playerData.JumpLvl2 = 0;
+        DataManager.Instance.playerData.SuperJumplvl1 = 0;
 
-        PlayerPrefs.DeleteAll();
+        DataManager.Instance.playerData.HealthLvl1 = 0;
+        DataManager.Instance.playerData.HealthLvl2 = 0;
+        DataManager.Instance.playerData.HealthLvl3 = 0;
+        DataManager.Instance.playerData.MagnetLvl1 = 0;
+        DataManager.Instance.playerData.MagnetLvl2 = 0;
+        DataManager.Instance.playerData.ShieldSphereLvl1 = 0;
 
-        PromptScreen.SetActive(false);
-        SettingsScreen.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(BtnSettings);
-        DataManager.Instance.SaveFile();
+        DataManager.Instance.playerData.PunchLvl1 = 0;
+        DataManager.Instance.playerData.PunchLvl2 = 0;
+        DataManager.Instance.playerData.PunchLvl3 = 0;
+        DataManager.Instance.playerData.MultiLvl1 = 0;
+        DataManager.Instance.playerData.MultiLvl2 = 0;
+        DataManager.Instance.playerData.ComboLvl1 = 0;
+
+
+
+    PlayerPrefs.DeleteAll();
+
+         PromptScreen.SetActive(false);
+         SettingsScreen.SetActive(true);
+         EventSystem.current.SetSelectedGameObject(BtnSettings);
+         DataManager.Instance.SaveFile();
     }
 }

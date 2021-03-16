@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleTxt: {fileID: 1007488974}
   descriptionTxt: {fileID: 1208480932}
-  title: Punch Combo
+  title: Fire Combo
   description: Every third punch in a sequence creates a powerful blast
 --- !u!1 &23650560
 GameObject:
@@ -2700,8 +2700,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.5047, y: 71}
-  m_SizeDelta: {x: 180.8, y: 45.2}
+  m_AnchoredPosition: {x: 21.082, y: 71}
+  m_SizeDelta: {x: 185.95, y: 45.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257690503
 MonoBehaviour:
@@ -2721,7 +2721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Super Jump
+  m_text: Flame Dash
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf5d9b0d6989b840ba7eb164fb5982d, type: 2}
   m_sharedMaterial: {fileID: -5199018035078868476, guid: 6cf5d9b0d6989b840ba7eb164fb5982d,
@@ -12649,8 +12649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleTxt: {fileID: 1007488974}
   descriptionTxt: {fileID: 1208480932}
-  title: Super Jump
-  description: Hold a squat to charge a powerful jump
+  title: Flame Dash
+  description: Engulf in flames that damage enemies while at max speed!
 --- !u!1 &821137028
 GameObject:
   m_ObjectHideFlags: 0
@@ -18402,7 +18402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Punch Combo
+  m_text: Fire Combo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf5d9b0d6989b840ba7eb164fb5982d, type: 2}
   m_sharedMaterial: {fileID: -5199018035078868476, guid: 6cf5d9b0d6989b840ba7eb164fb5982d,
@@ -18472,7 +18472,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.67439157, w: 0}
   m_textInfo:
     textComponent: {fileID: 1427613276}
-    characterCount: 11
+    characterCount: 10
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -19911,6 +19911,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a6a90a4ebbf1c42b0521edd0d268b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData:
+    stepsNumber: 0
+    Squats: 0
+    stageCalories: 0
+    totalCalories: 0
+    punches: 0
+    currentStage: 0
+    numOfHearts: 3
+    stageComplete: 0
+    totalCoins: 0
+    heartPieces: 0
+    speedSkill: 1
+    jumpSkill: 0
+    damageSkill: 3
+    shieldSphere: 0
+    multishots: 0
+    magnetRange: 2
+    superJump: 0
+    punchCombo: 0
+    altar1: 0
+    altar2: 0
+    altar3: 0
+    altar4: 0
+    altar5: 0
+    altar6: 0
+    altar7: 0
+    altar8: 0
+    altar9: 0
+    altar10: 0
+    Cutscene1: 0
+    Cutscene2: 0
+    Cutscene3: 0
+    Cutscene4: 0
+    Cutscene5: 0
+    Cutscene6: 0
+    Cutscene7: 0
+    Cutscene8: 0
+    Cutscene9: 0
+    Cutscene10: 0
+    Trophy1: 0
+    Trophy2: 0
+    Trophy3: 0
+    Trophy4: 0
+    Trophy5: 0
+    amulet1: 0
+    amulet2: 0
+    amulet3: 0
+    amulet4: 0
+    amulet5: 0
+    amulet6: 0
+    amulet7: 0
+    amulet8: 0
+    amulet9: 0
+    amulet10: 0
+    amulet11: 0
+    amulet12: 0
   TotalBubbles: {fileID: 1734299828}
   NoMoneyPopup: {fileID: 2436424697500545265, guid: c844ba0838d439a43a3d1684a89dd509,
     type: 3}

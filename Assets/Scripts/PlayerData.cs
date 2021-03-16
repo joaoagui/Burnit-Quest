@@ -4,10 +4,7 @@ using System.Collections.Generic;
 
 [System.Serializable]
 public class PlayerData {
-
-
-
-
+         
     public int stepsNumber = 0;
     public int Squats = 0;
     public float stageCalories = 0f;
@@ -20,6 +17,27 @@ public class PlayerData {
     public int stageComplete = 0;
     public int totalCoins = 0;
     public int heartPieces = 0;
+
+    public int SpeedLvl1 = 0;
+    public int SpeedLvl2 = 0;
+    public int SpeedLvl3 = 0;
+    public int JumpLvl1 = 0;
+    public int JumpLvl2 = 0;
+    public int SuperJumplvl1 = 0;
+
+    public int HealthLvl1 = 0;
+    public int HealthLvl2 = 0;
+    public int HealthLvl3 = 0;
+    public int MagnetLvl1 = 0;
+    public int MagnetLvl2 = 0;
+    public int ShieldSphereLvl1 = 0;
+
+    public int PunchLvl1 = 0;
+    public int PunchLvl2 = 0;
+    public int PunchLvl3 = 0;
+    public int MultiLvl1 = 0;
+    public int MultiLvl2 = 0;
+    public int ComboLvl1 = 0;
 
     public float speedSkill = 1;
     public float jumpSkill = 0;

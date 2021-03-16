@@ -11,7 +11,7 @@ public class Chay : MonoBehaviour
 
 
     public Rigidbody2D rb;
-    public float playerSpeed = 8;
+    public float playerSpeed = 7;
     public Animator animator;
 
     //get player colliders to turn them off

@@ -75,6 +75,28 @@ public class DataManager : MonoBehaviour
         Instance.playerData.Trophy3 = data.Trophy3;
         Instance.playerData.Trophy4 = data.Trophy4;
         Instance.playerData.Trophy5 = data.Trophy5;
+
+        //Skill unlocks
+        Instance.playerData.SpeedLvl1 = data.SpeedLvl1;
+        Instance.playerData.SpeedLvl2 = data.SpeedLvl2;
+        Instance.playerData.SpeedLvl3 = data.SpeedLvl3;
+        Instance.playerData.JumpLvl1 = data.JumpLvl1;
+        Instance.playerData.JumpLvl2 = data.JumpLvl2;
+        Instance.playerData.SuperJumplvl1 = data.SuperJumplvl1;
+
+        Instance.playerData.HealthLvl1 = data.HealthLvl1;
+        Instance.playerData.HealthLvl2 = data.HealthLvl2;
+        Instance.playerData.HealthLvl3 = data.HealthLvl3;
+        Instance.playerData.MagnetLvl1 = data.MagnetLvl1;
+        Instance.playerData.MagnetLvl2 = data.MagnetLvl2;
+        Instance.playerData.ShieldSphereLvl1 = data.ShieldSphereLvl1;
+
+        Instance.playerData.PunchLvl1 = data.PunchLvl1;
+        Instance.playerData.PunchLvl2 = data.PunchLvl2;
+        Instance.playerData.PunchLvl3 = data.PunchLvl3;
+        Instance.playerData.MultiLvl1 = data.MultiLvl1;
+        Instance.playerData.MultiLvl2 = data.MultiLvl2;
+        Instance.playerData.ComboLvl1 = data.ComboLvl1;
     }
 
     public void SaveFile()
@@ -134,6 +156,27 @@ public class DataManager : MonoBehaviour
         playerData.Trophy4 = Instance.playerData.Trophy4;
         playerData.Trophy5 = Instance.playerData.Trophy5;
 
-    }
+        playerData.SpeedLvl1 = Instance.playerData.SpeedLvl1;
+        playerData.SpeedLvl2 = Instance.playerData.SpeedLvl2;
+        playerData.SpeedLvl3 = Instance.playerData.SpeedLvl3;
+        playerData.JumpLvl1 = Instance.playerData.JumpLvl1;
+        playerData.JumpLvl2 = Instance.playerData.JumpLvl2;
+        playerData.SuperJumplvl1 = Instance.playerData.SuperJumplvl1;
+
+        playerData.HealthLvl1 = Instance.playerData.HealthLvl1;
+        playerData.HealthLvl2 = Instance.playerData.HealthLvl2;
+        playerData.HealthLvl3 = Instance.playerData.HealthLvl3;
+        playerData.MagnetLvl1 = Instance.playerData.MagnetLvl1;
+        playerData.MagnetLvl2 = Instance.playerData.MagnetLvl2;
+        playerData.ShieldSphereLvl1 = Instance.playerData.ShieldSphereLvl1;
+
+        playerData.PunchLvl1 = Instance.playerData.PunchLvl1;
+        playerData.PunchLvl2 = Instance.playerData.PunchLvl2;
+        playerData.PunchLvl3 = Instance.playerData.PunchLvl3;
+        playerData.MultiLvl1 = Instance.playerData.MultiLvl1;
+        playerData.MultiLvl2 = Instance.playerData.MultiLvl2;
+        playerData.ComboLvl1 = Instance.playerData.ComboLvl1;
+
+}
 
 }

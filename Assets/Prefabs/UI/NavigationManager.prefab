@@ -624,15 +624,26 @@ MonoBehaviour:
     Trophy3: 0
     Trophy4: 0
     Trophy5: 0
+    amulet1: 0
+    amulet2: 0
+    amulet3: 0
+    amulet4: 0
+    amulet5: 0
+    amulet6: 0
+    amulet7: 0
+    amulet8: 0
+    amulet9: 0
+    amulet10: 0
+    amulet11: 0
+    amulet12: 0
   loadingBar: {fileID: 854213849246259125}
   progressText: {fileID: 854213848455612131}
   TipText: {fileID: 854213849712636154}
   tip1: 'Tip: Consistency is key to a healthy routine! '
-  tip2: 'Tip: Don''t push yourself too hard, if you feel tired, rest for a while
-    and come back later!'
-  tip3: 'Tip: Remember to strech before and after exercising!'
-  tip4: 'Tip: Drink some water between stages, keep yourself hydrated!'
-  tip5: 'Tip: '
+  tip2: 'Tip: Take breaks between stages!'
+  tip3: 'Tip: Remember to stretch after each session!'
+  tip4: 'Tip: Don''t forget to stay hydrated!'
+  tip5: 'Tip: Keep your posture straight at all times!'
 --- !u!1 &854213849246259127
 GameObject:
   m_ObjectHideFlags: 0
