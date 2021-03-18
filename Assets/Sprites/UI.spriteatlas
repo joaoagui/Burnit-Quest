@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b082901a141c815458d482dbe5ec5ca8, type: 3}
-    totalSpriteSurfaceArea: 64464323
+    totalSpriteSurfaceArea: 64857636
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -39,6 +39,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 75df2230b7cb5e34e92b2e6e398e73d3, type: 3}
   - {fileID: 21300000, guid: f4d7a040dbe9e514b91c48d856b832fb, type: 3}
   - {fileID: 21300000, guid: c7c8ea406867b3c4abfb072d8bd06fc6, type: 3}
+  - {fileID: 21300000, guid: 249f5750a148d4144b36f1f56aca30c1, type: 3}
   - {fileID: 21300000, guid: 6ce9a260d9f911d498911a4c8620cbdb, type: 3}
   - {fileID: 21300000, guid: ae1159606fecfbe40986d60a9e3856bd, type: 3}
   - {fileID: 21300000, guid: 8c42e770e0bfe2e40908041a011e6f8f, type: 3}
@@ -50,6 +51,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6b2ac431bf4b73c4e866e0afc2c4a945, type: 3}
   - {fileID: 21300000, guid: 07031a310a3324b4e8ebb78347f63966, type: 3}
   - {fileID: 21300000, guid: 9f4bfd31fb9fcd9459687dbbe98deecf, type: 3}
+  - {fileID: 21300000, guid: 1cf4f451a2e24964d9462a2fa72c9526, type: 3}
   - {fileID: 21300000, guid: 953f87613c3a44345ad27d5ce427c8b3, type: 3}
   - {fileID: 21300000, guid: 850b81714628ff347848b69958aaeb20, type: 3}
   - {fileID: 21300000, guid: 44a83c71ee979d141a1e9abbc0aa3a60, type: 3}
@@ -84,6 +86,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cd35b674b35f2d14ba98ed4f08f43c86, type: 3}
   - {fileID: 21300000, guid: 176e9a74ba6703e4f9c65bdee2654eb0, type: 3}
   - {fileID: 21300000, guid: a5f40b74a0ccb8a44bee0753d33b1b9b, type: 3}
+  - {fileID: 21300000, guid: 845e4594101fc6e4a8f2083d664dbd84, type: 3}
   - {fileID: 21300000, guid: dd4681b454ff0af4394c189fbdb9d77b, type: 3}
   - {fileID: 21300000, guid: 612746b4a76a16143905e69b0e6a2e05, type: 3}
   - {fileID: 21300000, guid: dfd1c8d4bdf225c46b7ac68913a592a8, type: 3}
@@ -99,6 +102,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8106378587f3af1469903fe580558642, type: 3}
   - {fileID: 21300000, guid: c2de8c9570d8a5448ba714c231c64446, type: 3}
   - {fileID: 21300000, guid: ba57e1b54f376a14c92e1b9acac954a5, type: 3}
+  - {fileID: 21300000, guid: dc2fa3e565df2e644817ed1bf56658e1, type: 3}
   - {fileID: 21300000, guid: c6cfcaf520666504ab1a25ed1eccbc05, type: 3}
   - {fileID: 21300000, guid: ccffcb16814008e41a75e83c0fb76321, type: 3}
   - {fileID: 21300000, guid: cc10a556bcc940741bfb1f30fdc8b8f4, type: 3}
@@ -195,6 +199,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 05a04abeedd7d544087eabdf9de94677, type: 3}
   - {fileID: 21300000, guid: 15ccf1de3b876124aa4da7d974bf5adc, type: 3}
   - {fileID: 21300000, guid: 6b46340fa0a6bdd4bb5b63d19421987b, type: 3}
+  - {fileID: 21300000, guid: c36e4d0f2592cf648a90e7a45ca7cfab, type: 3}
   - {fileID: 21300000, guid: ffb17d1fc0e2eda419e635ae24d42b2b, type: 3}
   - {fileID: 21300000, guid: f1c0c35fb06614b4f9f220c27470f63a, type: 3}
   - {fileID: 21300000, guid: a558f17f9540e5941a3af3702edd9305, type: 3}
@@ -214,6 +219,7 @@ SpriteAtlas:
   - Burnit_UI_AudioBtn
   - TutorialGuy_Walk_00000
   - Burnit_UI_SkillBox_Active
+  - Burnit_MultiplayerVS_P2Arrow
   - FitHeroesAssets_Button_inactive copy
   - Burnit_Cutscenes_dialogBox_2
   - TutorialGuy_Walk_00008
@@ -225,6 +231,7 @@ SpriteAtlas:
   - Burnit_UI-47
   - Burnit_UI_BackgroundInteractive
   - TutorialGuy_Squat_00000
+  - Burnit_MultiplayerVS_P1Arrow
   - Burnit_UI_ShieldSphere_icon
   - FitHeroesAssets_StageComplete
   - Burnit_UI_Multi2_icon
@@ -259,6 +266,7 @@ SpriteAtlas:
   - Burnit_UI_Lifebar_bg
   - Burnit_UI_Pause_frame
   - FitHeroesAssets_InterfaceCoin
+  - Burnit_MultiplayerVS_CaloriesP2
   - TutorialGuy_Punch_00001
   - Burnit_Cutscenes_NameTag
   - Burnit_Assets_loading2
@@ -274,6 +282,7 @@ SpriteAtlas:
   - Burnit_UI_Lifebar_full
   - TutorialGuy_Punch_00011
   - TutorialGuy_Punch_00009
+  - Burnit_MultiplayerVS_InterfaceWinLose
   - TutorialGuy_Walk_00001
   - Burnit_UI_Light2
   - Burnit_UI_arrowBtn_highlight
@@ -370,6 +379,7 @@ SpriteAtlas:
   - FitHeroesAssets_SubStage_active2
   - TutorialGuy_Punch_00006
   - FitHeroesAssets_Background_ocean
+  - Burnit_MultiplayerVS_CaloriesP1
   - Burnit_UI_RacingTitle
   - Burnit_UI_Enemy_lifebarFront
   - Burnit_UI_Punch+_icon

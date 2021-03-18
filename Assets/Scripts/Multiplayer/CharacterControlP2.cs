@@ -22,7 +22,6 @@ namespace EasyWiFi.ServerControls
 
         public Rigidbody2D rb;
         public Text CaloriesText;
-        public Text SpeedText;
         public Animator animator;
 
         public GameObject speedParticle;
@@ -31,6 +30,7 @@ namespace EasyWiFi.ServerControls
         public GameObject walkingDust;
         public GameObject jumpDust;
         public GameObject dustPoint;
+        float P2Calories;
 
         //Run, Jump and Punch detection
         bool JJUp = false;
@@ -82,8 +82,7 @@ namespace EasyWiFi.ServerControls
                 }
             }
 
-            SpeedText.text = "" + Speed.ToString();
-            CaloriesText.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
+            CaloriesText.text = "" +  P2Calories.ToString("F2");
 
             if (Speed <= 0.1)
             {
@@ -215,9 +214,8 @@ namespace EasyWiFi.ServerControls
                 {
                     RunUp = false;
                     RunDown = false;
-                     DataManager.Instance.playerData.stepsNumber++;
                     Speed += 0.8f;
-                     DataManager.Instance.playerData.stageCalories += 0.04f;
+                    P2Calories += 0.04f;
                     timerStop = 0;
 
                 }
@@ -238,9 +236,8 @@ namespace EasyWiFi.ServerControls
                 {
                     RunUp_low = false;
                     RunDown_low = false;
-                     DataManager.Instance.playerData.stepsNumber++;
                     Speed += 0.8f;
-                     DataManager.Instance.playerData.stageCalories += 0.04f;
+                    P2Calories += 0.04f;
                     timerStop = 0;
 
                 }
@@ -250,8 +247,7 @@ namespace EasyWiFi.ServerControls
                 {
                     JJUp = false;
                     Crouching = false;
-                     DataManager.Instance.playerData.Squats++;
-                     DataManager.Instance.playerData.stageCalories += 0.2f;
+                    P2Calories += 0.2f;
 
                     if( DataManager.Instance.playerData.superJump == 0)
                     {
@@ -290,8 +286,7 @@ namespace EasyWiFi.ServerControls
                     animator.SetTrigger("Attack");
                     Speed = 0;
                     PunchTimer = 1;
-                     DataManager.Instance.playerData.stageCalories += 0.04f;
-                     DataManager.Instance.playerData.punches++;
+                    P2Calories += 0.04f;
                 }
 
                 if (orientation.z < 0.4 && PunchTimer <= 0) //detect punch
