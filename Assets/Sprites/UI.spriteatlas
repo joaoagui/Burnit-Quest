@@ -31,11 +31,12 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b082901a141c815458d482dbe5ec5ca8, type: 3}
-    totalSpriteSurfaceArea: 64857636
+    totalSpriteSurfaceArea: 67062670
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 32dd8a00ae388e140a9f248a08dad4ad, type: 3}
+  - {fileID: 21300000, guid: f3712f205a95b9847bf0855cac36fea0, type: 3}
   - {fileID: 21300000, guid: 75df2230b7cb5e34e92b2e6e398e73d3, type: 3}
   - {fileID: 21300000, guid: f4d7a040dbe9e514b91c48d856b832fb, type: 3}
   - {fileID: 21300000, guid: c7c8ea406867b3c4abfb072d8bd06fc6, type: 3}
@@ -48,6 +49,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9857fdb0e48285646bd604cf1f6e892c, type: 3}
   - {fileID: 21300000, guid: 0a601ac01925a24469f3cba343988aeb, type: 3}
   - {fileID: 21300000, guid: 451074e089d430344a4b2f8e40984e67, type: 3}
+  - {fileID: 21300000, guid: 3e13e911a8e31614ea319e707c40f9ed, type: 3}
   - {fileID: 21300000, guid: 6b2ac431bf4b73c4e866e0afc2c4a945, type: 3}
   - {fileID: 21300000, guid: 07031a310a3324b4e8ebb78347f63966, type: 3}
   - {fileID: 21300000, guid: 9f4bfd31fb9fcd9459687dbbe98deecf, type: 3}
@@ -82,6 +84,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 651183d383c96b64086e6d14eef83053, type: 3}
   - {fileID: 21300000, guid: 392c112453a277447b3c9546e3b78123, type: 3}
   - {fileID: 21300000, guid: ce8d2c44f0007374a9ab4af945303504, type: 3}
+  - {fileID: 21300000, guid: 507a7354b8fc01f428d885877072172c, type: 3}
   - {fileID: 21300000, guid: fadaef64435a1a54c9a8a88ee2b3df63, type: 3}
   - {fileID: 21300000, guid: cd35b674b35f2d14ba98ed4f08f43c86, type: 3}
   - {fileID: 21300000, guid: 176e9a74ba6703e4f9c65bdee2654eb0, type: 3}
@@ -105,6 +108,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: dc2fa3e565df2e644817ed1bf56658e1, type: 3}
   - {fileID: 21300000, guid: c6cfcaf520666504ab1a25ed1eccbc05, type: 3}
   - {fileID: 21300000, guid: ccffcb16814008e41a75e83c0fb76321, type: 3}
+  - {fileID: 21300000, guid: 75ae7c167e220234791dfb7405a88ec6, type: 3}
   - {fileID: 21300000, guid: cc10a556bcc940741bfb1f30fdc8b8f4, type: 3}
   - {fileID: 21300000, guid: 2d6bf16609687124e8f9d06b389f4082, type: 3}
   - {fileID: 21300000, guid: f77fff66c89e8204c8e999873d68344e, type: 3}
@@ -146,6 +150,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 32827e6ae9e4728498be3056a8eb6ef6, type: 3}
   - {fileID: 21300000, guid: 8cf3578a21ca9d34d8db29498fe3e3d9, type: 3}
   - {fileID: 21300000, guid: 400d4c8a003c3c241a1778b6d669019f, type: 3}
+  - {fileID: 21300000, guid: 830f1b9ab3a6ebe4fa8a1cf4831469b2, type: 3}
   - {fileID: 21300000, guid: 3b617baa051fd844f90d12cffef9248a, type: 3}
   - {fileID: 21300000, guid: c8e617ba39895524499bee77af422bde, type: 3}
   - {fileID: 21300000, guid: b701e6da266d58f42890c0d465473964, type: 3}
@@ -158,6 +163,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9f24824b55320c6488f2169017c264f4, type: 3}
   - {fileID: 21300000, guid: d399d24b873a5d64ab90a8056c3a18c1, type: 3}
   - {fileID: 21300000, guid: 7671b25b34270d64d8562e031eb8cba1, type: 3}
+  - {fileID: 21300000, guid: 41e93e6b7d7a1814b8a2a7f898d81b3c, type: 3}
   - {fileID: 21300000, guid: ea7a918b6f7b1024e9b622442ed91bec, type: 3}
   - {fileID: -3003131021163631788, guid: 63fae98b1b5a0b3459df7dc8337ae78b, type: 3}
   - {fileID: 4060217086492960146, guid: 63fae98b1b5a0b3459df7dc8337ae78b, type: 3}
@@ -194,6 +200,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 55f8fbdd989d00c48b2a0d11f9609108, type: 3}
   - {fileID: 21300000, guid: 7d568cddafba46f41b280a27d1d25edb, type: 3}
   - {fileID: 21300000, guid: 9538781eedeff89499c019b165c33369, type: 3}
+  - {fileID: 21300000, guid: f62acb3e9c0247f4c83b7acc5dbda24f, type: 3}
   - {fileID: 21300000, guid: a43b1d4e896ab24499d5f5599c9318f9, type: 3}
   - {fileID: 21300000, guid: f376a38e023bfa34d9ee97ad6c0761a2, type: 3}
   - {fileID: 21300000, guid: 05a04abeedd7d544087eabdf9de94677, type: 3}
@@ -216,6 +223,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9e83a3ff0fe3dc141b56c1bf578a85df, type: 3}
   m_PackedSpriteNamesToIndex:
   - Burnit_UI_Multi1_icon
+  - Burnit_MultiplayerVS_ScoreP2
   - Burnit_UI_AudioBtn
   - TutorialGuy_Walk_00000
   - Burnit_UI_SkillBox_Active
@@ -228,6 +236,7 @@ SpriteAtlas:
   - Island_00003
   - TutorialGuy_Squat_00009
   - FitHeroesAssets_GameOver_GameOver
+  - Burnit_MultiplayerVS_ScoreP1
   - Burnit_UI-47
   - Burnit_UI_BackgroundInteractive
   - TutorialGuy_Squat_00000
@@ -262,6 +271,7 @@ SpriteAtlas:
   - Burnit_UI_Lifebar_left
   - Burnit_UI_Divider
   - Island_00007
+  - Burnit_UI_VS_bg
   - Burnit_UI_checkmark
   - Burnit_UI_Lifebar_bg
   - Burnit_UI_Pause_frame
@@ -285,6 +295,7 @@ SpriteAtlas:
   - Burnit_MultiplayerVS_InterfaceWinLose
   - TutorialGuy_Walk_00001
   - Burnit_UI_Light2
+  - Burnit_UI_FrameP2
   - Burnit_UI_arrowBtn_highlight
   - TutorialGuy_Squat_00006
   - Burnit_UI-53
@@ -326,6 +337,7 @@ SpriteAtlas:
   - FitHeroesAssets-111
   - TutorialGuy_Walk_00004
   - Wompa_Logo_WompaWombat
+  - Burnit_UI-111
   - Burnit_UI_TransitionScreen
   - Burnit_UI_Light1
   - Burnit_UI_Stats
@@ -338,6 +350,7 @@ SpriteAtlas:
   - TutorialGuy_Squat_00002
   - Burnit_UI_HeartPiece_Bottom
   - Burnit_UI_Magnet_icon
+  - Burnit_UI_FrameP1
   - Burnit_UI_dialogBox
   - Heart_Full
   - Heart_Empty
@@ -374,6 +387,7 @@ SpriteAtlas:
   - Burnit_UI_SkillGet
   - Burnit_UI_SkillBox_Inactive
   - FitHeroesAssets_Stage_Highlighted
+  - Burnit_UI_RithPortrait
   - TutorialGuy_Squat_00004
   - Burnit_UI_Waiver
   - FitHeroesAssets_SubStage_active2

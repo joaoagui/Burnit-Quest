@@ -44,7 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndlessSettings.unity
     guid: 4f5801bbb54beb9438d4ec0f98bc56dd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VersusRace.unity
     guid: d6950dce5c8bb344a91b16de4a2d9039
+  - enabled: 1
+    path: Assets/Scenes/VersusSettings.unity
+    guid: 2b67cf96c352708469e5f8ffc01885a5
   m_configObjects: {}

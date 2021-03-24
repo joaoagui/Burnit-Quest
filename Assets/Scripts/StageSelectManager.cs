@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class StageSelectManager : MonoBehaviour
 {
-
-
     [Header("Buttons")]
     public Button BtnStage1;
     public Button BtnStage2;
@@ -22,7 +20,6 @@ public class StageSelectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         if ( DataManager.Instance.playerData.stageComplete <= 4)
         {
             BtnStage2.interactable = false;

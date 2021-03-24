@@ -14,6 +14,7 @@ public class Bumper : MonoBehaviour
     public bool verticalMove;
     private bool movingUP = true;
 
+    public bool Multiplayer = false;
 
     private void Start()
     {
@@ -29,6 +30,14 @@ public class Bumper : MonoBehaviour
         {
             rb = hitInfo.gameObject.GetComponent<Rigidbody2D>();
             Health.invincibilityTimer = 0;
+            rb.velocity = new Vector2(BumpPower * -1, 2);
+            animator.SetBool("NotBumping", true);
+            bump.Play();
+        }
+
+        if (hitInfo.gameObject.CompareTag("Chay") && Multiplayer == true)
+        {
+            rb = hitInfo.gameObject.GetComponent<Rigidbody2D>();
             rb.velocity = new Vector2(BumpPower * -1, 2);
             animator.SetBool("NotBumping", true);
             bump.Play();

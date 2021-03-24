@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Versus Mode (WIP)
+  m_Text: Multiplayer Versus
 --- !u!222 &12922246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -691,11 +691,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1927027685}
   - {fileID: 796303335}
+  - {fileID: 1927027685}
   - {fileID: 1607085746}
-  - {fileID: 1905180922}
   - {fileID: 2128290297}
+  - {fileID: 1905180922}
   - {fileID: 1810308863}
   - {fileID: 100831939}
   - {fileID: 2049132947}
@@ -1815,7 +1815,7 @@ RectTransform:
   m_Children:
   - {fileID: 1663595647}
   m_Father: {fileID: 220506672}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2513,7 +2513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40.549522}
+  m_AnchoredPosition: {x: 0, y: -40.54951}
   m_SizeDelta: {x: 0, y: -86.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017823336
@@ -3795,7 +3795,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 1927027686}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 2128290298}
     m_SelectOnLeft: {fileID: 1810308864}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
@@ -4451,7 +4451,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 1927027686}
+    m_SelectOnRight: {fileID: 2128290298}
   m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4634,11 +4634,11 @@ RectTransform:
   m_Children:
   - {fileID: 795893813}
   m_Father: {fileID: 220506672}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 567, y: -134}
+  m_AnchoredPosition: {x: 567, y: -242}
   m_SizeDelta: {x: 316.88, y: 83.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905180923
@@ -4764,7 +4764,7 @@ RectTransform:
   m_Children:
   - {fileID: 1345561029}
   m_Father: {fileID: 220506672}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5282,7 +5282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Endless Run (New!)
+  m_Text: Endless Run
 --- !u!222 &2076691084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5317,17 +5317,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128290296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0989, y: 1.0989, z: 1.0989}
   m_Children:
   - {fileID: 12922244}
   m_Father: {fileID: 220506672}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 567, y: -235}
+  m_AnchoredPosition: {x: 566.99994, y: -137}
   m_SizeDelta: {x: 316.88, y: 83.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128290298
@@ -5344,9 +5344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 1607085749}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 1810308864}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
   m_Colors:
@@ -5369,17 +5369,17 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 2128290299}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 711623187}
-        m_MethodName: 
+      - m_Target: {fileID: 291568327}
+        m_MethodName: GoVersusSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

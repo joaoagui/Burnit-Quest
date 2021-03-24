@@ -101,6 +101,18 @@ public class MainMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Select");
     }
 
+    public void GoVersusSettings()//startgame from the splash screen
+    {
+        StartCoroutine(LoadLevel("VersusSettings"));
+        FindObjectOfType<AudioManager>().Play("Select");
+    }
+
+    public void GoVersusRace()//startgame from the splash screen
+    {
+        StartCoroutine(LoadLevel("VersusRace"));
+        FindObjectOfType<AudioManager>().Play("Select");
+    }
+
     public void GoSkillTree()//GoTo Skilltree
     {
         StartCoroutine(LoadLevel("SkillTree"));

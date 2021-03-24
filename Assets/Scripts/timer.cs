@@ -10,7 +10,7 @@ public class timer : MonoBehaviour
         
     public TextMeshPro minutesTxt;
     public TextMeshPro secondsTxt;
-    
+
     public GameObject EndlessRunnerManager;
 
     // Start is called before the first frame update

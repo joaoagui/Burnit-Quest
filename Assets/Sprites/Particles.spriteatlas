@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 178f7b7ec7335634986894c1614fdc55, type: 3}
-    totalSpriteSurfaceArea: 262703
+    totalSpriteSurfaceArea: 267347
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -48,6 +48,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fc7286b6b1fd75f458f8d966a98715f5, type: 3}
   - {fileID: 21300000, guid: 3c2248b6ead30c642a43cc1edb47cf99, type: 3}
   - {fileID: 21300000, guid: bbbf7e1842834d54aa84a65e68043f53, type: 3}
+  - {fileID: -8826206094004635439, guid: dd97d088507456b4199e2efa522e324a, type: 3}
+  - {fileID: -9164487059051667627, guid: dd97d088507456b4199e2efa522e324a, type: 3}
+  - {fileID: 7829862611245293687, guid: dd97d088507456b4199e2efa522e324a, type: 3}
   - {fileID: 21300000, guid: 2be9a5290ead8e544ae4dd823e266e05, type: 3}
   - {fileID: 21300000, guid: d5de5459a6761d347ac38768383cff3b, type: 3}
   - {fileID: 21300000, guid: 8d5289c992b632743b11af5d90af578d, type: 3}
@@ -78,6 +81,9 @@ SpriteAtlas:
   - dust-02
   - Burnit_Juice&FX_JumpDust_7
   - dust-03
+  - Burnit_MultiplayerVS_RockParticle1_1
+  - Burnit_MultiplayerVS_RockParticle1_0
+  - Burnit_MultiplayerVS_RockParticle1_2
   - Burnit_Juice&FX_JumpDust_5
   - dust-07
   - dust-01

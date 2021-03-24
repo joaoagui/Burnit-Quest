@@ -251,7 +251,7 @@ namespace EasyWiFi.ServerControls
 
                     if( DataManager.Instance.playerData.superJump == 0)
                     {
-                        Instantiate(jumpDust, new Vector2(dustPoint.transform.position.x, dustPoint.transform.position.y -2), dustPoint.transform.rotation);
+                        Instantiate(jumpDust, new Vector2(dustPoint.transform.position.x, dustPoint.transform.position.y), dustPoint.transform.rotation);
                         rb.velocity = new Vector2(0, jumpForce +  DataManager.Instance.playerData.jumpSkill);
                         FindObjectOfType<AudioManager>().Play("hup");
                         Invoke("MoveForward", 0.2f);

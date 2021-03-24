@@ -9,11 +9,11 @@ public class FinishLine : MonoBehaviour
     public  Animator animator;
 
     public GameObject Player1;
-    public GameObject Player1win;
-
     public GameObject Player2;
-    public GameObject Player2win;
 
+    public GameObject ChayWin;
+    public GameObject RithWin;
+    
     public GameObject FinishScreen;
     public GameObject button;
     public GameObject pauseButton;
@@ -31,6 +31,7 @@ public class FinishLine : MonoBehaviour
         if (get == false && collision.gameObject.CompareTag("Player"))
         {
             get = true;
+
             animator.SetBool("Closed", true);
             PauseMenu.paused = true;
             FindObjectOfType<AudioManager>().Play("gateClose");
@@ -39,8 +40,17 @@ public class FinishLine : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(button);
 
-            Instantiate(Player1win, Player2.transform.position, Quaternion.identity);
-            Destroy(Player1);
+            if (VersusSettings.P1Character == "Chay")
+            {
+                Instantiate(ChayWin, Player1.transform.position, Quaternion.identity);
+                Destroy(Player1);
+            }
+
+            else if (VersusSettings.P1Character == "Rith")
+            {
+                Instantiate(RithWin, Player1.transform.position, Quaternion.identity);
+                Destroy(Player1);
+            }
 
             finishText.text = "P1 WINS";
 
@@ -55,9 +65,17 @@ public class FinishLine : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("gateClose");
             Destroy(pauseButton);
 
-            Instantiate(Player2win, Player2.transform.position, Quaternion.identity);
-            Destroy(Player2);
+            if(VersusSettings.P2Character == "Chay")
+            {
+                Instantiate(ChayWin, Player2.transform.position, Quaternion.identity);
+                Destroy(Player2);
+            }
 
+            else if (VersusSettings.P2Character == "Rith")
+            {
+                Instantiate(RithWin, Player2.transform.position, Quaternion.identity);
+                Destroy(Player2);
+            }
 
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(button);

@@ -89713,7 +89713,7 @@ Transform:
   - {fileID: 274378728}
   - {fileID: 43245313}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &90647925
 AudioSource:
@@ -92243,7 +92243,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303039976
 GameObject:
@@ -93638,7 +93638,7 @@ Transform:
   - {fileID: 253478167}
   - {fileID: 792885380}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &402631564
 GameObject:
@@ -94206,7 +94206,7 @@ Transform:
   - {fileID: 1889913979}
   - {fileID: 764613557}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439766956
 GameObject:
@@ -104394,7 +104394,7 @@ Transform:
   - {fileID: 1802478718}
   - {fileID: 273345719}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587745516
 GameObject:
@@ -120192,7 +120192,7 @@ Transform:
   - {fileID: 1545800221}
   - {fileID: 1067400096}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1583080971 stripped
 RectTransform:
@@ -120321,7 +120321,7 @@ PrefabInstance:
     - target: {fileID: 6850178965898454179, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6850178965898454179, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
@@ -121655,7 +121655,7 @@ RectTransform:
   - {fileID: 3218546521596826899}
   - {fileID: 718946897}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -123853,7 +123853,7 @@ Transform:
   - {fileID: 50038052}
   - {fileID: 1780310341}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907948024
 GameObject:
@@ -125730,59 +125730,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c1586a5514322641b2c802a55932ad9, type: 3}
---- !u!1 &2077278651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2077278653}
-  - component: {fileID: 2077278652}
-  m_Layer: 0
-  m_Name: NavigationManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2077278652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077278651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45dad6fc16f1f484587aae3102dc664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 0}
-  transitionTime: 1
-  loadingBar: {fileID: 0}
-  progressText: {fileID: 0}
-  TipText: {fileID: 0}
-  tip1: 
-  tip2: 
-  tip3: 
-  tip4: 
-  tip5: 
---- !u!4 &2077278653
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077278651}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084663595
 GameObject:
   m_ObjectHideFlags: 0
@@ -133236,7 +133183,7 @@ PrefabInstance:
     - target: {fileID: 7991263406233285410, guid: f63ee60f2d6ec434dbaf84d35cf2a1cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7991263406233285410, guid: f63ee60f2d6ec434dbaf84d35cf2a1cd,
         type: 3}
