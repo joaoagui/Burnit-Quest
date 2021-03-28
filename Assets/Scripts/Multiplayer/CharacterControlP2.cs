@@ -159,18 +159,18 @@ namespace EasyWiFi.ServerControls
 
         private void FixedUpdate()
         {
-            if (Speed > 0  && Health.invincibilityTimer > 1 && Player.isGrounded) //Move character according to speed
+            if (Speed > 0  && Health.invincibilityTimerP2 > 1 && Player.isGrounded) //Move character according to speed
             {
                 //rb.velocity = new Vector2(Speed *  DataManager.Instance.playerData.speedSkill, rb.velocity.y) * Time.deltaTime; 
                 rb.transform.Translate(Vector2.right * Time.deltaTime * Speed *  DataManager.Instance.playerData.speedSkill, Space.World);
                 //rb.AddForce(new Vector2(Time.deltaTime * Speed *  DataManager.Instance.playerData.speedSkill, 0), ForceMode2D.Force);
             }
             //Player hurt animation plays when Invincibility timer is reset:
-            if (Health.invincibilityTimer <= 1f)
+            if (Health.invincibilityTimerP2 <= 1f)
             {
                 animator.SetBool("Hurt", true);
             }
-            if (Health.invincibilityTimer > 0.1f)
+            if (Health.invincibilityTimerP2 > 0.1f)
             {
                 animator.SetBool("Hurt", false);
             }

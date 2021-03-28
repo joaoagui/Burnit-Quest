@@ -41,6 +41,7 @@ public class TimerMultiplayer : MonoBehaviour
 
             if (minutes <= 0 && seconds <= 0)
             {
+                FindObjectOfType<AudioManager>().Play("whistle");
                 TokenFrenzyManager.GetComponent<TokenFrenzyManager>().Finish();
             }
         }

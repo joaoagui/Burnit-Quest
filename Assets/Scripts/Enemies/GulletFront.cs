@@ -5,9 +5,17 @@ using UnityEngine;
 public class GulletFront : MonoBehaviour
 {
     public bool movingUP;
+    public GameObject gulletDead;
+
+    private bool dead = false;
 
     void Update()
     {
+        if (gameObject.transform.position.y < -400 || gameObject.transform.position.y > 1600)
+        {
+            Destroy(gameObject);
+        }
+
         if (movingUP == true)
         {
             transform.Translate(Vector2.up * 2 * Time.deltaTime);
@@ -23,12 +31,18 @@ public class GulletFront : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-
+            dead = true;
+            SlingshotManager.p1Score += 1;
+            Instantiate(gulletDead, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
 
         if (collision.tag == "Chay")
         {
-
+            dead = true;
+            SlingshotManager.p2Score += 1;
+            Instantiate(gulletDead, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

@@ -12,13 +12,19 @@ public class Bumper : MonoBehaviour
     public float maxHeight;
     private float minHeight;
     public bool verticalMove;
+
+    public float maxWidth;
+    private float minWidth;
+    public bool horizontalMove;
     private bool movingUP = true;
+    private bool movingLEFT = true;
+
 
     public bool Multiplayer = false;
 
     private void Start()
     {
-              
+        minWidth = transform.position.y;
         minHeight = transform.position.y;
         animator = GetComponent<Animator>();
     }
@@ -38,6 +44,7 @@ public class Bumper : MonoBehaviour
         if (hitInfo.gameObject.CompareTag("Chay") && Multiplayer == true)
         {
             rb = hitInfo.gameObject.GetComponent<Rigidbody2D>();
+            Health.invincibilityTimerP2 = 0;
             rb.velocity = new Vector2(BumpPower * -1, 2);
             animator.SetBool("NotBumping", true);
             bump.Play();
@@ -53,24 +60,62 @@ public class Bumper : MonoBehaviour
     {
         if (PauseMenu.paused == false)
         {
-            if(verticalMove == true && movingUP == true)
+            if(verticalMove == true)
             {
-                transform.Translate(Vector2.up * 4 * Time.deltaTime);
+                if (movingUP == true)
+                {
+                    transform.Translate(Vector2.up * 4 * Time.deltaTime);
+                }
+
+                if (movingUP == false)
+                {
+                    transform.Translate(Vector2.down * 4 * Time.deltaTime);
+                }
+
+
+                if (this.transform.position.y <= minHeight)
+                {
+                    movingUP = true;
+                }
+                if (this.transform.position.y >= maxHeight)
+                {
+                    movingUP = false;
+                }
+
+
+
             }
 
-            if (verticalMove == true && movingUP == false)
+
+
+            if(horizontalMove == true)
             {
-                transform.Translate(Vector2.down * 4 * Time.deltaTime);
+
+
+
+                if (movingLEFT == true)
+                {
+                    transform.Translate(Vector2.left * 4 * Time.deltaTime);
+                }
+
+                if (movingLEFT == false)
+                {
+                    transform.Translate(Vector2.right * 4 * Time.deltaTime);
+                }
+
+                if (this.transform.position.x >= minWidth)
+                {
+                    movingLEFT = true;
+                }
+                if (this.transform.position.x <= -maxWidth)
+                {
+                    movingLEFT = false;
+                }
             }
 
-            if ( this.transform.position.y <= minHeight)
-            {
-                movingUP = true;
-            }
-            if (this.transform.position.y >= maxHeight)
-            {
-                movingUP = false;
-            }
+
+
+
         }
     }
 }

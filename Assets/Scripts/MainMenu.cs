@@ -109,8 +109,26 @@ public class MainMenu : MonoBehaviour
 
     public void GoVersusRace()//startgame from the splash screen
     {
-        StartCoroutine(LoadLevel("VersusRace"));
-        FindObjectOfType<AudioManager>().Play("Select");
+        if(VersusSettings.GameMode == "Race")
+        {
+            StartCoroutine(LoadLevel("VersusRace"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+        if (VersusSettings.GameMode == "Slingshot")
+        {
+            StartCoroutine(LoadLevel("VersusSlingshot"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+        if (VersusSettings.GameMode == "Token")
+        {
+            StartCoroutine(LoadLevel("VersusTokenFrenzy"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+        if (VersusSettings.GameMode == "LastStanding")
+        {
+            StartCoroutine(LoadLevel("VersusLastStanding"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
     }
 
     public void GoSkillTree()//GoTo Skilltree

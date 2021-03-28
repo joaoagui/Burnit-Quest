@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ChaySlingshotOverride
+  m_Controller: {fileID: 9100000, guid: 9d6d3792a29657f4a99701018fc69257, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fdf147e9aec5ffe448794252b9d6664c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3522feebb9644924b964229afa195c95, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e3238a09f342be848be6cd93852d03cc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 94340639b9319fb4a8c513601c5029ea, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 78b4ec55fbed5b542b4a5ccfb84ad225, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: acd6751cb10643b45b58ad2df8d128ea, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b5aa8b70a3960f6469b2e080ee7db1de, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9292bfc9b2f8ef44eb9c355a1ba2ad7d, type: 2}

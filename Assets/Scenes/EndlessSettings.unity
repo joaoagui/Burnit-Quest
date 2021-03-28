@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1712,21 +1712,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4992957871569491095, guid: bf7165736cf7da94ba01dc7c3c0df83f,
-        type: 3}
-      propertyPath: sounds.Array.data[7].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992957871569491095, guid: bf7165736cf7da94ba01dc7c3c0df83f,
-        type: 3}
-      propertyPath: sounds.Array.data[6].name
-      value: Select
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992957871569491095, guid: bf7165736cf7da94ba01dc7c3c0df83f,
-        type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 89078cb2c9098b644a00ce1974a4ea7c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf7165736cf7da94ba01dc7c3c0df83f, type: 3}
 --- !u!1 &637268190
@@ -2033,7 +2018,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048280064
 GameObject:
@@ -3838,20 +3823,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1630307983
-Transform:
+--- !u!224 &1630307983
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630307981}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: -0.001, z: 0}
-  m_LocalScale: {x: 0.926352, y: 0.926352, z: 0.926352}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9720}
+  m_LocalScale: {x: 100.1, y: 100.1, z: 100.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 2048286585}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.100097656, y: -0.107910156}
+  m_SizeDelta: {x: -1900.79, y: -1069.19}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1646917032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5557,8 +5547,9 @@ RectTransform:
   - {fileID: 1497644719}
   - {fileID: 2020343559}
   - {fileID: 1667074434}
+  - {fileID: 1630307983}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

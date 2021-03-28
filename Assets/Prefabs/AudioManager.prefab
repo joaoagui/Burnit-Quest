@@ -95,7 +95,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: TrophyGet
     clip: {fileID: 8300000, guid: 531ba98e52747f84482782fc9098b4cf, type: 3}
-    volume: 0.857
+    volume: 1
     pitch: 1
     randomPitch: 0
     loop: 0
@@ -131,6 +131,27 @@ MonoBehaviour:
   - name: amulet
     clip: {fileID: 8300000, guid: b837e9513dec25d4ba1a7875be7f070a, type: 3}
     volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: token
+    clip: {fileID: 8300000, guid: cd4cfed6384fce8419630083d247a991, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: whistle
+    clip: {fileID: 8300000, guid: ac0c13e5707ec304992491dd7701a471, type: 3}
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: stretch
+    clip: {fileID: 8300000, guid: 9c51cfd88a901144db30fc9e7e1c5682, type: 3}
+    volume: 0.7
     pitch: 1
     randomPitch: 0
     loop: 0

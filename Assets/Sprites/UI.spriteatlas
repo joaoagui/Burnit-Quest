@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b082901a141c815458d482dbe5ec5ca8, type: 3}
-    totalSpriteSurfaceArea: 67062670
+    totalSpriteSurfaceArea: 67716905
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -99,6 +99,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 47647f05e78ac3b4c8aa9883323aab8e, type: 3}
   - {fileID: 21300000, guid: 49200215cb755a34b95d8828c89ee8f0, type: 3}
   - {fileID: 21300000, guid: 342305151462372488afbe9cc3ea75b1, type: 3}
+  - {fileID: 21300000, guid: 26613225db46e9a41897afd680f62311, type: 3}
   - {fileID: 21300000, guid: 99b4ff251ea150443887c6da1443422d, type: 3}
   - {fileID: 21300000, guid: a37254353251709499f9b55f8338f83d, type: 3}
   - {fileID: 21300000, guid: 3610bf65f33a5dd4bac3477f3d8d5195, type: 3}
@@ -195,6 +196,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1a99033d275a78d409a16c577510ab98, type: 3}
   - {fileID: 21300000, guid: 8fb21e3d8ed824d4eb6a41ce58f04d97, type: 3}
   - {fileID: 21300000, guid: 1621045d9f89b3549833e6c4413efbba, type: 3}
+  - {fileID: 21300000, guid: 9a47df6d78e552c4e88a8c6a703d253c, type: 3}
   - {fileID: 21300000, guid: 20406a8d1a5d4a746882b7da480e8521, type: 3}
   - {fileID: 21300000, guid: d86df5cd8dc833444904fbd15caa8d56, type: 3}
   - {fileID: 21300000, guid: 55f8fbdd989d00c48b2a0d11f9609108, type: 3}
@@ -286,6 +288,7 @@ SpriteAtlas:
   - phonebothhands-112
   - Burnit_UI_LoadingHexagon_fill
   - Burnit_UI_Warning
+  - Burnit_MultiplayerVS_ThreadmillSpeedometer
   - Burnit_UI_LoadingHexagon_base
   - Island_00002
   - TutorialGuy_Squat_00011
@@ -382,6 +385,7 @@ SpriteAtlas:
   - Burnit_UI_arrowBtn_normal
   - FitHeroesAssets_tutorial_screen
   - SkillBuy_00002
+  - Burnit_MultiplayerVS_Objective
   - Burnit_UI_ButtonPlusMinus
   - Burnit_UI_HeartPieces_Base
   - Burnit_UI_SkillGet

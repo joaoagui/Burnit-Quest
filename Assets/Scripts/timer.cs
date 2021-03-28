@@ -44,6 +44,7 @@ public class timer : MonoBehaviour
 
             if (minutes <= 0 && seconds <= 0 && EndlessRunnerSettings.timerGoal == true)
             {
+                FindObjectOfType<AudioManager>().Play("whistle");
                 EndlessRunnerManager.GetComponent<EndlessRunner>().Finish();                
             }
         }

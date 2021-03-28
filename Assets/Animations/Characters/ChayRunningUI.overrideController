@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ChayRunningUI
+  m_Controller: {fileID: 9100000, guid: 33b9d0ed411b3504c8b9383408f9efda, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bfb0ef8d3d6ed4d45aab5078864dea00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a290832fa5e523a4c98eaf43edb07b09, type: 2}

@@ -13,6 +13,10 @@ public class Health : MonoBehaviour
     public Rigidbody2D rb;
     static public float invincibilityTimer = 2;
 
+    //for Multiplayer
+    static public float invincibilityTimerP2 = 2;
+
+
     public GameObject loseScreen;
     public GameObject playerLose;
     public GameObject button;
@@ -44,6 +48,8 @@ public class Health : MonoBehaviour
     void Update()
     {
         invincibilityTimer += 1 * (Time.deltaTime * 1);
+        invincibilityTimerP2 += 1 * (Time.deltaTime * 1);
+
 
         if (health >  DataManager.Instance.playerData.numOfHearts)
         {

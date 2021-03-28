@@ -7,14 +7,14 @@ using System;
 namespace EasyWiFi.ServerControls
 {
 
-    [AddComponentMenu("EasyWiFiController/Server/UserControls/Slingshot Control")]
+    [AddComponentMenu("EasyWiFiController/Server/UserControls/SlingshotControl")]
     public class SlingshotControl : MonoBehaviour, IServerController
     {
 
         public string control = "Gyro";
         public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
 
-        public Text CaloriesText;
+        public Text CaloriesTextP1;
         public Animator animator;
 
         public GameObject Shot;
@@ -62,12 +62,11 @@ namespace EasyWiFi.ServerControls
                 }
             }
 
-            CaloriesText.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
-
+            CaloriesTextP1.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
 
             if (punchTimer > 0) //punching cooldown
             {
-                punchTimer -= 1 * (Time.deltaTime * 2f);
+                punchTimer -= 1 * Time.deltaTime;
             }
 
         }
@@ -94,12 +93,13 @@ namespace EasyWiFi.ServerControls
                 {
                     animator.SetBool("Pull", true);
                     pull = true;
-                    DataManager.Instance.playerData.stageCalories += 0.2f;
+                    FindObjectOfType<AudioManager>().Play("stretch");
                 }
 
                 if (orientation.z < 0.2 && punchTimer <= 0 && pull == true) 
                 {
                     animator.SetBool("Pull", false);
+                    DataManager.Instance.playerData.stageCalories += 0.2f;
                     pull = false;
                 }
             }
