@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
     //transition screen
     IEnumerator LoadLevel(string levelID)
     {
+        PauseMenu.paused = false;
         loadingBar.fillAmount = 0f;
         progressText.text = 0 + "%";
         transition.SetTrigger("Start");
@@ -54,7 +55,6 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PauseMenu.paused = false;
         tipRandomizer = Random.Range(0f, 5f);
     }
 

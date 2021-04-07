@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6ced30286849e9f4683cdd6b08168a87, type: 3}
-    totalSpriteSurfaceArea: 20428350
+    totalSpriteSurfaceArea: 25717235
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -44,6 +44,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 10ae3cc0968a62845a6cbd49c054529d, type: 3}
   - {fileID: 21300000, guid: 5e77ccc01f7a0494b813efc9e2e33522, type: 3}
   - {fileID: 21300000, guid: 127ff3e05b6769b4d92c89a0802bc5e5, type: 3}
+  - {fileID: 21300000, guid: b7ffe9f0daca92b498380297d54a8502, type: 3}
+  - {fileID: 21300000, guid: 72287af0ae8210e45901ac049e237efa, type: 3}
   - {fileID: 21300000, guid: ef799ff007c15eb42bb9766657f356ad, type: 3}
   - {fileID: 21300000, guid: 820440218ba1eab47aa9badf83746ed7, type: 3}
   - {fileID: 21300000, guid: c5b2cf21fb511874d974ce2070fe7dfd, type: 3}
@@ -54,19 +56,27 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0d6289f1631eba1489c04bd56d2eb0cb, type: 3}
   - {fileID: 21300000, guid: 7f74faf1e6510a74b90e61b2a9ed841c, type: 3}
   - {fileID: 21300000, guid: abade502a57c347449a5f4bb20f32a4e, type: 3}
+  - {fileID: 21300000, guid: 31bd4602edc3e69468195c723357262c, type: 3}
   - {fileID: 21300000, guid: 0d887602cd66edc48bcb9f0f8c2fe6b5, type: 3}
   - {fileID: 21300000, guid: de5e4d02a75b4e248bd1a99d45fb5a35, type: 3}
+  - {fileID: 21300000, guid: 76512432855dbc24bbf249ba716b0980, type: 3}
   - {fileID: 21300000, guid: c8521662c87dc4f4eaf66553f34a81f3, type: 3}
   - {fileID: 21300000, guid: f41e4d622098fb94a9d5fe66c61f3dad, type: 3}
   - {fileID: 21300000, guid: 203dee6210c31554aa9f8c1e55c91031, type: 3}
   - {fileID: 21300000, guid: 60f23c82a827b364dbc98e0075b89902, type: 3}
+  - {fileID: 21300000, guid: c11aa1b20bacf1c43a5cf064f460fbb5, type: 3}
   - {fileID: 21300000, guid: 7af198b2b6a96ef4eabfd4e7566438ae, type: 3}
   - {fileID: 21300000, guid: 348f2cb2f5b5bd34e9d6b05981eacba8, type: 3}
   - {fileID: 21300000, guid: d8e0b3c202ce4dc429ef374cbf3c2363, type: 3}
+  - {fileID: 21300000, guid: fc98f5d2bba8d7348903d3318ee18ff0, type: 3}
+  - {fileID: 21300000, guid: b840b913d8f0c7049b46076ca9f3ee23, type: 3}
   - {fileID: 21300000, guid: 1a9ee7233a5fc6246b99194cf80f3650, type: 3}
   - {fileID: 21300000, guid: 90dff2432bb47254b97c6cd728644e28, type: 3}
+  - {fileID: 21300000, guid: 3e5fd3435dd5cb94eaf6189dcb9832c6, type: 3}
   - {fileID: 21300000, guid: fc98a853aed6f184c881c4adb795c80c, type: 3}
+  - {fileID: 21300000, guid: 75890b5310da24d49b25bb4fb01960cc, type: 3}
   - {fileID: 21300000, guid: 66856f53a91022348a40a84b948c289f, type: 3}
+  - {fileID: 21300000, guid: 8a8041638c236a1468de8790bc8ba107, type: 3}
   - {fileID: 21300000, guid: 3e89bc83002376d4c8d606269319794b, type: 3}
   - {fileID: 21300000, guid: 5e812e83656beec47bbaca3ba12dca90, type: 3}
   - {fileID: 21300000, guid: 45eb9493a3a606143a5f8f750ee8228b, type: 3}
@@ -74,12 +84,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3f4722053f6efb745a0548e937741b51, type: 3}
   - {fileID: 21300000, guid: 18ccfe0518f1d2c42a6641413d862649, type: 3}
   - {fileID: 21300000, guid: b6b440153a3952042afabd99ab678438, type: 3}
+  - {fileID: 21300000, guid: 32ee152582b619e49bd286b798ff2ec5, type: 3}
   - {fileID: 21300000, guid: b74b3a356e4093645a2ddba40bc27e3d, type: 3}
   - {fileID: 21300000, guid: 67a9777536a0ec648b4140a3825122ef, type: 3}
   - {fileID: 21300000, guid: 805f6a85cce7cf943a217aff0edef30f, type: 3}
   - {fileID: 21300000, guid: c86397c5b66d3ca40908aa64278b3985, type: 3}
+  - {fileID: 21300000, guid: c9d589c524f28c74a941562080cd9572, type: 3}
   - {fileID: 21300000, guid: 2d522926e7b1e894f93f77c4b5d1b830, type: 3}
   - {fileID: 21300000, guid: ff3f7d269cc00b8438930688ccf2987e, type: 3}
+  - {fileID: 21300000, guid: c120bc6637a78a4408b6f45d67f5aac8, type: 3}
   - {fileID: 21300000, guid: ef21d5764f2af9e4f96244be9ad3a32e, type: 3}
   - {fileID: 21300000, guid: a9fc71862cbb73341a99f0d2bad89446, type: 3}
   - {fileID: 21300000, guid: 73b4c4a6da03db54faf544a69fcb0766, type: 3}
@@ -87,14 +100,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9320b0d6bf88d944c84dfa68f44b4c0d, type: 3}
   - {fileID: 21300000, guid: b54805d6e7429154d8730f52a110bd3d, type: 3}
   - {fileID: 21300000, guid: d78631e6c58b31d4ea890aa3cc5c7d7d, type: 3}
+  - {fileID: 21300000, guid: 65d21ae69b4334247ac2d0433669ef7e, type: 3}
   - {fileID: 21300000, guid: 54ca69f6da1968043848a821fdbdf0fd, type: 3}
   - {fileID: 21300000, guid: 5777e5076be59c645b9b567fad456e51, type: 3}
   - {fileID: 21300000, guid: 3062d527bd88f904392009985b8c9403, type: 3}
   - {fileID: 21300000, guid: 12929a27243b08941a8378d7eedbb340, type: 3}
+  - {fileID: 21300000, guid: dc196e377f33c47468954e6cc6a502aa, type: 3}
   - {fileID: 21300000, guid: 18ecb14713935cd4884540ee03215958, type: 3}
+  - {fileID: 21300000, guid: c30bca471ca3134459a0667ddc281fa9, type: 3}
   - {fileID: 21300000, guid: 27cfde47b080b8242bd2e387930c8793, type: 3}
   - {fileID: 21300000, guid: 404295675adb6464e811f18ad57cb566, type: 3}
   - {fileID: 21300000, guid: ffeb6a67b7dc57546be3d9b9c07e163e, type: 3}
+  - {fileID: 21300000, guid: c6e32977c5097804bb86eae99d3f31c5, type: 3}
   - {fileID: 21300000, guid: db2fbc874ba881549923ec348a99eaea, type: 3}
   - {fileID: 21300000, guid: 8afea2a7875f9b74bba9cf30b4fb75b6, type: 3}
   - {fileID: 21300000, guid: f617caa756b628042b2f7a908ddb3395, type: 3}
@@ -108,32 +125,42 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2109f358c5def294581746e03e374218, type: 3}
   - {fileID: 21300000, guid: 3f28afb84d48b544d9b6b09dc5e7ebed, type: 3}
   - {fileID: 21300000, guid: 8fad33c88ec2c444ba3d0b99d07508b2, type: 3}
+  - {fileID: 21300000, guid: 88aca1d83be8f784b88209bb7f1ebfa2, type: 3}
   - {fileID: 21300000, guid: b7ef17e83cd28184fa0dec3d07438dbd, type: 3}
   - {fileID: 21300000, guid: dc45fa491969ffd4ea7d33386f6a1c40, type: 3}
   - {fileID: 21300000, guid: 4d09725998952154da364d7f39a238a9, type: 3}
   - {fileID: 21300000, guid: 18929c89d5bb099498a6aeea3a60368c, type: 3}
   - {fileID: 21300000, guid: 0f937f99a2ca000498c4044a2293549d, type: 3}
   - {fileID: 21300000, guid: 960c66b944781a546aa44c3dbe7c2d56, type: 3}
+  - {fileID: 21300000, guid: a806a1c929f91d94f81638a6ad47a543, type: 3}
   - {fileID: 21300000, guid: 763898c9f75090247b18f393b714f46b, type: 3}
   - {fileID: 21300000, guid: 0431f8c93c30d5046805d28dd2fba13a, type: 3}
   - {fileID: 21300000, guid: 5b05e5d929c84db499d91a05d03eb90b, type: 3}
   - {fileID: 21300000, guid: 90deefd9e57562e4bac2eaf72832df02, type: 3}
+  - {fileID: 21300000, guid: 564712e9eeb9c2044b49df6c9a989a8d, type: 3}
   - {fileID: 21300000, guid: 26678d2ac5bc3004a99692de5ef1c494, type: 3}
   - {fileID: 21300000, guid: e415173a224134445baab09bbca3e34a, type: 3}
+  - {fileID: 21300000, guid: 91f9da3ad80f8e94b9015030d8b2ce73, type: 3}
   - {fileID: 21300000, guid: d335646a5b0acac4abc3d5178037ac1b, type: 3}
+  - {fileID: 21300000, guid: 44e03a6a45c2d2e46aecf6d8ebba4e16, type: 3}
   - {fileID: 21300000, guid: 3a52997afa78f7349a607086f5ebc639, type: 3}
   - {fileID: 21300000, guid: 97a84d7aa8d0b9143b873cf352e77f9a, type: 3}
   - {fileID: 21300000, guid: dfa9208a06eae6f4db9c3320ed9b5ba9, type: 3}
   - {fileID: 21300000, guid: a1184bfa60362fe4294c53161570dbe4, type: 3}
+  - {fileID: 21300000, guid: 6efd712bdcf301044b77c12f830cbc41, type: 3}
   - {fileID: 21300000, guid: 384c145bfe1ae20459c1464c9a176c43, type: 3}
   - {fileID: 21300000, guid: 2d2c327bccebef94982562bc9e8b468d, type: 3}
   - {fileID: 21300000, guid: c9386bdbdd5ef774891b13a130bdf1c7, type: 3}
   - {fileID: 21300000, guid: a3ec4ceb7ab99d44f9ee4688f6b362f5, type: 3}
   - {fileID: 21300000, guid: 3f0c64fba434d1a449312ecc5239ccff, type: 3}
+  - {fileID: 21300000, guid: 08db350c7ce33c74f8d70311c191ac89, type: 3}
   - {fileID: 21300000, guid: 1c00511c29c617f43b8bd601608609d1, type: 3}
   - {fileID: 21300000, guid: 6e84141c174118b4f9b6b3ab8cde3d0f, type: 3}
   - {fileID: 21300000, guid: e9a5b02ce9457c24e996889cfd868a7d, type: 3}
   - {fileID: 21300000, guid: 19a0d15c3de3666489ad7f06eb3c19b0, type: 3}
+  - {fileID: 21300000, guid: 722ecd5c2d1976544b959f48c182078a, type: 3}
+  - {fileID: 21300000, guid: 0551b07c38394054692f41ab392ff653, type: 3}
+  - {fileID: 21300000, guid: b17eea7cf022007449b73c66e49edc34, type: 3}
   - {fileID: 21300000, guid: d302de7c6b62f9846bc5b6ca23b4f78a, type: 3}
   - {fileID: 21300000, guid: eec6929c2c576684a84b97adb8c928ed, type: 3}
   - {fileID: 21300000, guid: 250e3ddc8eb821544bd255405330016a, type: 3}
@@ -141,27 +168,39 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fc51460d747ba7e499ba97c31d57ccb1, type: 3}
   - {fileID: 21300000, guid: bca7c72d8eafc8e4f9b6b3135121f095, type: 3}
   - {fileID: 21300000, guid: c372192d0d2f0094db714d6dfe02e7af, type: 3}
+  - {fileID: 21300000, guid: aabd613d05ed7324aa2af70df09b07b6, type: 3}
   - {fileID: 21300000, guid: fbd4ea4d069fc164a9fe11cc9af10536, type: 3}
+  - {fileID: 21300000, guid: b856528d7a1195540b4bdc391f5af9a6, type: 3}
+  - {fileID: 21300000, guid: 3e85f58df45df554ba1aa33207b76878, type: 3}
   - {fileID: 21300000, guid: d4f924ad80129f941b335f6e4fc52b81, type: 3}
   - {fileID: 21300000, guid: 2b6599edb03cd5240b1981413a44382d, type: 3}
+  - {fileID: 21300000, guid: 0dffe3fddde49ae48adb660e0d815392, type: 3}
   - {fileID: 21300000, guid: de84450e8aa409a42ac282a4d64b6b66, type: 3}
   - {fileID: 21300000, guid: 529efb0e18efc934d8c03a6d0103863a, type: 3}
   - {fileID: 21300000, guid: 1235386ea269483498df09885d7d0c07, type: 3}
   - {fileID: 21300000, guid: 13b4139e44a954a4d87c71113c5534b5, type: 3}
+  - {fileID: 21300000, guid: 93a214ae70317b4438f3712c66204483, type: 3}
   - {fileID: 21300000, guid: 0ad455aef9e7fe44d9271d590b50bc64, type: 3}
   - {fileID: 21300000, guid: 533c94be0c820474aa5725e09bda3d53, type: 3}
+  - {fileID: 21300000, guid: 5ecfb5bef48a48d49b849c8024efc54b, type: 3}
+  - {fileID: 21300000, guid: ccf2ffde3fee71a49aa9a48d579eef79, type: 3}
   - {fileID: 21300000, guid: a7a752ee2fa016a46babaad0502d4e22, type: 3}
   - {fileID: 21300000, guid: 5c9768fe2ac0bf4499a288605aafe674, type: 3}
   - {fileID: 21300000, guid: 6207bcfe0c3615d45a181f366224a057, type: 3}
   - {fileID: 21300000, guid: d250040f1f55ba24095e26c8054ede43, type: 3}
+  - {fileID: 21300000, guid: b645ef0f6acf4d343b59d9e733589822, type: 3}
   - {fileID: 21300000, guid: 11e9441f697a6794db6f000c5088b28f, type: 3}
   - {fileID: 21300000, guid: a8e1762fe25ad4a40b32e4721cc10a1e, type: 3}
+  - {fileID: 21300000, guid: af3cc92f135f4b94b987c188024219d8, type: 3}
   - {fileID: 21300000, guid: bc0f0c2f70877794d9380a15b8f1f3c5, type: 3}
   - {fileID: 21300000, guid: 864b343fef074ff40b170466bc33d303, type: 3}
   - {fileID: 21300000, guid: 59f26c7fe7411a242a4f326513c5366b, type: 3}
+  - {fileID: 21300000, guid: 50d1a08f9e2b52b46b5fc489be26c8c9, type: 3}
   - {fileID: 21300000, guid: f8f30f9f75158cc43b65c0bec0256d22, type: 3}
   - {fileID: 21300000, guid: 646fe0cfb2ddac74bbc18e21b8f9212a, type: 3}
+  - {fileID: 21300000, guid: 1361f4cf68de9d34a921c74d467a0bda, type: 3}
   - {fileID: 21300000, guid: 5b8326efba97cb54ebb3dd94af5a3b81, type: 3}
+  - {fileID: 21300000, guid: 0648c6ffcf5e2ad49882c1e9ad80cabe, type: 3}
   m_PackedSpriteNamesToIndex:
   - __ChayArmFront
   - Burnit_Juice&FX_ShieldBack3
@@ -172,6 +211,8 @@ SpriteAtlas:
   - Rith_Sleep_00009
   - Rith_Win_00000
   - __ShotP1
+  - RithSwim_00011
+  - Burnit_Rith_Spin1
   - __ChayLegs
   - Rith_Punch_00009
   - Rith_Idle_00010
@@ -182,19 +223,27 @@ SpriteAtlas:
   - Rith_Walk_00010
   - Burnit_MultiplayerVS_ElasticShooting
   - Rith_Walk_00003
+  - Burnit_Rith_WaterSpin2
   - Rith_Jump_00001
   - Rith_Idle_00003
+  - Burnit_Rith_WaterSpin4
   - Rith_Sleep_00004
   - Rith_Jump_00004
   - ShieldSphere_ShieldBack3
   - Rith_Idle_00000
+  - RithSwim_00010
   - Rith_Jump_00010
   - Rith_crouch_00000
   - Rith_Idle_00009
+  - RithSwimIdle_00002
+  - Burnit_Rith_WaterSpin8
   - ShieldSphere_ShieldBack2
   - Rith_Win_00005
+  - RithSwim_00004
   - Rith_Walk_00000
+  - Burnit_Rith_WaterSpin5
   - Rith_Sleep_00003
+  - RithSwimIdle_00006
   - Rith_Punch_00010
   - Rith_Win_00010
   - Rith_Sleep_00007
@@ -202,12 +251,15 @@ SpriteAtlas:
   - Rith_hurt_00000
   - __RithBody
   - Rith_hurt_00004
+  - RithSwimIdle_00008
   - Rith_Idle_00001
   - Rith_crouch_00006
   - Burnit_Juice&FX_ShieldBack1
   - __ChayHandFront
+  - RithSwimIdle_00007
   - Rith_Sleep_00008
   - Rith_hurt_00001
+  - RithSwim_00000
   - ShieldSphere_ShieldFront3
   - Rith_Win_00003
   - Burnit_MultiplayerVS_AmmoPile2
@@ -215,14 +267,18 @@ SpriteAtlas:
   - Rith_Win_00008
   - Rith_Sleep_00006
   - Rith_Sleep_00002
+  - Burnit_Rith_WaterSpin7
   - Rith_crouch_00004
   - Rith_Win_00001
   - ShieldSphere_ShieldFront2
   - Burnit_MultiplayerVS_ShotP2
+  - Burnit_Rith_WaterSpin1
   - Burnit_Juice&FX_ShieldFront2
+  - RithSwim_00001
   - Burnit_MultiplayerVS_SlingshotBack
   - Burnit_Juice&FX_ShieldSphere_particle
   - Rith_Punch_00012
+  - RithSwimIdle_00004
   - __HandFront
   - ShieldSphere_ShieldBack4
   - Rith_Sleep_00010
@@ -236,32 +292,42 @@ SpriteAtlas:
   - Rith_hurt_00003
   - Burnit_Juice&FX_ShieldFront1
   - Rith_land_00000
+  - RithSwim_00002
   - __ChayHandBack
   - ShieldSphere_ShieldFront1
   - Rith_crouch_00003
   - Rith_Idle_00005
   - Rith_Walk_00001
   - Rith_Win_00011
+  - Burnit_Rith_WaterSpin6
   - Rith_Walk_00002
   - Rith_Sleep_00000
   - Rith_land_00002
   - Rith_Walk_00007
+  - RithPunchWater_00005
   - Rith_Punch_00006
   - __AmmoPile2
+  - RithSwimIdle_00001
   - Rith_Idle_00007
+  - RithPunchWater_00001
   - Rith_Punch_00007
   - Burnit_MultiplayerVS_SlignshotFront
   - Rith_Win_00007
   - Rith_Jump_00009
+  - RithSwimIdle_00003
   - Rith_Jump_00002
   - Rith_Win_00006
   - Burnit_Juice&FX_ShieldBack4
   - Rith_Jump_00003
   - __ChayHead
+  - RithSwim_00005
   - Rith_Punch_00008
   - Rith_Sleep_00001
   - Rith_Idle_00006
   - Rith_Jump_00008
+  - RithSwimIdle_00000
+  - RithSwim_00007
+  - RithSwim_00009
   - ShieldSphere_ShieldBack1
   - Rith_land_00003
   - Rith_Walk_00011
@@ -269,26 +335,38 @@ SpriteAtlas:
   - __RithLegs
   - ShieldSphere_ShieldFront4
   - Rith_crouch_00002
+  - RithPunchWater_00004
   - Rith_Jump_00007
+  - RithPunchWater_00002
+  - Burnit_Rith_Spin3
   - __RithHead
   - Burnit_MultiplayerVS_ElasticFront
+  - RithPunchWater_00003
   - Burnit_Juice&FX_ShieldFront4
   - Rith_Walk_00008
   - __ArmFront
   - __ChayBody
+  - RithSwim_00003
   - Rith_Sleep_00011
   - Burnit_Juice&FX_ShieldFront3
+  - RithPunchWater_00007
+  - RithSwimIdle_00005
   - Rith_crouch_00005
   - Burnit_MultiplayerVS_AmmoPile
   - __HandBack
   - Rith_land_00005
+  - Burnit_Rith_Spin2
   - Rith_Walk_00006
   - Rith_Walk_00004
+  - RithSwim_00008
   - Rith_Idle_00011
   - Rith_Walk_00009
   - Rith_Win_00002
+  - RithSwim_00006
   - Rith_Walk_00005
   - Burnit_Juice&FX_ShieldBack2
+  - Burnit_Rith_WaterSpin3
   - Rith_Punch_00011
+  - RithPunchWater_00006
   m_Tag: Player
   m_IsVariant: 0

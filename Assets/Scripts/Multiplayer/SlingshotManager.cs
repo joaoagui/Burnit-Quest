@@ -69,7 +69,6 @@ public class SlingshotManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PauseMenu.paused = false;
         p1Score = 0;
         p2Score = 0;
 
@@ -136,8 +135,11 @@ public class SlingshotManager : MonoBehaviour
 
     public IEnumerator SpawnGullets()
     {
+
         while (gulletNumber > 0)
         {
+            {
+
             gulletNumber -= 1;
 
             if (currentSpawnPoint == 6)
@@ -147,7 +149,7 @@ public class SlingshotManager : MonoBehaviour
 
                 currentSpawnPoint = 1;
             }
-           
+
 
             if (currentSpawnPoint == 5)
             {
@@ -191,6 +193,9 @@ public class SlingshotManager : MonoBehaviour
             }
 
             yield return new WaitForSeconds(2.5f);
+
+            }
+
         }
 
         if(gulletNumber <= 0)

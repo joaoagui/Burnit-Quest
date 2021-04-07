@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: faca837442bc4874487d9fed80d0a0fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8494545101179557339
+    second: Burnit_Underwater_Tilemap_BeachVisuals_0
+  - first:
+      213: -3877614943961152635
+    second: Burnit_Underwater_Tilemap_BeachVisuals_1
+  - first:
+      213: 8788263517768935691
+    second: Burnit_Underwater_Tilemap_BeachVisuals_2
+  - first:
+      213: -8638419846724040590
+    second: Burnit_Underwater_Tilemap_BeachVisuals_3
+  - first:
+      213: -1688161974632857844
+    second: Burnit_Underwater_Tilemap_BeachVisuals_4
+  - first:
+      213: 4037076547002785377
+    second: Burnit_Underwater_Tilemap_BeachVisuals_5
+  - first:
+      213: -7509040053066927018
+    second: Burnit_Underwater_Tilemap_BeachVisuals_6
+  - first:
+      213: 4975608203644383098
+    second: Burnit_Underwater_Tilemap_BeachVisuals_7
+  - first:
+      213: -3797549992408810686
+    second: Burnit_Underwater_Tilemap_BeachVisuals_8
+  - first:
+      213: -2714708519251499323
+    second: Burnit_Underwater_Tilemap_BeachVisuals_9
+  - first:
+      213: -7165360133484768383
+    second: Burnit_Underwater_Tilemap_BeachVisuals_10
+  - first:
+      213: -3662634469067970712
+    second: Burnit_Underwater_Tilemap_BeachVisuals_11
+  - first:
+      213: -2063533021058608612
+    second: Burnit_Underwater_Tilemap_BeachVisuals_12
+  - first:
+      213: 2881595230698292329
+    second: Burnit_Underwater_Tilemap_BeachVisuals_13
+  - first:
+      213: 1790725656038111364
+    second: Burnit_Underwater_Tilemap_BeachVisuals_14
+  - first:
+      213: -9000767906626633647
+    second: Burnit_Underwater_Tilemap_BeachVisuals_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a68ab8c305d1a80800000000000000
+      internalID: -8494545101179557339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5830371c0c1ff2ac0800000000000000
+      internalID: -3877614943961152635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0964217b1f26f970800000000000000
+      internalID: 8788263517768935691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278445feaea2e1880800000000000000
+      internalID: -8638419846724040590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fbfaad0a17298e0800000000000000
+      internalID: -1688161974632857844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e592beab3960830800000000000000
+      internalID: 4037076547002785377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654f3c83bd78ac790800000000000000
+      internalID: -7509040053066927018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f2ebf9c49ec0540800000000000000
+      internalID: 4975608203644383098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b7fa5f6646c4bc0800000000000000
+      internalID: -3797549992408810686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6a9412cfa635ad0800000000000000
+      internalID: -2714708519251499323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18315eb1ce68f8c90800000000000000
+      internalID: -7165360133484768383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8672a191b55bb2dc0800000000000000
+      internalID: -3662634469067970712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12538186abdc53e0800000000000000
+      internalID: -2063533021058608612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9644b30589b7df720800000000000000
+      internalID: 2881595230698292329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488745a1f7fe9d810800000000000000
+      internalID: 1790725656038111364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Underwater_Tilemap_BeachVisuals_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15088cbe649d61380800000000000000
+      internalID: -9000767906626633647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

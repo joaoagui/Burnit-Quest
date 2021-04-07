@@ -37,7 +37,6 @@ public class TokenFrenzyManager : MonoBehaviour
     {
         P1Animator = Player1.GetComponent<Animator>();
         P2Animator = Player2.GetComponent<Animator>();
-        PauseMenu.paused = false;
         p1Score = 0;
         p2Score = 0;
 
