@@ -32,6 +32,9 @@ public class Health : MonoBehaviour
     public GameObject shieldSphere;
     public GameObject shieldBreak;
 
+    //for referencing if player is underwater
+    public Player Player;
+
     private void Start()
     {
         health =  DataManager.Instance.playerData.numOfHearts;
@@ -98,7 +101,14 @@ public class Health : MonoBehaviour
             {
                 invincibilityTimer = 0;
                 health -=  1;
-                rb.velocity = new Vector2(-10, 2);
+                if (Player.underwater == false)
+                {
+                    rb.velocity = new Vector2(-20, rb.velocity.y);
+                }
+                else if (Player.underwater == true)
+                {
+                    rb.velocity = new Vector2(0, -10);
+                }
                 FindObjectOfType<AudioManager>().Play("ouch");
             }
 
@@ -166,7 +176,14 @@ public class Health : MonoBehaviour
             shieldActive = false;
             invincibilityTimer = 0;            
             shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
-            rb.velocity = new Vector2(-20, rb.velocity.y);
+            if(Player.underwater == false)
+            {
+                rb.velocity = new Vector2(-20, rb.velocity.y);
+            }
+            else if(Player.underwater == true)
+            {
+                rb.velocity = new Vector2(0, -10);
+            }
             Destroy(shieldSphere);
             Instantiate(shieldBreak, transform.position, Quaternion.identity);
         }

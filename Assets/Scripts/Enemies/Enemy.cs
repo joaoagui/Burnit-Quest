@@ -138,7 +138,8 @@ public class Enemy : MonoBehaviour
 
         if (sporHealth < 1)
         {
-            Die();
+                Destroy(gameObject);
+                Die();
         }
     }
 

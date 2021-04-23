@@ -7,7 +7,7 @@ using TMPro;
 public class CoinsScript : MonoBehaviour
 {
     public static int stageCoins;
-    public TextMeshPro CoinText;
+    public Text CoinText;
 
     // Update is called once per frame
     void Update()

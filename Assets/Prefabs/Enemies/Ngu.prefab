@@ -456,7 +456,7 @@ MonoBehaviour:
   sporHealth: 3
   rb: {fileID: 92043981460310592}
   dmgText: {fileID: 5687076634602637916, guid: 4512eaa88b5c57840a6cc128dfc21d43, type: 3}
-  damageParticles: {fileID: 1654280046741475339, guid: 1e9de43d81aca274aa940bc45eb185e2,
+  damageParticles: {fileID: 1275211017960498081, guid: e6a20b2d27b157946ba95cb80f98d897,
     type: 3}
   sporDie: {fileID: 3326074313631552288, guid: eb1e1d93d51d5be4984f9e84bfd32abb, type: 3}
   die: {fileID: 8300000, guid: bf69565f32c18ab4893cda199ee94cda, type: 3}
@@ -477,8 +477,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

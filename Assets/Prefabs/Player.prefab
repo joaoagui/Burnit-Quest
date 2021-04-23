@@ -5117,10 +5117,14 @@ MonoBehaviour:
     type: 3}
   superProjectile: {fileID: 3516322763899113654, guid: cfd78ff44f487674faf4773c8226286a,
     type: 3}
+  swimSpeed: 16
+  bubblesParticle: {fileID: 8771287169465948654, guid: 93393a6910181f241a3a10d47bddfa98,
+    type: 3}
   magnet: {fileID: 1365728386275463229}
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  underwater: 0
 --- !u!114 &7991263406233285438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,6 +5148,24 @@ MonoBehaviour:
     stageComplete: 0
     totalCoins: 0
     heartPieces: 0
+    SpeedLvl1: 0
+    SpeedLvl2: 0
+    SpeedLvl3: 0
+    JumpLvl1: 0
+    JumpLvl2: 0
+    SuperJumplvl1: 0
+    HealthLvl1: 0
+    HealthLvl2: 0
+    HealthLvl3: 0
+    MagnetLvl1: 0
+    MagnetLvl2: 0
+    ShieldSphereLvl1: 0
+    PunchLvl1: 0
+    PunchLvl2: 0
+    PunchLvl3: 0
+    MultiLvl1: 0
+    MultiLvl2: 0
+    ComboLvl1: 0
     speedSkill: 1
     jumpSkill: 0
     damageSkill: 3
@@ -5215,6 +5237,7 @@ MonoBehaviour:
     type: 3}
   shieldBreak: {fileID: 5947499145880036498, guid: 1c2b7af8f6d0da949975b61fa6a1b21c,
     type: 3}
+  Player: {fileID: 0}
 --- !u!58 &7991263406233285439
 CircleCollider2D:
   m_ObjectHideFlags: 0

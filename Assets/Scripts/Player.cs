@@ -5,8 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 
 {
-
-
+    
     public Rigidbody2D rb;
     public Animator animator;
     public Transform firePoint;
@@ -18,6 +17,10 @@ public class Player : MonoBehaviour
 
     public static int combo = 0;
 
+    public float swimSpeed = 16;
+    public GameObject bubblesParticle;
+
+
     public CircleCollider2D magnet;
 
     public static bool isGrounded;
@@ -26,6 +29,10 @@ public class Player : MonoBehaviour
     public static bool hasShield;
 
     [SerializeField] private LayerMask WhatIsGround;
+
+    public bool underwater = false;
+
+
     //[SerializeField] private LayerMask WhatIsEnemy;
 
     private void Start()
@@ -62,11 +69,18 @@ public class Player : MonoBehaviour
         animator.SetBool("Punch", false);
     }
 
+    public void Swim()
+    {
+        rb.AddForce(new Vector2(0, swimSpeed), ForceMode2D.Impulse);
+        Instantiate(bubblesParticle, new Vector2(transform.position.x, transform.position.y) , Quaternion.identity);
+    }
+    
+
     void FireProjectile()
     {
         if(   DataManager.Instance.playerData.punchCombo == 0 || (   DataManager.Instance.playerData.punchCombo == 1 && combo < 3))
         {
-            Instantiate(projectile, firePoint.position, firePoint.rotation);
+            GameObject newBullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
         }
 
         if(   DataManager.Instance.playerData.punchCombo == 1 && combo >= 3)

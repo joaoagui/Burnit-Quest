@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: 1919b99ca8a16f34099cb9d3bffaedb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2038522750638607723
+    second: Burnit_Forest_Tilemap_Forest_0
+  - first:
+      213: 5037141376298404362
+    second: Burnit_Forest_Tilemap_Forest_1
+  - first:
+      213: -5435238499041773296
+    second: Burnit_Forest_Tilemap_Forest_2
+  - first:
+      213: -392008491506341773
+    second: Burnit_Forest_Tilemap_Forest_3
+  - first:
+      213: 7936781797722704059
+    second: Burnit_Forest_Tilemap_Forest_4
+  - first:
+      213: 3271660385552929345
+    second: Burnit_Forest_Tilemap_Forest_5
+  - first:
+      213: -1051358610425963310
+    second: Burnit_Forest_Tilemap_Forest_6
+  - first:
+      213: 1163409072431516950
+    second: Burnit_Forest_Tilemap_Forest_7
+  - first:
+      213: -5625247875995644522
+    second: Burnit_Forest_Tilemap_Forest_8
+  - first:
+      213: 321275845636129595
+    second: Burnit_Forest_Tilemap_Forest_9
+  - first:
+      213: -9030194205125607641
+    second: Burnit_Forest_Tilemap_Forest_10
+  - first:
+      213: -368904109437386110
+    second: Burnit_Forest_Tilemap_Forest_11
+  - first:
+      213: 3212985371979750062
+    second: Burnit_Forest_Tilemap_Forest_12
+  - first:
+      213: -918554205925793833
+    second: Burnit_Forest_Tilemap_Forest_13
+  - first:
+      213: 7359804196149858282
+    second: Burnit_Forest_Tilemap_Forest_14
+  - first:
+      213: -7593846519618661906
+    second: Burnit_Forest_Tilemap_Forest_15
+  - first:
+      213: -4889433627121126021
+    second: Burnit_Forest_Tilemap_Forest_16
+  - first:
+      213: -5731490484901193446
+    second: Burnit_Forest_Tilemap_Forest_17
+  - first:
+      213: -3823246553032552072
+    second: Burnit_Forest_Tilemap_Forest_18
+  - first:
+      213: 8777923726278092467
+    second: Burnit_Forest_Tilemap_Forest_19
+  - first:
+      213: 618847972869861660
+    second: Burnit_Forest_Tilemap_Forest_20
+  - first:
+      213: -1235998262817748358
+    second: Burnit_Forest_Tilemap_Forest_21
+  - first:
+      213: -6469082628994866374
+    second: Burnit_Forest_Tilemap_Forest_22
+  - first:
+      213: 3884293330441788657
+    second: Burnit_Forest_Tilemap_Forest_23
+  - first:
+      213: -8502998276979376214
+    second: Burnit_Forest_Tilemap_Forest_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dcd5224a94a4c10800000000000000
+      internalID: 2038522750638607723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a40b1d46587e540800000000000000
+      internalID: 5037141376298404362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019761bd1672294b0800000000000000
+      internalID: -5435238499041773296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378e3da9a5e4f8af0800000000000000
+      internalID: -392008491506341773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb84c018efc152e60800000000000000
+      internalID: 7936781797722704059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142999269c5476d20800000000000000
+      internalID: 3271660385552929345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc13060ae2d861f0800000000000000
+      internalID: -1051358610425963310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d4fba2362452010800000000000000
+      internalID: 1163409072431516950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d42c15cda1fe1b0800000000000000
+      internalID: -5625247875995644522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b330e0eeda6657400800000000000000
+      internalID: 321275845636129595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f72b6e63e4ea280800000000000000
+      internalID: -9030194205125607641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2828dc0caa361eaf0800000000000000
+      internalID: -368904109437386110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa11653c21d69c20800000000000000
+      internalID: 3212985371979750062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df1ad001d3a043f0800000000000000
+      internalID: -918554205925793833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef01f72ce6432660800000000000000
+      internalID: 7359804196149858282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee11b4703dc3d9690800000000000000
+      internalID: -7593846519618661906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75789e750e352cb0800000000000000
+      internalID: -4889433627121126021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19deed45c7a570b0800000000000000
+      internalID: -5731490484901193446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87112c5348911fac0800000000000000
+      internalID: -3823246553032552072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b667422f1371d970800000000000000
+      internalID: 8777923726278092467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11f0e8d3f6969800800000000000000
+      internalID: 618847972869861660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a8fb9e02ad8dee0800000000000000
+      internalID: -1235998262817748358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a336c14af933936a0800000000000000
+      internalID: -6469082628994866374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcd6644438c7e530800000000000000
+      internalID: 3884293330441788657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_Tilemap_Forest_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafb2ee2e184ff980800000000000000
+      internalID: -8502998276979376214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

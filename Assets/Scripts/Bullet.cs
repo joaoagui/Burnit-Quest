@@ -23,6 +23,8 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
         Destroy(gameObject, 3f);
         timer -= Time.deltaTime * 1;
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

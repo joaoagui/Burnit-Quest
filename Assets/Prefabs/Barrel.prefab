@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7906898940934855757}
   - component: {fileID: 8171794809285392797}
   - component: {fileID: 7697024060970010905}
+  - component: {fileID: 6715719808701740417}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6f9fcc379b69343a9e07750efdafc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakEffect: {fileID: 1654280046741475339, guid: 6e9b897ed6e511d43858b891face99fe,
+  breakEffect: {fileID: 4505288900746447317, guid: 110c781d32ec0d745b0ad83359b62744,
     type: 3}
   coin: {fileID: 2675642895819350066, guid: b77f8c9125f12bb4dade7f989f42900d, type: 3}
   key: {fileID: 4070085233956157002, guid: 800a9585490cd044ab88600885e8b44e, type: 3}
@@ -181,6 +182,22 @@ MonoBehaviour:
   speed: 0.1
   OffsetStartX: 0
   OffsetStartY: 0
+--- !u!70 &6715719808701740417
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32324441227754093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.040153265, y: -0.03754838}
+  m_Size: {x: 5.3993044, y: 3.3267066}
+  m_Direction: 1
 --- !u!1 &8809995577671628989
 GameObject:
   m_ObjectHideFlags: 0
