@@ -23,15 +23,15 @@ SpriteAtlas:
     platformSettings: []
     packingSettings:
       serializedVersion: 2
-      padding: 4
+      padding: 8
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
-      enableTightPacking: 1
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ecbcbd4d8c43a534d84db4426f9b5a2d, type: 3}
-    totalSpriteSurfaceArea: 89721972
+    totalSpriteSurfaceArea: 90684858
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -55,6 +55,7 @@ SpriteAtlas:
   - {fileID: -1691301459983187232, guid: 59c1207049fa9c04fa5efcd88c3a6f4d, type: 3}
   - {fileID: 109953630736115753, guid: 59c1207049fa9c04fa5efcd88c3a6f4d, type: 3}
   - {fileID: 229963783729333456, guid: 59c1207049fa9c04fa5efcd88c3a6f4d, type: 3}
+  - {fileID: 21300000, guid: 84f039703946f2a47807d2b4cb30a3e6, type: 3}
   - {fileID: 21300000, guid: cc51c28026195a4458ca17a70bf5f005, type: 3}
   - {fileID: 21300000, guid: 415a4980c5435ad4d945b7bddeaf5c74, type: 3}
   - {fileID: 21300000, guid: 4d8a39c001fd8eb4e8b99860c94c5bc9, type: 3}
@@ -123,7 +124,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bef77cc42a392684ca73564c7957c2b1, type: 3}
   - {fileID: 21300000, guid: 0aee2ae4a6d03404483bf398c961f921, type: 3}
   - {fileID: 21300000, guid: 26551b15d3e82ad43ba9d46cec1352f1, type: 3}
+  - {fileID: 21300000, guid: a6f92d151a824c241a5ead95b5a87130, type: 3}
   - {fileID: 21300000, guid: 6e70d845db3705e459032ab12a715285, type: 3}
+  - {fileID: 21300000, guid: 7fb7ec550038e1a418e86c18349d2c74, type: 3}
   - {fileID: 21300000, guid: c07bbbc53395cb847a8f8ae18d85eaaf, type: 3}
   - {fileID: 21300000, guid: 19f988469298fc74e8b44211c5d31f5d, type: 3}
   - {fileID: 21300000, guid: 5d439a462d733474b9e01a1818c5f932, type: 3}
@@ -173,12 +176,17 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f3dfea1915595e84ab6e35ab89ae88bf, type: 3}
   - {fileID: 21300000, guid: a8e3f669bb9635044b8c0bd357539c62, type: 3}
   - {fileID: 21300000, guid: 11469079630d21b4e8ac4db27d99197a, type: 3}
+  - {fileID: -8144748041736510302, guid: ed78da895955d614db94e9ba06c672be, type: 3}
+  - {fileID: -3616319843763485287, guid: ed78da895955d614db94e9ba06c672be, type: 3}
+  - {fileID: 5715806007628287109, guid: ed78da895955d614db94e9ba06c672be, type: 3}
+  - {fileID: 6121397358416306318, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: 21300000, guid: 3049d299587daaa4591949b9d7a0dd92, type: 3}
   - {fileID: 21300000, guid: 2d6aaa993f7b91149a4439ceb4c8ba58, type: 3}
   - {fileID: 21300000, guid: c1bc4f992c7962c499a146c5ec880b90, type: 3}
   - {fileID: 21300000, guid: 0cbb84c94668ce249904e6d24986962b, type: 3}
   - {fileID: 21300000, guid: 15a5d3e90ec45974ca2a7a72a838c882, type: 3}
   - {fileID: 21300000, guid: 842b65e997281f044b79bf463899f307, type: 3}
+  - {fileID: 21300000, guid: e72f725afd6e2c145bc347a497eebc74, type: 3}
   - {fileID: 21300000, guid: fdf33c7a6d5c9864e87a41ccdb1fa6c4, type: 3}
   - {fileID: 21300000, guid: 1ddc668af2e87dc4289df74fab52eba6, type: 3}
   - {fileID: 21300000, guid: 905c1eaa20da2f5449fab24be8f6421f, type: 3}
@@ -342,6 +350,7 @@ SpriteAtlas:
   - Burnit_Assets_Tilemap_Cave_4
   - Burnit_Assets_Tilemap_Cave_9
   - Burnit_Assets_Tilemap_Cave_8
+  - Burnit_Forest_HammerBase_F
   - FitHeroesAssets_bush7
   - FitHeroesAssets_Pillar1
   - Burnit_Assets_gate_lever
@@ -410,7 +419,9 @@ SpriteAtlas:
   - Burnit_Assets_Stalagmite1
   - Burnit_Assets_WindMill
   - Burnit_Assets_gate_door
+  - Burnit_Forest_HammerBase_B
   - Burnit_Assets_trees_dawn
+  - Burnit_Forest_Hidden Wall
   - Burnit_Assets_bg_night
   - Burnit_Assets_Gate_front
   - Burnit_Assets_Caveentrance_bg
@@ -460,12 +471,17 @@ SpriteAtlas:
   - Burnit_Forest_Pine4
   - Burnit_Underwater_BubblesFront2
   - Burnit_Forest_Pine2
+  - Burnit_Forest_LeafBurning_0
+  - Burnit_Forest_LeafBurning_1
+  - Burnit_Forest_LeafBurning_2
+  - Burnit_Forest_LeafBurning_3
   - Burnit_Underwater_AlgaeFront1
   - Burnit_Forest_MushroomForest1
   - Burnit_Underwater_Rocks1
   - Burnit_Assets_Bush_Front1
   - Burnit_Assets_bg_day
   - Burnit_Forest_PineTree1
+  - Burnit_Forest_Hammer
   - Burnit_Forest_BackgroundForest
   - Burnit_Assets_trees_day
   - Burnit_Forest_RockForest2
