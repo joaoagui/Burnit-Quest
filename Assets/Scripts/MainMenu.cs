@@ -218,6 +218,51 @@ public class MainMenu : MonoBehaviour
          
     }
 
+    public void GoStage2_1()//GoTo Stage1
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 6;
+        StartCoroutine(LoadLevel("Stage2-1"));
+        FindObjectOfType<AudioManager>().Play("Select");
+    }
+
+    public void GoStage2_2()//GoTo Stage2
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 7;
+        StartCoroutine(LoadLevel("Stage2-2"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+    public void GoStage2_3()//GoTo Stage3
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 8;
+        StartCoroutine(LoadLevel("Stage2-3"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+    public void GoStage2_4()//GoTo Stage4
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 9;
+        StartCoroutine(LoadLevel("Stage2-4"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+
+    public void GoStage2_5()//GoTo Stage4
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 10;
+        StartCoroutine(LoadLevel("Stage2-5"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
     public void GoStage3()//GoTo Stage1
     {
         SceneManager.LoadScene("Stage3");
@@ -226,7 +271,52 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage4()//GoTo Stage1
+    public void GoStage3_1()//GoTo Stage1
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 11;
+        StartCoroutine(LoadLevel("Stage3-1"));
+        FindObjectOfType<AudioManager>().Play("Select");
+    }
+
+    public void GoStage3_2()//GoTo Stage2
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 12;
+        StartCoroutine(LoadLevel("Stage3-2"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+    public void GoStage3_3()//GoTo Stage3
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 13;
+        StartCoroutine(LoadLevel("Stage3-3"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+    public void GoStage3_4()//GoTo Stage 3- 4
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 14;
+        StartCoroutine(LoadLevel("Stage3-4"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+
+    public void GoStage3_5()//GoTo Stage 3- 5
+    {
+        StoreVariables();
+        DataManager.Instance.playerData.currentStage = 15;
+        StartCoroutine(LoadLevel("Stage3-5"));
+        FindObjectOfType<AudioManager>().Play("Select");
+
+    }
+
+    public void GoStage4()//GoTo Stage selection 4
     {
         SceneManager.LoadScene("Stage4");
         SceneManager.GetSceneByName("Stage4");
@@ -234,7 +324,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage5()//GoTo Stage1
+    public void GoStage5()//GoTo Stage selection 5
     {
         SceneManager.LoadScene("Stage5");
         SceneManager.GetSceneByName("Stage5");
@@ -242,7 +332,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage6()//GoTo Stage1
+    public void GoStage6()//GoTo Stage selection 6
     {
         SceneManager.LoadScene("Stage6");
         SceneManager.GetSceneByName("Stage6");
@@ -250,7 +340,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage7()//GoTo Stage1
+    public void GoStage7()//GoTo Stage selection 7
     {
         SceneManager.LoadScene("Stage7");
         SceneManager.GetSceneByName("Stage7");
@@ -258,7 +348,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage8()//GoTo Stage1
+    public void GoStage8()//GoTo Stage selection 8
     {
         SceneManager.LoadScene("Stage8");
         SceneManager.GetSceneByName("Stage8");
@@ -266,7 +356,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage9()//GoTo Stage1
+    public void GoStage9()//GoTo Stage selection 9
     {
         SceneManager.LoadScene("Stage9");
         SceneManager.GetSceneByName("Stage9");
@@ -274,7 +364,7 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage10()//GoTo Stage1
+    public void GoStage10()//GoTo Stage selection 10
     {
         SceneManager.LoadScene("Stage10");
         SceneManager.GetSceneByName("Stage10");

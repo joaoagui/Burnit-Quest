@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Egg : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private bool broken;
+    public GameObject breakEffect;
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.CompareTag("Player") || collision.CompareTag("Bullet"))
+
+        Instantiate(breakEffect, transform.position, Quaternion.identity);
+        broken = true;
+        Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -22,6 +22,7 @@ public class Gullet : MonoBehaviour
     AudioSource AudioSource;
 
     private SpriteRenderer sprite;
+    private Animator animator;
 
     private Material defaultMaterial;
     public Material dmgMaterial;
@@ -33,6 +34,7 @@ public class Gullet : MonoBehaviour
     public float dropTrigger;
     public bool isMoving;
     public bool eggDropped;
+    bool hasEgg = true;
 
     public LayerMask whatIsPlayer;
 
@@ -60,10 +62,21 @@ public class Gullet : MonoBehaviour
     void Update()
     {
         isMoving = Physics2D.OverlapArea(new Vector2(transform.position.x - moveTrigger, transform.position.y - moveTrigger), new Vector2(transform.position.x + moveTrigger, transform.position.y + moveTrigger), whatIsPlayer);
-
         eggDropped = Physics2D.OverlapArea(new Vector2(transform.position.x - dropTrigger, transform.position.y - dropTrigger), new Vector2(transform.position.x + dropTrigger, transform.position.y + dropTrigger), whatIsPlayer);
 
+        if (eggDropped == true && hasEgg == true)
+        {
+            Rigidbody2D eggRB;
 
+            hasEgg = false;
+            animator.SetBool("Egg", false);
+            GameObject newEgg = Instantiate(eggObject, eggPoint.position, Quaternion.identity);
+
+            eggRB = newEgg.GetComponent<Rigidbody2D>();
+            eggRB.AddForce(new Vector2(-4, 0), ForceMode2D.Impulse);
+            
+        }
+        
         invincibilityTimer -= Time.deltaTime * 2;
         levelTxt.text = "" + level;
 
@@ -101,10 +114,7 @@ public class Gullet : MonoBehaviour
             backHealthBar.transform.localScale = new Vector2((Mathf.Lerp(fillB, hFraction, percentComplete)), 1f);
         }
     }
-
-
-
-
+         
 
 
     private void OnTriggerEnter2D(Collider2D collision)
