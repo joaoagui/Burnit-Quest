@@ -159,7 +159,7 @@ public class Health : MonoBehaviour
                 if(health <= 0)
                 {
                     Instantiate(playerLose, playerObject.transform.position, Quaternion.identity);
-                    Destroy(playerObject);
+                    Destroy(playerObject,0.1f);
                     Destroy(btnPause);
 
                     //End Screen

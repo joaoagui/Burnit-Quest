@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ecbcbd4d8c43a534d84db4426f9b5a2d, type: 3}
-    totalSpriteSurfaceArea: 90684858
+    totalSpriteSurfaceArea: 94596732
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -248,6 +248,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4c88a96d26868054ea62200f85d06dc6, type: 3}
   - {fileID: 21300000, guid: 1785717d41f5dd14aa12b9d9e10f8b87, type: 3}
   - {fileID: 21300000, guid: ef4e648d5b969044bbd936e719013379, type: 3}
+  - {fileID: 21300000, guid: c7200e8d40b82d54481b898606063e07, type: 3}
   - {fileID: 21300000, guid: b022dfcdc88aeb048a31e3faf314d138, type: 3}
   - {fileID: 21300000, guid: c85ad8dd6ffe57f4da54a4fc56798303, type: 3}
   - {fileID: 21300000, guid: c2ccd2edb8d248b4c91e27093bbe184d, type: 3}
@@ -543,6 +544,7 @@ SpriteAtlas:
   - FitHeroesAssets_vase
   - Burnit_Forest_Pine3
   - Burnit_Assets_rock_front
+  - forest-bg-tile-top
   - Burnit_Assets_Lamplight
   - Burnit_Assets_Arrow_Diagonal
   - Burnit_Underwater_AlgaePink3

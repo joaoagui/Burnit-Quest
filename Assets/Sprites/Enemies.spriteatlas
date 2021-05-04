@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f8ec792807c705d42b148dd4fdef5acb, type: 3}
-    totalSpriteSurfaceArea: 36482154
+    totalSpriteSurfaceArea: 36496304
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -206,6 +206,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 78ac5b78ba59d944b8f813bccc0ebf86, type: 3}
   - {fileID: 21300000, guid: 6b00eb788169b0a48ad99bd995a04fd5, type: 3}
   - {fileID: 21300000, guid: 3c04338806e8f6f48bf91782dd1f082d, type: 3}
+  - {fileID: 4274742972345354526, guid: df4d50a83d4bbaf4eb2b5275139ddceb, type: 3}
+  - {fileID: -8749414790829473597, guid: df4d50a83d4bbaf4eb2b5275139ddceb, type: 3}
+  - {fileID: -9133246372060225710, guid: df4d50a83d4bbaf4eb2b5275139ddceb, type: 3}
+  - {fileID: 2462582525094644318, guid: df4d50a83d4bbaf4eb2b5275139ddceb, type: 3}
   - {fileID: 21300000, guid: 03cae0a8a14ce58429ccf0091544e9c6, type: 3}
   - {fileID: 21300000, guid: ea5e64b8b1756bc4ebfc86e1d3f21a87, type: 3}
   - {fileID: 21300000, guid: 452676b8813a59940b6f4cfeb32dc0bc, type: 3}
@@ -505,6 +509,10 @@ SpriteAtlas:
   - Chay_walk_00001
   - Chay_Punch_00003
   - Schlaf_angry_00004
+  - Burnit_Enemies_EggBreak_0
+  - Burnit_Enemies_EggBreak_1
+  - Burnit_Enemies_EggBreak_2
+  - Burnit_Enemies_EggBreak_3
   - Schlaf_enter_00011
   - Schlaf_loseCrate_00004
   - Yuzu_Jump&Fall_00013

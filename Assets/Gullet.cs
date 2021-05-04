@@ -46,6 +46,8 @@ public class Gullet : MonoBehaviour
     public GameObject frontHealthBar;
     public GameObject backHealthBar;
 
+    public AudioClip gulletEnter;
+
     private void Start()
     {
         //health and lifebar setup
@@ -53,6 +55,7 @@ public class Gullet : MonoBehaviour
         maxHealth = gulletHealth;
         lifebar.SetActive(false);
 
+        animator = GetComponent<Animator>();
         AudioSource = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();
         defaultMaterial = sprite.material;
@@ -74,9 +77,9 @@ public class Gullet : MonoBehaviour
 
             eggRB = newEgg.GetComponent<Rigidbody2D>();
             eggRB.AddForce(new Vector2(-4, 0), ForceMode2D.Impulse);
-            
+            AudioSource.PlayOneShot(gulletEnter, 0.8f);
         }
-        
+
         invincibilityTimer -= Time.deltaTime * 2;
         levelTxt.text = "" + level;
 

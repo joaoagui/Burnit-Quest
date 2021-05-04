@@ -5,9 +5,18 @@ using UnityEngine;
 public class Hammer : MonoBehaviour
 {
     public float BumpPower;
-    public AudioSource bump;
     private Rigidbody2D rb;
     public bool Multiplayer = false;
+
+
+    public AudioClip hammerWoosh;
+    AudioSource AudioSource;
+
+    private void Start()
+    {
+        AudioSource = GetComponent<AudioSource>();
+    }
+
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -16,7 +25,6 @@ public class Hammer : MonoBehaviour
             rb = hitInfo.gameObject.GetComponent<Rigidbody2D>();
             Health.invincibilityTimer = 0;
             rb.velocity = new Vector2(BumpPower * -1, 2);
-            bump.Play();
         }
 
         if (hitInfo.gameObject.CompareTag("Chay") && Multiplayer == true)
@@ -24,7 +32,12 @@ public class Hammer : MonoBehaviour
             rb = hitInfo.gameObject.GetComponent<Rigidbody2D>();
             Health.invincibilityTimerP2 = 0;
             rb.velocity = new Vector2(BumpPower * -1, 2);
-            bump.Play();
         }
+    }
+
+
+    public void HammerWoosh()
+    {
+        AudioSource.PlayOneShot(hammerWoosh, 0.8f);
     }
 }
