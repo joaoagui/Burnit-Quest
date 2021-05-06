@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 3593374297040796663}
   m_Layer: 0
   m_Name: GulletFront
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

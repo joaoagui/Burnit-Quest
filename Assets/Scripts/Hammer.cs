@@ -8,6 +8,9 @@ public class Hammer : MonoBehaviour
     private Rigidbody2D rb;
     public bool Multiplayer = false;
 
+    public Animator animator;
+    [Range(0,1)]
+    public float rotationSpeed;
 
     public AudioClip hammerWoosh;
     AudioSource AudioSource;
@@ -15,6 +18,7 @@ public class Hammer : MonoBehaviour
     private void Start()
     {
         AudioSource = GetComponent<AudioSource>();
+        animator.speed = rotationSpeed;
     }
 
 

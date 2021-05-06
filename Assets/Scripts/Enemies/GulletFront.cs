@@ -32,7 +32,8 @@ public class GulletFront : MonoBehaviour
         if(collision.tag == "Player")
         {
             dead = true;
-            SlingshotManager.p1Score += 1;
+            SlingshotMultiplayer.p1Score += 1;
+            SlingshotManager.gulletNumber -= 1;
             Instantiate(gulletDead, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
@@ -40,7 +41,7 @@ public class GulletFront : MonoBehaviour
         if (collision.tag == "Chay")
         {
             dead = true;
-            SlingshotManager.p2Score += 1;
+            SlingshotMultiplayer.p2Score += 1;
             Instantiate(gulletDead, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

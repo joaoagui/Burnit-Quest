@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class SlingshotManager : MonoBehaviour
+public class SlingshotMultiplayer : MonoBehaviour
 {
     [Header("P1 Sprites")]
     public SpriteRenderer P1Body;
