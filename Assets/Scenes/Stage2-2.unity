@@ -51006,6 +51006,7 @@ MonoBehaviour:
   TrophyUI: {fileID: 1825174164}
   TrophyParticles: {fileID: 8726140030251348212, guid: 0962b0156da471443a6fef1c8f369e1f,
     type: 3}
+  pulling: 0
 --- !u!82 &168070623
 AudioSource:
   m_ObjectHideFlags: 0
@@ -73877,7 +73878,7 @@ PrefabInstance:
     - target: {fileID: 854213848474567171, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 854213848474567172, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
         type: 3}
@@ -112375,7 +112376,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 350572942}
-        m_MethodName: GoStage1_2
+        m_MethodName: GoStage2_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

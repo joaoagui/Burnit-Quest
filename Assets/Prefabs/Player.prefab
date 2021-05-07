@@ -5237,7 +5237,7 @@ MonoBehaviour:
     type: 3}
   shieldBreak: {fileID: 5947499145880036498, guid: 1c2b7af8f6d0da949975b61fa6a1b21c,
     type: 3}
-  Player: {fileID: 0}
+  Player: {fileID: 7991263406233285437}
 --- !u!58 &7991263406233285439
 CircleCollider2D:
   m_ObjectHideFlags: 0

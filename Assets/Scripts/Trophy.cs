@@ -10,6 +10,24 @@ public class Trophy : MonoBehaviour
     public GameObject TrophyUI;
     public GameObject TrophyParticles;
 
+    public bool pulling = false;
+
+    GameObject Target;
+
+
+    private void Start()
+    {
+        Target = GameObject.FindWithTag("Player");
+    }
+
+
+    private void Update()
+    {
+        if (pulling == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Target.transform.position, .3f);
+        }
+    }
 
     public void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -43,9 +61,10 @@ public class Trophy : MonoBehaviour
                  DataManager.Instance.playerData.Trophy5 = 1;
             }
 
-
-
-
+            if (hitInfo.gameObject.CompareTag("Magnet"))
+            {
+                pulling = true;
+            }
 
         }
 

@@ -47123,7 +47123,7 @@ Tilemap:
       - {fileID: 4349987119457221343, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 7013091017353089748, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 8097594666254530385, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 53, y: 0, z: 0}
@@ -50126,6 +50126,7 @@ MonoBehaviour:
   TrophyUI: {fileID: 1886278079}
   TrophyParticles: {fileID: 8726140030251348212, guid: 0962b0156da471443a6fef1c8f369e1f,
     type: 3}
+  pulling: 0
 --- !u!82 &168070623
 AudioSource:
   m_ObjectHideFlags: 0
@@ -69337,7 +69338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668497791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -565.6, y: -317.2, z: -1080}
+  m_LocalPosition: {x: -565.6, y: -317.2, z: 0}
   m_LocalScale: {x: 77.76, y: 77.76, z: 77.76}
   m_Children: []
   m_Father: {fileID: 1491761785}
@@ -70351,7 +70352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817832613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -564.6, y: -316, z: -1080}
+  m_LocalPosition: {x: -564.6, y: -316, z: 0}
   m_LocalScale: {x: 77.76, y: 77.76, z: 77.76}
   m_Children: []
   m_Father: {fileID: 1491761785}
