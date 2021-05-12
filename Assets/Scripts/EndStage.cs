@@ -20,6 +20,8 @@ public class EndStage : MonoBehaviour
     public Text squatCount;
     public Text stepCount;
     public Text punchCount;
+    public Text situpCount;
+    public Text jumpingjackCount;
 
     public GameObject button;
        
@@ -56,6 +58,8 @@ public class EndStage : MonoBehaviour
         caloryCount.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
         stepCount.text = "" +  DataManager.Instance.playerData.stepsNumber.ToString();
         punchCount.text = "" +  DataManager.Instance.playerData.punches.ToString();
+        situpCount.text = "" + DataManager.Instance.playerData.sitUps.ToString();
+        jumpingjackCount.text = "" + DataManager.Instance.playerData.jumpingJacks.ToString();
         coinCount.text = "" + CoinsScript.stageCoins.ToString();
 
         if ( DataManager.Instance.playerData.currentStage >=  DataManager.Instance.playerData.stageComplete)

@@ -78,12 +78,12 @@ public class Player : MonoBehaviour
 
     void FireProjectile()
     {
-        if(   DataManager.Instance.playerData.punchCombo == 0 || (   DataManager.Instance.playerData.punchCombo == 1 && combo < 3))
+        if(   DataManager.Instance.playerData.punchCombo == 0 || (   DataManager.Instance.playerData.punchCombo == 1 && combo < 4))
         {
             GameObject newBullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
         }
 
-        if(   DataManager.Instance.playerData.punchCombo == 1 && combo >= 3)
+        if(   DataManager.Instance.playerData.punchCombo == 1 && combo >= 4)
         {
             combo = 0;
             Instantiate(superProjectile, firePoint.position, firePoint.rotation);            
@@ -91,12 +91,14 @@ public class Player : MonoBehaviour
 
         if (   DataManager.Instance.playerData.multishots >= 1)
         {
-            Instantiate(projectile2, firePoint.position, firePoint.rotation);
+            GameObject multishot1 = Instantiate(projectile2, firePoint.position, firePoint.rotation);
+            multishot1.transform.Rotate(0, 0, 20);
         }
 
         if (   DataManager.Instance.playerData.multishots == 2)
         {
-            Instantiate(projectile3, firePoint.position, firePoint.rotation);
+            GameObject multishot2 = Instantiate(projectile3, firePoint.position, firePoint.rotation);
+            multishot2.transform.Rotate(0, 0, 10);
         }
 
     }

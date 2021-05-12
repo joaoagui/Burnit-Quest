@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4384356966473590802}
   m_Layer: 5
-  m_Name: TxtHolder
+  m_Name: dmgTextSuper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 236382946442002333}
   - component: {fileID: 6301581327396143516}
   - component: {fileID: 8463261240553097033}
-  - component: {fileID: 1506865647041164593}
+  - component: {fileID: 7705013172931604839}
   m_Layer: 5
   m_Name: dmg
   m_TagString: Untagged
@@ -180,13 +180,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63557d054f800948b435f22bfc48760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1506865647041164593
+--- !u!114 &7705013172931604839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7714744023892052998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83bce6d5c4e81ea41afe3bffb01775a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e2560c7a68933748ab9620db8ef455e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 236382946442002333}

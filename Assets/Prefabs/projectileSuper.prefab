@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 3516322763899113661}
   - component: {fileID: 3516322763899113658}
   - component: {fileID: 3516322763899113663}
+  - component: {fileID: 3371169371822008382}
   m_Layer: 11
   m_Name: projectileSuper
-  m_TagString: Bullet
+  m_TagString: SuperBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,9 +236,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.53219235, y: -0.13088956}
+  m_Offset: {x: 0.1199317, y: -0.13088956}
   serializedVersion: 2
-  m_Radius: 1.0886569
+  m_Radius: 1.4720553
 --- !u!114 &3516322763899113663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,3 +254,19 @@ MonoBehaviour:
   speed: 20
   dmgText: {fileID: 5687076634602637916, guid: 322cb09a4d231b240b38b10281ace34d, type: 3}
   sparks: {fileID: 3781246441056916137, guid: c8cc0f46f654a8c4c95b5e2bbd2394ed, type: 3}
+--- !u!58 &3371169371822008382
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516322763899113654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.72557765, y: -0.111310184}
+  serializedVersion: 2
+  m_Radius: 0.6614539

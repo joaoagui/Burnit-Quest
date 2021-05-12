@@ -81,8 +81,7 @@ namespace EasyWiFi.ServerControls
 
             transform.localRotation = orientation;
 
-
-            RotationX.text = "X" + orientation.x.ToString();
+            RotationX.text = "Pull:" + pull;
             RotationY.text = "Y" + orientation.y.ToString();
             RotationZ.text = "Z" + orientation.z.ToString();
 
@@ -99,6 +98,7 @@ namespace EasyWiFi.ServerControls
                 if (orientation.z < 0.2 && punchTimer <= 0 && pull == true) 
                 {
                     animator.SetBool("Pull", false);
+                    DataManager.Instance.playerData.sitUps++;
                     DataManager.Instance.playerData.stageCalories += 0.2f;
                     pull = false;
                 }

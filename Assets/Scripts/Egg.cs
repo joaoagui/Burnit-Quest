@@ -30,7 +30,15 @@ public class Egg : MonoBehaviour
             broken = true;
             BreakEgg();
         }
+
+        if (collision.tag == "Bullet" && broken == false)
+        {
+            broken = true;
+            BreakEgg();
+        }
     }
+
+
 
     public void BreakEgg()
     {

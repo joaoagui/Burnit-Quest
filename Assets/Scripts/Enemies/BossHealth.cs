@@ -58,6 +58,14 @@ public class BossHealth : MonoBehaviour
         lerpTimer = 0f;
     }
 
+    public static void TakeSuperDamage()
+    {
+        health -= bulletSuper.superDmgTotal;
+        lerpTimer = 0f;
+    }
+
+
+
     public IEnumerator Flash()
     {
         frontHealthBar.material = dmgMaterial;

@@ -7,7 +7,11 @@ public class bulletSuper : MonoBehaviour
     public float speed = 20f;
     private Rigidbody2D rb;
     public GameObject dmgText;
+    public static int superDmgTotal;
     public GameObject sparks;
+
+    private float timer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +19,9 @@ public class bulletSuper : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
         Destroy(gameObject, 3f);
+
+        timer -= Time.deltaTime * 1;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,9 +29,11 @@ public class bulletSuper : MonoBehaviour
 
 
         Enemy enemy = collision.GetComponent<Enemy>();
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && timer <= 0)
         {
             Destroy(gameObject);
+            superDmgTotal = DataManager.Instance.playerData.damageSkill * 2;
+
             Instantiate(sparks, transform.position, Quaternion.identity);
             Instantiate(dmgText, transform.position, Quaternion.identity);
         }

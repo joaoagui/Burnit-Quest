@@ -150,6 +150,12 @@ public class MainMenu : MonoBehaviour
         DataManager.Instance.playerData.Cutscene1 = true;
     }
 
+    public void GoCutscene2()//GoTo Stage1
+    {
+        StartCoroutine(LoadLevel("Cutscene_2"));
+        DataManager.Instance.playerData.Cutscene2 = true;
+    }
+
     public void GoStage1()//GoTo Stage1
     {
         if(DataManager.Instance.playerData.Cutscene1 == false)
@@ -211,11 +217,27 @@ public class MainMenu : MonoBehaviour
          
     }
 
-    public void GoStage2()//GoTo Stage1
+    public void GoStage2()//GoTo Stage2
     {
-        StartCoroutine(LoadLevel("Stage2"));
-        FindObjectOfType<AudioManager>().Play("Select");
-         
+
+        if (DataManager.Instance.playerData.Cutscene2 == false && DataManager.Instance.playerData.stageComplete >= 5)
+        {
+            DataManager.Instance.playerData.Cutscene2 = true;
+            StartCoroutine(LoadLevel("Cutscene_2"));
+            DataManager.Instance.SaveFile();
+        }
+
+        else if (DataManager.Instance.playerData.Cutscene2 == true && DataManager.Instance.playerData.stageComplete >= 5)
+        {
+            StartCoroutine(LoadLevel("Stage2"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+
+        else;
+        {
+            FindObjectOfType<AudioManager>().Play("error");
+        }
+
     }
 
     public void GoStage2_1()//GoTo Stage1
@@ -265,10 +287,24 @@ public class MainMenu : MonoBehaviour
 
     public void GoStage3()//GoTo Stage1
     {
-        SceneManager.LoadScene("Stage3");
-        SceneManager.GetSceneByName("Stage3");
-        FindObjectOfType<AudioManager>().Play("Select");
-         
+
+        if (DataManager.Instance.playerData.Cutscene3 == false && DataManager.Instance.playerData.stageComplete >= 10)
+        {
+            DataManager.Instance.playerData.Cutscene3 = true;
+            StartCoroutine(LoadLevel("Cutscene_3"));
+            DataManager.Instance.SaveFile();
+        }
+
+        if (DataManager.Instance.playerData.Cutscene3 == true && DataManager.Instance.playerData.stageComplete >= 10)
+        {
+            StartCoroutine(LoadLevel("Stage3"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+
+        else;
+        {
+            FindObjectOfType<AudioManager>().Play("error");
+        }
     }
 
     public void GoStage3_1()//GoTo Stage1
@@ -318,18 +354,29 @@ public class MainMenu : MonoBehaviour
 
     public void GoStage4()//GoTo Stage selection 4
     {
-        SceneManager.LoadScene("Stage4");
-        SceneManager.GetSceneByName("Stage4");
-        FindObjectOfType<AudioManager>().Play("Select");
-         
+        if (DataManager.Instance.playerData.stageComplete >= 15)
+        {
+            StartCoroutine(LoadLevel("Stage4"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+        else;
+        {
+            FindObjectOfType<AudioManager>().Play("error");
+        }
+
     }
 
     public void GoStage5()//GoTo Stage selection 5
     {
-        SceneManager.LoadScene("Stage5");
-        SceneManager.GetSceneByName("Stage5");
-        FindObjectOfType<AudioManager>().Play("Select");
-         
+        if (DataManager.Instance.playerData.stageComplete >= 20)
+        {
+            StartCoroutine(LoadLevel("Stage5"));
+            FindObjectOfType<AudioManager>().Play("Select");
+        }
+        else;
+        {
+            FindObjectOfType<AudioManager>().Play("error");
+        }
     }
 
     public void GoStage6()//GoTo Stage selection 6
@@ -386,6 +433,12 @@ public class MainMenu : MonoBehaviour
     {
         DataManager.Instance.playerData.totalCoins += CoinsScript.stageCoins;
         CoinsScript.stageCoins = 0;
+        DataManager.Instance.playerData.Squats = 0;
+        DataManager.Instance.playerData.punches = 0;
+        DataManager.Instance.playerData.stepsNumber = 0;
+        DataManager.Instance.playerData.sitUps = 0;
+        DataManager.Instance.playerData.jumpingJacks = 0;
+
         DataManager.Instance.playerData.totalCalories += DataManager.Instance.playerData.stageCalories;
         DataManager.Instance.playerData.stageCalories = 0;
         DataManager.Instance.SaveFile();

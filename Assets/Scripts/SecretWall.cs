@@ -9,7 +9,7 @@ public class SecretWall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Bullet") || collision.gameObject.CompareTag("SuperBullet"))
         {
             Destroy(gameObject);
             Instantiate(leafParticles, leafPoint.position, Quaternion.identity);

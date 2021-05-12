@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ecbcbd4d8c43a534d84db4426f9b5a2d, type: 3}
-    totalSpriteSurfaceArea: 96527957
+    totalSpriteSurfaceArea: 96687175
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -152,6 +152,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5426f2a8f4bc75344be2de4dcdc3b363, type: 3}
   - {fileID: 21300000, guid: 989203b88141a634dad72fea28ec1cff, type: 3}
   - {fileID: 21300000, guid: 762758b89d885d44e9b9638013b9247b, type: 3}
+  - {fileID: -1761254419528726712, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
+  - {fileID: -8627068929140562484, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
+  - {fileID: 2661156532614257649, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
+  - {fileID: -843121178137633126, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
   - {fileID: 21300000, guid: 251930e8d3a2db04eba49bac71bd4133, type: 3}
   - {fileID: 21300000, guid: dc7662e8f31aaee4aa499573525ae61f, type: 3}
   - {fileID: 21300000, guid: c0b999e8dbd1d8d4b9e56dc885444629, type: 3}
@@ -180,6 +184,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f3dfea1915595e84ab6e35ab89ae88bf, type: 3}
   - {fileID: 21300000, guid: a8e3f669bb9635044b8c0bd357539c62, type: 3}
   - {fileID: 21300000, guid: 11469079630d21b4e8ac4db27d99197a, type: 3}
+  - {fileID: 7008279905332046063, guid: ed78da895955d614db94e9ba06c672be, type: 3}
+  - {fileID: -1412203240312215362, guid: ed78da895955d614db94e9ba06c672be, type: 3}
+  - {fileID: 954537540002575018, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: -8144748041736510302, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: -3616319843763485287, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: 5715806007628287109, guid: ed78da895955d614db94e9ba06c672be, type: 3}
@@ -454,6 +461,10 @@ SpriteAtlas:
   - Burnit_Assets_Flag
   - Burnit_Underwater_BubbleParticle
   - Burnit_Forest_Chain
+  - Burnit_Assets_Tilemap_Corners_0
+  - Burnit_Assets_Tilemap_Corners_1
+  - Burnit_Assets_Tilemap_Corners_2
+  - Burnit_Assets_Tilemap_Corners_3
   - Burnit_Assets_Gate_bg
   - Burnit_Underwater_Barrel
   - FitHeroesAssets_House2
@@ -482,6 +493,9 @@ SpriteAtlas:
   - Burnit_Forest_Pine4
   - Burnit_Underwater_BubblesFront2
   - Burnit_Forest_Pine2
+  - Burnit_Forest_LeafBurning_4
+  - Burnit_Forest_LeafBurning_5
+  - Burnit_Forest_LeafBurning_6
   - Burnit_Forest_LeafBurning_0
   - Burnit_Forest_LeafBurning_1
   - Burnit_Forest_LeafBurning_2

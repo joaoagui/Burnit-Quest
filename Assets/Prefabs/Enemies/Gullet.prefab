@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062174642753956989}
   - component: {fileID: 6062174642753956988}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Burnit_UI_Enemy_lifebarFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062174643055083923}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: EggPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062174643174995928}
   - component: {fileID: 6062174643174995929}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Burnit_UI_EnemyLifebarBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062174643296072653}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: lifebar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 6062174643622363995}
   - component: {fileID: 6062174643622363996}
   - component: {fileID: 6062174643622363997}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062174644283431451}
   - component: {fileID: 6062174644283431450}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Burnit_UI_EnemyLifebarBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 6062174644283730245}
   - component: {fileID: 6062174644283730241}
   - component: {fileID: 8445238444446989891}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Gullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   levelTxt: {fileID: 6062174643622363997}
-  speed: 0.2
+  speed: 0.1
   gulletHealth: 1
   dmgText: {fileID: 5687076634602637916, guid: 4512eaa88b5c57840a6cc128dfc21d43, type: 3}
   damageParticles: {fileID: 1654280046741475339, guid: 1e9de43d81aca274aa940bc45eb185e2,
@@ -788,7 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062174644583212178}
   - component: {fileID: 6062174644583212177}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Burnit_UI_EnemyLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

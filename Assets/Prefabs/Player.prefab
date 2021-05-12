@@ -5113,7 +5113,7 @@ MonoBehaviour:
     type: 3}
   projectile2: {fileID: 5827219053108131270, guid: 6a0f044c73817764aafcaa742aabcd11,
     type: 3}
-  projectile3: {fileID: 5827219053108131270, guid: 6a0f044c73817764aafcaa742aabcd11,
+  projectile3: {fileID: 5827219053108131270, guid: 7d86aa66de775924091268c00005244f,
     type: 3}
   superProjectile: {fileID: 3516322763899113654, guid: cfd78ff44f487674faf4773c8226286a,
     type: 3}
@@ -5143,6 +5143,8 @@ MonoBehaviour:
     stageCalories: 0
     totalCalories: 0
     punches: 0
+    jumpingJacks: 0
+    sitUps: 0
     currentStage: 0
     numOfHearts: 3
     stageComplete: 0
@@ -5199,6 +5201,21 @@ MonoBehaviour:
     Trophy3: 0
     Trophy4: 0
     Trophy5: 0
+    Trophy6: 0
+    Trophy7: 0
+    Trophy8: 0
+    Trophy9: 0
+    Trophy10: 0
+    Trophy11: 0
+    Trophy12: 0
+    Trophy13: 0
+    Trophy14: 0
+    Trophy15: 0
+    Trophy16: 0
+    Trophy17: 0
+    Trophy18: 0
+    Trophy19: 0
+    Trophy20: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0

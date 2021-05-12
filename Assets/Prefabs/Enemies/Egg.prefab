@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6217985468383267283}
   - component: {fileID: 6217985468383267295}
   - component: {fileID: 5181914976628299306}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Egg
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4169749341566215435}
   - component: {fileID: 2845616399805277607}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 8063135071904788454}
   - component: {fileID: 9093846473622903019}
   - component: {fileID: 6996270066696712853}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

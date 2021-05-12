@@ -280,16 +280,16 @@ namespace EasyWiFi.ServerControls
 
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z > 0.75 && PunchTimer <= 0) //detect punch
                 {
-                    if ( DataManager.Instance.playerData.punchCombo == 1 && Player.combo < 3)
+                    if ( DataManager.Instance.playerData.punchCombo == 1 && Player.combo <= 4)
                     {
                         comboTimer = 3f;
                         Player.combo += 1;
                     }
 
-                    animator.SetBool("Punch", true);
-                    animator.SetTrigger("Attack");
-                    Speed = 0;
-                    PunchTimer = 1;
+                     animator.SetBool("Punch", true);
+                     animator.SetTrigger("Attack");
+                     Speed = 0;
+                     PunchTimer = 1;
                      DataManager.Instance.playerData.stageCalories += 0.04f;
                      DataManager.Instance.playerData.punches++;
                 }

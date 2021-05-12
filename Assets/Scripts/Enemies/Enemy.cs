@@ -104,15 +104,23 @@ public class Enemy : MonoBehaviour
             walkLeft = !walkLeft;
             Flip();
         }
+
         if (collision.gameObject.CompareTag("Bullet") && invincibilityTimer <= 0)
         {
             invincibilityTimer = 0.1f;
-            TakeDamage();
-            
+            TakeDamage();            
         }
-     
 
-     void Flip() //flips when collides with a solid object
+        else if (collision.gameObject.CompareTag("SuperBullet") && invincibilityTimer <= 0)
+        {
+            invincibilityTimer = 0.1f;
+            TakeSuperDamage();
+        }
+    }
+
+
+
+    void Flip() //flips when collides with a solid object
     {
         Vector2 theScale = transform.localScale;
         theScale.x *= -1;
@@ -120,7 +128,7 @@ public class Enemy : MonoBehaviour
         transform.localScale = theScale;
         lifebar.transform.localScale *= new Vector2(-1, 1);
 
-        }
+    }
 
     void TakeDamage()
     {
@@ -144,6 +152,28 @@ public class Enemy : MonoBehaviour
     }
 
 
+    void TakeSuperDamage()
+    {
+        lifebar.SetActive(true);
+        lerpTimer = 0f;
+        coroutine = Flash();
+        StartCoroutine(coroutine);
+        sporHealth -= bulletSuper.superDmgTotal;
+
+        if (sporHealth > 0)
+        {
+            Instantiate(damageParticles, transform.position, Quaternion.identity);
+        }
+
+
+        if (sporHealth < 1)
+        {
+            Destroy(gameObject);
+            Die();
+        }
+    }
+
+
     void Die()
     {
             GameObject sporDead = Instantiate(sporDie, transform.position, Quaternion.identity);
@@ -158,7 +188,5 @@ public class Enemy : MonoBehaviour
 
     }
 
-
-    }
 
 }

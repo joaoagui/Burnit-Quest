@@ -136,6 +136,11 @@ public class Yuxu : MonoBehaviour
             TakeDamage();
         }
 
+        else if (collision.gameObject.CompareTag("SuperBullet") && invincibilityTimer <= 0)
+        {
+            invincibilityTimer = 0.1f;
+            TakeSuperDamage();
+        }
     }
 
     public void TakeDamage()
@@ -150,6 +155,27 @@ public class Yuxu : MonoBehaviour
 
         if (YuzuHealth < 1)
         {
+            Die();
+        }
+    }
+
+    void TakeSuperDamage()
+    {
+        lifebar.SetActive(true);
+        lerpTimer = 0f;
+        coroutine = Flash();
+        StartCoroutine(coroutine);
+        YuzuHealth -= bulletSuper.superDmgTotal;
+
+        if (YuzuHealth > 0)
+        {
+            Instantiate(damageParticles, transform.position, Quaternion.identity);
+        }
+
+
+        if (YuzuHealth < 1)
+        {
+            Destroy(gameObject);
             Die();
         }
     }

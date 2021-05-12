@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 6072967056152300458
     second: Burnit_Forest_LeafBurning_3
+  - first:
+      213: 5628414210449851650
+    second: Burnit_Forest_LeafBurning_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -156,9 +159,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6
-        width: 64
-        height: 67
+        y: 0
+        width: 43
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +179,10 @@ TextureImporter:
       name: Burnit_Forest_LeafBurning_2
       rect:
         serializedVersion: 2
-        x: 132
-        y: 8
-        width: 44
-        height: 58
+        x: 84
+        y: 0
+        width: 39
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +200,10 @@ TextureImporter:
       name: Burnit_Forest_LeafBurning_3
       rect:
         serializedVersion: 2
-        x: 181
-        y: 8
-        width: 25
-        height: 51
+        x: 124
+        y: 0
+        width: 35
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,12 +221,12 @@ TextureImporter:
       name: Burnit_Forest_LeafBurning_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 16
-        width: 48
-        height: 41
+        x: 43
+        y: 0
+        width: 40
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,6 +234,69 @@ TextureImporter:
       bones: []
       spriteID: 02a5b1d6794a3d620800000000000000
       internalID: 2797760763804736032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_LeafBurning_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe823d34179624160800000000000000
+      internalID: 7008279905332046063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_LeafBurning_5
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8e88692a8d66ce0800000000000000
+      internalID: -1412203240312215362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burnit_Forest_LeafBurning_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 29
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205cf9e57e42c1e40800000000000000
+      internalID: 5628414210449851650
       vertices: []
       indices: 
       edges: []

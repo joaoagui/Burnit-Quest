@@ -111,6 +111,12 @@ public class Schlaf : MonoBehaviour
             TakeDamage();
         }
 
+        else if (collision.gameObject.CompareTag("SuperBullet") && invincibilityTimer <= 0)
+        {
+            invincibilityTimer = 0.1f;
+            TakeSuperDamage();
+        }
+
     }
 
     public IEnumerator Flash()
@@ -166,6 +172,39 @@ public class Schlaf : MonoBehaviour
             Die();
         }
     }
+
+
+    void TakeSuperDamage()
+    {
+        lifebar.SetActive(true);
+        lerpTimer = 0f;
+
+        if (box == false)
+        {
+            coroutine = Flash();
+            StartCoroutine(coroutine);
+            SchlafHealth -= bulletSuper.superDmgTotal;
+            Instantiate(damageParticles, transform.position, Quaternion.identity);
+        }
+
+        if (box == true)
+        {
+            Instantiate(splinters, boxPoint.position, Quaternion.identity);
+            GetComponent<Rigidbody2D>().sharedMaterial = slide;
+            box = false;
+            speed = 1;
+            animator.SetBool("Angry", true);
+            animator.SetBool("Hidden", false);
+            AudioSource.PlayOneShot(schlafEnter, 0.8f);
+        }
+
+        if (SchlafHealth < 1)
+        {
+            Destroy(gameObject);
+            Die();
+        }
+    }
+
 
     public void Move()
     {

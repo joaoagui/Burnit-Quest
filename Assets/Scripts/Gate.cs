@@ -17,6 +17,12 @@ public class Gate : MonoBehaviour
 
     public CinemachineVirtualCamera playerCam;
 
+    private void Start()
+    {
+        get = false;
+    }
+
+
     void OnTriggerEnter2D(Collider2D collision)
         {
             if (get == false && collision.gameObject.CompareTag("Player"))
@@ -27,22 +33,22 @@ public class Gate : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("gateClose");
             }
 
-        if (get = false && collision.gameObject.CompareTag("Chay"))
-        {
-            get = true;
-            playerCam.Follow = rbChay.transform;
+            else if (get == false && collision.gameObject.CompareTag("Chay"))
+            {
+                get = true;
+                playerCam.Follow = rbChay.transform;
 
-            Chay.Stop();
-            animator.SetBool("Closed", true);
-            FindObjectOfType<AudioManager>().Play("gateClose");
-            Instantiate(playerLose, playerObject.transform.position, Quaternion.identity);
+                Chay.Stop();
+                animator.SetBool("Closed", true);
+                FindObjectOfType<AudioManager>().Play("gateClose");
+                Instantiate(playerLose, playerObject.transform.position, Quaternion.identity);
 
-            Destroy(playerObject);
+                Destroy(playerObject);
 
-            loseScreen.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(button);
-        }
+                loseScreen.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(button);
+            }
     }
 
 }

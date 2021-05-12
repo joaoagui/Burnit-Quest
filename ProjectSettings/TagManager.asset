@@ -13,6 +13,8 @@ TagManager:
   - Bullet
   - Magnet
   - Key
+  - SuperBullet
+  - Shield
   layers:
   - Default
   - TransparentFX

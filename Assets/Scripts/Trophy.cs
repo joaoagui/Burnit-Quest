@@ -61,6 +61,67 @@ public class Trophy : MonoBehaviour
                  DataManager.Instance.playerData.Trophy5 = 1;
             }
 
+            if (trophyStage == 6)
+            {
+                DataManager.Instance.playerData.Trophy6 = 1;
+            }
+            if (trophyStage == 7)
+            {
+                DataManager.Instance.playerData.Trophy7 = 1;
+            }
+            if (trophyStage == 8)
+            {
+                DataManager.Instance.playerData.Trophy8 = 1;
+            }
+            if (trophyStage == 9)
+            {
+                DataManager.Instance.playerData.Trophy9 = 1;
+            }
+            if (trophyStage == 10)
+            {
+                DataManager.Instance.playerData.Trophy10 = 1;
+            }
+            if (trophyStage == 11)
+            {
+                DataManager.Instance.playerData.Trophy1 = 1;
+            }
+            if (trophyStage == 12)
+            {
+                DataManager.Instance.playerData.Trophy2 = 1;
+            }
+            if (trophyStage == 13)
+            {
+                DataManager.Instance.playerData.Trophy3 = 1;
+            }
+            if (trophyStage == 14)
+            {
+                DataManager.Instance.playerData.Trophy4 = 1;
+            }
+            if (trophyStage == 15)
+            {
+                DataManager.Instance.playerData.Trophy5 = 1;
+            }
+            if (trophyStage == 16)
+            {
+                DataManager.Instance.playerData.Trophy6 = 1;
+            }
+            if (trophyStage == 17)
+            {
+                DataManager.Instance.playerData.Trophy7 = 1;
+            }
+            if (trophyStage == 18)
+            {
+                DataManager.Instance.playerData.Trophy8 = 1;
+            }
+            if (trophyStage == 19)
+            {
+                DataManager.Instance.playerData.Trophy9 = 1;
+            }
+            if (trophyStage == 20)
+            {
+                DataManager.Instance.playerData.Trophy10 = 1;
+            }
+
             if (hitInfo.gameObject.CompareTag("Magnet"))
             {
                 pulling = true;

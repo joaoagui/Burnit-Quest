@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5573211893226250693}
   - component: {fileID: 5573211893226250698}
+  - component: {fileID: -6241062803574451589}
   m_Layer: 0
   m_Name: ColliderHolder
   m_TagString: Untagged
@@ -52,3 +53,22 @@ EdgeCollider2D:
   - {x: -2.7733324, y: 9.712077}
   - {x: -2.7827008, y: -0.058338165}
   - {x: 2.5693047, y: -0.059233665}
+--- !u!95 &-6241062803574451589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5573211893226250699}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e411444b73478940b073f8038330cf1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

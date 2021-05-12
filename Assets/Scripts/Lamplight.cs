@@ -12,7 +12,7 @@ public class Lamplight : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Bullet enemy = collision.GetComponent<Bullet>();
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Bullet") || collision.gameObject.CompareTag("SuperBullet"))
         {
             animator.SetBool("Lit", true);
             Instantiate(sparks, transform.position, Quaternion.identity);

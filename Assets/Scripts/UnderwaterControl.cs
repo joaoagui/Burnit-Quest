@@ -146,7 +146,7 @@ namespace EasyWiFi.ServerControls
                 {
                     JJUp = false;
                     JJDown = false;
-                    DataManager.Instance.playerData.stepsNumber++;
+                    DataManager.Instance.playerData.jumpingJacks ++;
                     DataManager.Instance.playerData.stageCalories += 0.04f;
                     timerStop = 0;
                     animator.SetTrigger("Swim");

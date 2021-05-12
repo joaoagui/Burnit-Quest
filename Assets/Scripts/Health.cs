@@ -128,10 +128,18 @@ public class Health : MonoBehaviour
                 UILastBtn.lastselect = button;
             }
         }
+
         else if (info.gameObject.CompareTag("Enemy") && shieldActive == true)
         {
             shieldActive = false;
-            invincibilityTimer = 0;            
+            invincibilityTimer = 0;
+
+            GameObject[] shields = GameObject.FindGameObjectsWithTag("Shield");
+            foreach (GameObject shield in shields)
+            {
+                GameObject.Destroy(shield);
+            }
+
             shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
             rb.velocity = new Vector2(-20, rb.velocity.y);
             Instantiate(shieldBreak, transform.position, Quaternion.identity);
