@@ -23,7 +23,8 @@ public class SlingshotManager : MonoBehaviour
 
     [Header("Enemy Spawn System")]
     [SerializeField]
-    public static int gulletNumber = 10;
+    public int amountofEnemies;
+    public static int gulletNumber;
     public static int startingtNumber;
 
 
@@ -39,10 +40,16 @@ public class SlingshotManager : MonoBehaviour
     private IEnumerator coroutine;
     public GameObject gulletDead;
 
+    public Text sitUpText;
+    public Text caloryText;
+    public Text coinText;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        gulletNumber = amountofEnemies;
         coroutine = SpawnGullets();
         StartCoroutine(coroutine);
         startingtNumber = gulletNumber;
@@ -77,6 +84,11 @@ public class SlingshotManager : MonoBehaviour
         if (gulletNumber >= 0)
         {
             PauseMenu.paused = true;
+
+            sitUpText.text = "" + DataManager.Instance.playerData.sitUps;
+            caloryText.text = "" + DataManager.Instance.playerData.stageCalories;
+            coinText.text = "" + CoinsScript.stageCoins;
+
             finishScreen.SetActive(true);
             Destroy(pauseButton);
         }
@@ -152,6 +164,8 @@ public class SlingshotManager : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("whistle");
 
             Destroy(pauseButton);
+
+
 
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(button);

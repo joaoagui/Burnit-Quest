@@ -56,6 +56,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         tipRandomizer = Random.Range(0f, 5f);
+        DataManager.Instance.LoadFromFile();
+        DataManager.Instance.SaveFile();
     }
 
     private void Update()
@@ -137,8 +139,14 @@ public class MainMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Select");
     }
 
-    public void GoSplash()//GoTo Splash page
+    public void QuitGame()//Quit Game
     {
+        Application.Quit();
+    }
+
+public void GoSplash()//GoTo Splash page
+    {
+        DataManager.Instance.LoadFromFile();
         SceneManager.LoadScene("Splash");
         SceneManager.GetSceneByName("Splash");
         FindObjectOfType<AudioManager>().Play("Select");

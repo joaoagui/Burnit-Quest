@@ -32,6 +32,8 @@ public class DataManager : MonoBehaviour
         //load progression
         Instance.playerData.stageComplete = data.stageComplete;
         Instance.playerData.totalCoins = data.totalCoins;
+        Instance.playerData.heartPieces = data.heartPieces;
+
 
         //load skills and Stats
         Instance.playerData.numOfHearts = data.numOfHearts;
@@ -76,6 +78,12 @@ public class DataManager : MonoBehaviour
         Instance.playerData.Trophy4 = data.Trophy4;
         Instance.playerData.Trophy5 = data.Trophy5;
 
+        Instance.playerData.Trophy1 = data.Trophy6;
+        Instance.playerData.Trophy2 = data.Trophy7;
+        Instance.playerData.Trophy3 = data.Trophy8;
+        Instance.playerData.Trophy4 = data.Trophy9;
+        Instance.playerData.Trophy5 = data.Trophy10;
+
         //Skill unlocks
         Instance.playerData.SpeedLvl1 = data.SpeedLvl1;
         Instance.playerData.SpeedLvl2 = data.SpeedLvl2;
@@ -112,6 +120,8 @@ public class DataManager : MonoBehaviour
         //save progression
         playerData.stageComplete = Instance.playerData.stageComplete;
         playerData.totalCoins = Instance.playerData.totalCoins;
+        playerData.heartPieces = Instance.playerData.heartPieces;
+
 
         //save skills and Stats
         playerData.numOfHearts = Instance.playerData.numOfHearts;
@@ -155,6 +165,12 @@ public class DataManager : MonoBehaviour
         playerData.Trophy3 = Instance.playerData.Trophy3;
         playerData.Trophy4 = Instance.playerData.Trophy4;
         playerData.Trophy5 = Instance.playerData.Trophy5;
+
+        playerData.Trophy1 = Instance.playerData.Trophy6;
+        playerData.Trophy2 = Instance.playerData.Trophy7;
+        playerData.Trophy3 = Instance.playerData.Trophy8;
+        playerData.Trophy4 = Instance.playerData.Trophy9;
+        playerData.Trophy5 = Instance.playerData.Trophy10;
 
         playerData.SpeedLvl1 = Instance.playerData.SpeedLvl1;
         playerData.SpeedLvl2 = Instance.playerData.SpeedLvl2;

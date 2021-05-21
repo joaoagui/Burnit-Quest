@@ -9,6 +9,7 @@ public class GulletFront : MonoBehaviour
 
     private bool dead = false;
 
+
     void Update()
     {
         if (gameObject.transform.position.y < -400 || gameObject.transform.position.y > 1600)

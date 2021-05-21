@@ -142,16 +142,24 @@ public class Boss1 : MonoBehaviour
                 Die();
             }
         }
-        
 
-        if (collision.gameObject.CompareTag("Bullet") && BossHealth.health > 0)
+
+
+        else if (collision.gameObject.CompareTag("SuperBullet") && BossHealth.health > 0)
         {
             coroutine = Flash();
             StartCoroutine(coroutine);
             AudioSource.PlayOneShot(bossDamage, 1f);
             BossHealth.TakeSuperDamage();
             GameObject crateInstance = Instantiate(coin, firePoint.position, Quaternion.identity);
+
+            if (BossHealth.health <= 0)
+            {
+                AudioSource.PlayOneShot(bossDamage, 1f);
+                Die();
+            }
         }
+
 
     }
 

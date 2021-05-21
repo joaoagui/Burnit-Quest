@@ -4335,6 +4335,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &403085842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403085843}
+  - component: {fileID: 403085845}
+  - component: {fileID: 403085844}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &403085843
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403085842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1803915129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.53, y: -2.85}
+  m_SizeDelta: {x: 231.41, y: 35.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &403085844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403085842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8bfe845cc71053c44999aba5ca963377, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Back to Menu
+--- !u!222 &403085845
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403085842}
+  m_CullTransparentMesh: 0
 --- !u!1 &406119711
 GameObject:
   m_ObjectHideFlags: 0
@@ -19917,11 +19994,31 @@ MonoBehaviour:
     stageCalories: 0
     totalCalories: 0
     punches: 0
+    jumpingJacks: 0
+    sitUps: 0
     currentStage: 0
     numOfHearts: 3
     stageComplete: 0
     totalCoins: 0
     heartPieces: 0
+    SpeedLvl1: 0
+    SpeedLvl2: 0
+    SpeedLvl3: 0
+    JumpLvl1: 0
+    JumpLvl2: 0
+    SuperJumplvl1: 0
+    HealthLvl1: 0
+    HealthLvl2: 0
+    HealthLvl3: 0
+    MagnetLvl1: 0
+    MagnetLvl2: 0
+    ShieldSphereLvl1: 0
+    PunchLvl1: 0
+    PunchLvl2: 0
+    PunchLvl3: 0
+    MultiLvl1: 0
+    MultiLvl2: 0
+    ComboLvl1: 0
     speedSkill: 1
     jumpSkill: 0
     damageSkill: 3
@@ -19955,6 +20052,21 @@ MonoBehaviour:
     Trophy3: 0
     Trophy4: 0
     Trophy5: 0
+    Trophy6: 0
+    Trophy7: 0
+    Trophy8: 0
+    Trophy9: 0
+    Trophy10: 0
+    Trophy11: 0
+    Trophy12: 0
+    Trophy13: 0
+    Trophy14: 0
+    Trophy15: 0
+    Trophy16: 0
+    Trophy17: 0
+    Trophy18: 0
+    Trophy19: 0
+    Trophy20: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0
@@ -21762,7 +21874,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 403085843}
   m_Father: {fileID: 2048286585}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

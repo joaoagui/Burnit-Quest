@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b082901a141c815458d482dbe5ec5ca8, type: 3}
-    totalSpriteSurfaceArea: 73968018
+    totalSpriteSurfaceArea: 73987908
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -218,6 +218,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f4ce1c0d1e0df4d41bdad2df270e1635, type: 3}
   - {fileID: 21300000, guid: fcd1ef0dd761781459a11e95ef3b7093, type: 3}
   - {fileID: 21300000, guid: a3bd841d62498ab4bb06eaa97027c3fe, type: 3}
+  - {fileID: 21300000, guid: d43bbb2d717ce7f4f9febe00ea3a03e9, type: 3}
   - {fileID: 21300000, guid: 1a99033d275a78d409a16c577510ab98, type: 3}
   - {fileID: 21300000, guid: 8fb21e3d8ed824d4eb6a41ce58f04d97, type: 3}
   - {fileID: 21300000, guid: 1621045d9f89b3549833e6c4413efbba, type: 3}
@@ -436,6 +437,7 @@ SpriteAtlas:
   - Burnit_UI_+
   - TutorialGuy_JumpingJacks_00004
   - Burnit_UI_HeartTop
+  - Burnit_UI_QuitIcon
   - Burnit_UI_arrowBtn_normal
   - FitHeroesAssets_tutorial_screen
   - SkillBuy_00002

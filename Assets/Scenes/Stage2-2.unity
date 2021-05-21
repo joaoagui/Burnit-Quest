@@ -88454,12 +88454,12 @@ PrefabInstance:
     - target: {fileID: 32324441227754094, guid: 7a9f6456780172048a0c9994cb0637ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -221.88625
+      value: -223.33
       objectReference: {fileID: 0}
     - target: {fileID: 32324441227754094, guid: 7a9f6456780172048a0c9994cb0637ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 123.77107
+      value: 124.2
       objectReference: {fileID: 0}
     - target: {fileID: 32324441227754094, guid: 7a9f6456780172048a0c9994cb0637ff,
         type: 3}
@@ -90437,7 +90437,7 @@ BuoyancyEffector2D:
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_FlowAngle: 270
-  m_FlowMagnitude: 6
+  m_FlowMagnitude: 2
   m_FlowVariation: 0
 --- !u!61 &852532378
 BoxCollider2D:
