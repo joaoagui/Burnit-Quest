@@ -239,12 +239,7 @@ public void GoSplash()//GoTo Splash page
         {
             StartCoroutine(LoadLevel("Stage2"));
             FindObjectOfType<AudioManager>().Play("Select");
-        }
-
-        else;
-        {
-            FindObjectOfType<AudioManager>().Play("error");
-        }
+        }       
 
     }
 
@@ -309,10 +304,6 @@ public void GoSplash()//GoTo Splash page
             FindObjectOfType<AudioManager>().Play("Select");
         }
 
-        else;
-        {
-            FindObjectOfType<AudioManager>().Play("error");
-        }
     }
 
     public void GoStage3_1()//GoTo Stage1
@@ -367,10 +358,7 @@ public void GoSplash()//GoTo Splash page
             StartCoroutine(LoadLevel("Stage4"));
             FindObjectOfType<AudioManager>().Play("Select");
         }
-        else;
-        {
-            FindObjectOfType<AudioManager>().Play("error");
-        }
+
 
     }
 
@@ -381,10 +369,7 @@ public void GoSplash()//GoTo Splash page
             StartCoroutine(LoadLevel("Stage5"));
             FindObjectOfType<AudioManager>().Play("Select");
         }
-        else;
-        {
-            FindObjectOfType<AudioManager>().Play("error");
-        }
+
     }
 
     public void GoStage6()//GoTo Stage selection 6

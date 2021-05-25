@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f8ec792807c705d42b148dd4fdef5acb, type: 3}
-    totalSpriteSurfaceArea: 45404464
+    totalSpriteSurfaceArea: 44617820
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -150,7 +150,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9a513c54a4f24e44dbfc520a400508fd, type: 3}
   - {fileID: 21300000, guid: b2c45664ddf685c4db60492ab6e489ed, type: 3}
   - {fileID: 21300000, guid: df48de84282a54d40a23b966c274ab71, type: 3}
-  - {fileID: 21300000, guid: 6cd2eb94d6d0d644ba41263fe664b879, type: 3}
   - {fileID: 21300000, guid: 0764e3a44eab19947aed585f0b9ba417, type: 3}
   - {fileID: 21300000, guid: 4c4f65b40bfd9a14ab16729825f06a4e, type: 3}
   - {fileID: 21300000, guid: 303d3cb467a4cf74fbc689b02c611c36, type: 3}
@@ -168,7 +167,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 90c2d5455b030274db5a6d80f99c01d6, type: 3}
   - {fileID: 21300000, guid: efe07055670517440a86f38243da5b92, type: 3}
   - {fileID: 21300000, guid: b2fead551b5e3da43882d5c824e064f4, type: 3}
-  - {fileID: 21300000, guid: 09a74375223cdc1488efbbaee5dd0cce, type: 3}
   - {fileID: 21300000, guid: d081ef75b47dc1d4b87918dbc7f61245, type: 3}
   - {fileID: 21300000, guid: 5a36b885bb9ebad42924a036e76f7ae3, type: 3}
   - {fileID: 21300000, guid: 8c46ce85f0c4e0c48a2d7fd61816de0c, type: 3}
@@ -338,7 +336,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 924c88dca7e7d634f8c00ad38e0ee4f5, type: 3}
   - {fileID: 21300000, guid: 0057dcdc51d360f4a8d5e8e8d208926d, type: 3}
   - {fileID: 21300000, guid: 00d781fcf51b22f4ba34db695737295e, type: 3}
-  - {fileID: 21300000, guid: e83e17fc9f29d1e429325dc6b50de2d0, type: 3}
   - {fileID: 21300000, guid: 238abbfca19846242ae674278fe1f8bc, type: 3}
   - {fileID: 21300000, guid: b635e01dc3b66f64b99f677caa22afb5, type: 3}
   - {fileID: 21300000, guid: bbfa981db8c6b3a4695881aefadbe876, type: 3}
@@ -520,7 +517,6 @@ SpriteAtlas:
   - Yuzu_Jump&Fall_00022
   - Chay_Hurt_00003
   - Schlaf_enter_00018
-  - Burnit_Enemies-124
   - Schlaf_walk_00013
   - Schlaf_walk_00000
   - Burnit_Enemies_MouthT_3
@@ -538,7 +534,6 @@ SpriteAtlas:
   - Burnit_Enemies_SporDie_5
   - Chay_Jump_00000
   - Chay_Idle_00009
-  - Burnit_Enemies-125
   - Yuzu_Jump&Fall_00002
   - Burnit_Enemies_Brog_Body
   - Chay_Run_00003
@@ -708,7 +703,6 @@ SpriteAtlas:
   - Sylvy_Hurt_00000
   - Schlaf_walk_00008
   - Chay_Jump_00005
-  - Burnit_Enemies-126
   - Chay_Lose_00000
   - Sylvy_Walk_00004
   - Chay_Talk_00005
