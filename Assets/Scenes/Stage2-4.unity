@@ -14101,7 +14101,7 @@ MonoBehaviour:
     type: 3}
   sitUpText: {fileID: 716773979}
   caloryText: {fileID: 1938542022}
-  coinText: {fileID: 0}
+  coinText: {fileID: 1356078810}
 --- !u!1 &560356551
 GameObject:
   m_ObjectHideFlags: 0
@@ -24547,7 +24547,7 @@ AudioSource:
   m_GameObject: {fileID: 1810282620}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e,
+  OutputAudioMixerGroup: {fileID: -1431384911508869273, guid: 490ab88530266004cb478498e169c64e,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -38867,10 +38867,60 @@ PrefabInstance:
       propertyPath: LoadAnimation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 212328727153314600, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 940479639691050999, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 976887060921917592, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462105421305006887, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462105421305006887, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462105421305006887, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549339368289640247, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1676534024218896549, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524814628819773878, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524814628819773878, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524814628819773878, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3037307234754688612, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
@@ -38922,6 +38972,41 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5840760506520062774, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840760506520062774, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022316247059775574, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022316247059775574, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022316247059775574, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068216036551078338, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068216036551078338, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6174520751185906424, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -38941,6 +39026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850178964744009972, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6850178964744009975, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
@@ -39122,6 +39212,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoStage2
       objectReference: {fileID: 0}
+    - target: {fileID: 6850178965820784692, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 6850178965820784695, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
       propertyPath: m_Mesh
@@ -39131,6 +39226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850178965827218951, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6850178965898454179, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
@@ -39267,10 +39367,25 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 180143738}
+    - target: {fileID: 6850178965898454190, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6850178965938205269, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850178966093278972, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850178966422724988, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6850178966422724991, guid: bd124a268668a8a44806265fb520622d,
         type: 3}
@@ -39321,6 +39436,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497199454609243175, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608960141265210889, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656205951503798140, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656205951503798140, guid: bd124a268668a8a44806265fb520622d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd124a268668a8a44806265fb520622d, type: 3}
@@ -39735,7 +39870,7 @@ AudioSource:
   m_GameObject: {fileID: 7991263406293758224}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e,
+  OutputAudioMixerGroup: {fileID: -2792711260354897763, guid: 490ab88530266004cb478498e169c64e,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5ec748c17c8a0764c80e1d7bceedd676, type: 3}
   m_PlayOnAwake: 0

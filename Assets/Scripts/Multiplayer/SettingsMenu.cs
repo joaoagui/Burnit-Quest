@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+
+    public AudioMixer MainMixer;
+
     public GameObject focusButton;
 
     //public Dropdown resolutionDropdown;
@@ -48,9 +50,24 @@ public class SettingsMenu : MonoBehaviour
     //    Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     //}
 
-    public void SetVolume(float volume)
+    public void SetMainVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        MainMixer.SetFloat("volume", volume);
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        MainMixer.SetFloat("music", volume);
+    }
+
+    public void SetSfxVolume(float volume)
+    {
+        MainMixer.SetFloat("sfx", volume);
+    }
+
+    public void SetVoicesVolume(float volume)
+    {
+        MainMixer.SetFloat("voices", volume);
     }
 
     public void SetQuality(int qualityIndex)
@@ -61,5 +78,10 @@ public class SettingsMenu : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+    }
+
+    public void SetCoop(bool coopEnabled)
+    {
+        CoopManager.CoopEnabled = coopEnabled;
     }
 }

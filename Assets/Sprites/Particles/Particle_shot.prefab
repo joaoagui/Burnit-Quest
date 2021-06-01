@@ -4787,9 +4787,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1208666661
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4822,7 +4822,7 @@ AudioSource:
   m_GameObject: {fileID: 4331044790870007836}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e,
+  OutputAudioMixerGroup: {fileID: -2792711260354897763, guid: 490ab88530266004cb478498e169c64e,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 7539a3d88beea4649b2887132f5ca433, type: 3}
   m_PlayOnAwake: 1

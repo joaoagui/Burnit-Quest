@@ -23,6 +23,8 @@ namespace EasyWiFi.ServerControls
 
         //Hamspoter Action system
         public SpriteRenderer gauge;
+        public GameObject hamMedal;
+        private float gaugeHeight;
         public static bool charged;
 
         public Text CaloriesText;
@@ -69,11 +71,17 @@ namespace EasyWiFi.ServerControls
             {
                 EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
             }
+
         }
 
         void OnDestroy()
         {
             EasyWiFiController.On_ConnectionsChanged -= checkForNewConnections;
+        }
+
+        private void Start()
+        {
+            gaugeHeight = gauge.size.y;
         }
 
         // Update is called once per frame
@@ -83,10 +91,13 @@ namespace EasyWiFi.ServerControls
             {
                 //gaugeAnimator.SetFloat("Speed", Speed/4);
 
-                gauge.size += new Vector2(Speed / 4f, 0f);
+                gauge.size += new Vector2(Speed/5f, 0f) * Time.deltaTime;
+
                 if (gauge.size.x >= 4)
                 {
-                    gauge.size = new Vector2(4, 1);
+                    gauge.size = new Vector2(4, gaugeHeight);
+                    charged = true;
+                    hamMedal.SetActive(true);
                 }
 
 
@@ -241,8 +252,8 @@ namespace EasyWiFi.ServerControls
                 if (orientation.x < -0.7 && orientation.z < 0.5 && RunDown_low == false)
                 {
                     RunDown_low = true;
-
                 }
+
                 //Mark one Step + Calories when moving with arms lower
                 if (RunUp_low == true && RunDown_low == true && Crouching == false)
                 {
@@ -267,6 +278,11 @@ namespace EasyWiFi.ServerControls
 
                     idleTimer = 0;
 
+                    gauge.size = new Vector2(0, gaugeHeight);
+                    charged = false;
+                    hamMedal.SetActive(false);
+
+
                 }
 
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z < -0.8 && Crouching == false && charged == true) //detect Crouch
@@ -286,6 +302,7 @@ namespace EasyWiFi.ServerControls
                         comboTimer = 3f;
                         Player.combo += 1;
                     }
+                    charged = false;
 
                     animatorHamster.SetBool("Punch", true);
                     Speed = 0;
@@ -294,10 +311,15 @@ namespace EasyWiFi.ServerControls
 
                     idleTimer = 0;
 
+                    gauge.size = new Vector2(0, gaugeHeight);
+                    hamMedal.SetActive(false);
+
                 }
 
                 if (orientation.z < 0.4 && PunchTimer <= 0) //detect punch
                 {
+                    animatorHamster.SetBool("Punch", false);
+
                     PunchTimer = 0;
                 }
             }

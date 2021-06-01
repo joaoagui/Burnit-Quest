@@ -7695,7 +7695,7 @@ AudioSource:
   m_GameObject: {fileID: 107289960}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e,
+  OutputAudioMixerGroup: {fileID: -6893385633210648807, guid: 490ab88530266004cb478498e169c64e,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9d78ca726e8af8d49ad7327eea6e8481, type: 3}
   m_PlayOnAwake: 1
@@ -25796,7 +25796,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6850178965172700545}
-        m_MethodName: SetVolume
+        m_MethodName: SetMainVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26475,7 +26475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6d267e8de8fa44db7cf0a0ff5528cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 490ab88530266004cb478498e169c64e, type: 2}
+  MainMixer: {fileID: 0}
   focusButton: {fileID: 6850178965351820014}
 --- !u!1 &6850178965172700547
 GameObject:
@@ -29076,7 +29076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6850178966168025708
 MonoBehaviour:
   m_ObjectHideFlags: 0

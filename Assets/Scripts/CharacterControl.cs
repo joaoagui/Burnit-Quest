@@ -143,10 +143,10 @@ namespace EasyWiFi.ServerControls
                 Speed = 7;
             }
 
-            if (PunchTimer > 0) //punching cooldown
-            {
-                PunchTimer -= 1 * (Time.deltaTime * 2f);
-            }
+            // if (PunchTimer > 0) //punching cooldown
+            //{
+            //    PunchTimer -= 1 * (Time.deltaTime * 2f);
+            //}
 
             if (comboTimer > 0) //punching cooldown
             {
@@ -294,7 +294,7 @@ namespace EasyWiFi.ServerControls
                      DataManager.Instance.playerData.punches++;
                 }
 
-                if (orientation.z < 0.4 && PunchTimer <= 0) //detect punch
+                if (orientation.z < 0.4) //detect getting out of punch
                 {
                     PunchTimer = 0;
                 }

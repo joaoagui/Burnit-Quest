@@ -156,4 +156,5 @@ MonoBehaviour:
     randomPitch: 0
     loop: 0
     source: {fileID: 0}
-  audioMixer: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e, type: 2}
+  audioMixer: {fileID: -2792711260354897763, guid: 490ab88530266004cb478498e169c64e,
+    type: 2}

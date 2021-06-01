@@ -117,10 +117,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BumpPower: 16
-  animator: {fileID: 7050472603719527853}
   bump: {fileID: 7050472603719527849}
   maxHeight: 12
   verticalMove: 0
+  maxWidth: 0
+  horizontalMove: 0
+  Multiplayer: 0
 --- !u!61 &7050472603719527850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,7 +158,7 @@ AudioSource:
   m_GameObject: {fileID: 7050472603719527504}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 490ab88530266004cb478498e169c64e,
+  OutputAudioMixerGroup: {fileID: -2792711260354897763, guid: 490ab88530266004cb478498e169c64e,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 520481073eb868243a93ec3336bba142, type: 3}
   m_PlayOnAwake: 0
