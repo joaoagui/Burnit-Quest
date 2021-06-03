@@ -268,7 +268,7 @@ namespace EasyWiFi.ServerControls
                 }
 
 
-                if (orientation.x < 0.1 && orientation.y < -0.8 && orientation.z > -0.7 && JJUp == false && Crouching == true && Player.isGrounded == true) //detect getting up from crouch
+                if (orientation.x < 0.1 && orientation.y < -0.8 && orientation.z > -0.7 && JJUp == false && Crouching == true) //detect getting up from crouch
                 {
                     JJUp = false;
                     Crouching = false;
@@ -297,11 +297,6 @@ namespace EasyWiFi.ServerControls
 
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z > 0.75 && PunchTimer <= 0 && charged == true) //detect punch
                 {
-                    if ( DataManager.Instance.playerData.punchCombo == 1 && Player.combo < 3)
-                    {
-                        comboTimer = 3f;
-                        Player.combo += 1;
-                    }
                     charged = false;
 
                     animatorHamster.SetBool("Punch", true);
