@@ -147,8 +147,8 @@ public class MainMenu : MonoBehaviour
 public void GoSplash()//GoTo Splash page
     {
         DataManager.Instance.LoadFromFile();
-        SceneManager.LoadScene("Splash");
-        SceneManager.GetSceneByName("Splash");
+
+        StartCoroutine(LoadLevel("Splash"));
         FindObjectOfType<AudioManager>().Play("Select");
     }
 

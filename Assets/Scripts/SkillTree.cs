@@ -299,7 +299,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.SpeedLvl2 = 1;
             DataManager.Instance.playerData.JumpLvl1 = 1;
              DataManager.Instance.playerData.speedSkill = 1.25f;
+
             Instantiate(BuyEffect, Speedlvl1_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("SpeedLvl1", 2);
             PlayerPrefs.SetInt("JumpLvl1", 1);
             PlayerPrefs.SetInt("SpeedLvl2", 1);
@@ -318,7 +321,10 @@ public class SkillTree : MonoBehaviour
              DataManager.Instance.playerData.totalCoins -= SpeedLvl2Cost;
             DataManager.Instance.playerData.SpeedLvl2 = 2;
             DataManager.Instance.playerData.SpeedLvl3 = 1;
+
             Instantiate(BuyEffect, Speedlvl2_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("SpeedLvl2", 2);
             PlayerPrefs.SetInt("SpeedLvl3", 1);
         }
@@ -334,7 +340,10 @@ public class SkillTree : MonoBehaviour
         {
              DataManager.Instance.playerData.totalCoins -= SpeedLvl3Cost;
             DataManager.Instance.playerData.SpeedLvl3 = 2;
+
             Instantiate(BuyEffect, Speedlvl3_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("SpeedLvl3", 2);
             PlayerPrefs.SetInt("SuperJumplvl1", 1);
 
@@ -355,7 +364,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= JumpLvl1Cost;
             DataManager.Instance.playerData.JumpLvl1 = 2;
             DataManager.Instance.playerData.jumpSkill += 2f;
+
             Instantiate(BuyEffect, Jumplvl1_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("JumpLvl1", 2);
             PlayerPrefs.SetInt("JumpLvl2", 1);
         }
@@ -372,7 +384,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= JumpLvl2Cost;
             DataManager.Instance.playerData.JumpLvl2 = 2;
             DataManager.Instance.playerData.jumpSkill += 4f;
+
             Instantiate(BuyEffect, Jumplvl2_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("JumpLvl2", 2);
             PlayerPrefs.SetInt("SuperJumplvl1", 1);
 
@@ -396,7 +411,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= SuperJumpCost;
             DataManager.Instance.playerData.SuperJumplvl1 = 2;
             DataManager.Instance.playerData.superJump = 1;
+
             Instantiate(BuyEffect, SuperJump_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("SuperJumplvl1", 2);
             PlayerPrefs.SetInt("superJump", 1);
         }
@@ -416,7 +434,10 @@ public class SkillTree : MonoBehaviour
              DataManager.Instance.playerData.totalCoins -= HeartLvl1Cost;
             DataManager.Instance.playerData.HealthLvl1 = 2;
              DataManager.Instance.playerData.numOfHearts += 1;
+
             Instantiate(BuyEffect, Heartlvl1_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("HealthLvl1", 2);
             PlayerPrefs.SetInt("HealthLvl2", 1);
             PlayerPrefs.SetInt("MagnetLvl1", 1);
@@ -441,7 +462,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= HeartLvl2Cost;
             DataManager.Instance.playerData.HealthLvl2 = 2;
             DataManager.Instance.playerData.numOfHearts += 1;
+
             Instantiate(BuyEffect, Heartlvl2_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("HealthLvl2", 2);
             PlayerPrefs.SetInt("HealthLvl3", 1);
 
@@ -464,7 +488,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= HeartLvl3Cost;
             DataManager.Instance.playerData.HealthLvl3 = 2;
             DataManager.Instance.playerData.numOfHearts += 1;
+
             Instantiate(BuyEffect, Heartlvl3_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("HealthLvl3", 2);
             PlayerPrefs.SetInt("ShieldSphereLvl1", 1);
 
@@ -487,7 +514,10 @@ public class SkillTree : MonoBehaviour
              DataManager.Instance.playerData.totalCoins -= MagnetLvl1Cost;
             DataManager.Instance.playerData.MagnetLvl1 = 2;
             DataManager.Instance.playerData.magnetRange = 4;
+
             Instantiate(BuyEffect, Magnetlvl1_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("MagnetLvl1", 2);
             PlayerPrefs.SetInt("MagnetLvl2", 1);
 
@@ -509,7 +539,10 @@ public class SkillTree : MonoBehaviour
         {
             DataManager.Instance.playerData.totalCoins -= MagnetLvl2Cost;
             DataManager.Instance.playerData.MagnetLvl2 = 2;
+
             Instantiate(BuyEffect, Magnetlvl2_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             DataManager.Instance.playerData.magnetRange = 6;
             PlayerPrefs.SetInt("MagnetLvl2", 2);
             PlayerPrefs.SetInt("ShieldSphereLvl1", 1);
@@ -534,7 +567,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= ShieldSphereCost;
             DataManager.Instance.playerData.ShieldSphereLvl1 = 2;
             DataManager.Instance.playerData.shieldSphere = 1;
+
             Instantiate(BuyEffect, ShieldSphere_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("ShieldSphereLvl1", 2);
 
         }
@@ -549,10 +585,13 @@ public class SkillTree : MonoBehaviour
     {
         if ( DataManager.Instance.playerData.totalCoins >= PunchLvl1Cost && DataManager.Instance.playerData.PunchLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= PunchLvl1Cost;
+            DataManager.Instance.playerData.totalCoins -= PunchLvl1Cost;
             DataManager.Instance.playerData.PunchLvl1 = 2;
+
             Instantiate(BuyEffect, Punchlvl1_check.transform.position, Quaternion.identity);
-             DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
+            DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
             PlayerPrefs.SetInt("PunchLvl1", 2);
             PlayerPrefs.SetInt("PunchLvl2", 1);
 
@@ -572,10 +611,14 @@ public class SkillTree : MonoBehaviour
     {
         if ( DataManager.Instance.playerData.totalCoins >= PunchLvl2Cost && DataManager.Instance.playerData.PunchLvl1 == 2 && DataManager.Instance.playerData.PunchLvl2 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= PunchLvl2Cost;
+            DataManager.Instance.playerData.totalCoins -= PunchLvl2Cost;
             DataManager.Instance.playerData.PunchLvl2 = 2;
+
             Instantiate(BuyEffect, Punchlvl2_check.transform.position, Quaternion.identity);
-             DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
+
+            DataManager.Instance.playerData.damageSkill =  DataManager.Instance.playerData.damageSkill + 2;
             PlayerPrefs.SetInt("PunchLvl2", 2);
             PlayerPrefs.SetInt("PunchLvl3", 1);
 
@@ -595,10 +638,13 @@ public class SkillTree : MonoBehaviour
     {
         if ( DataManager.Instance.playerData.totalCoins >= PunchLvl3Cost && DataManager.Instance.playerData.PunchLvl2 == 2 && DataManager.Instance.playerData.PunchLvl3 < 2)
         {
-             DataManager.Instance.playerData.totalCoins -= PunchLvl3Cost;
+            DataManager.Instance.playerData.totalCoins -= PunchLvl3Cost;
             DataManager.Instance.playerData.PunchLvl3 = 2;
-             DataManager.Instance.playerData.damageSkill = +3;
+            DataManager.Instance.playerData.damageSkill = +3;
+
             Instantiate(BuyEffect, Punchlvl3_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("PunchLvl3", 2);
             PlayerPrefs.SetInt("ComboLvl1", 1);
 
@@ -622,7 +668,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= MultiLvl1Cost;
             DataManager.Instance.playerData.MultiLvl1 = 2;
             DataManager.Instance.playerData.multishots = 1;
+
             Instantiate(BuyEffect, Multi1_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("MultiLvl1", 2);
             PlayerPrefs.SetInt("MultiLvl2", 1);
 
@@ -645,7 +694,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= MultiLvl2Cost;
             DataManager.Instance.playerData.MultiLvl2 = 2;
             DataManager.Instance.playerData.multishots = 2;
+
             Instantiate(BuyEffect, Multil2_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("MultiLvl2", 2);
             PlayerPrefs.SetInt("ComboLvl1", 1);
 
@@ -669,7 +721,10 @@ public class SkillTree : MonoBehaviour
             DataManager.Instance.playerData.totalCoins -= ComboCost;
             DataManager.Instance.playerData.ComboLvl1 = 2;
             DataManager.Instance.playerData.punchCombo = 1;
+
             Instantiate(BuyEffect, PunchCombo_check.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("skillbuy");
+
             PlayerPrefs.SetInt("ComboLvl1", 2);
         }
         else

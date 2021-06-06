@@ -38,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage1-5.unity
     guid: acf685752e210744f80fe5c73cada9c5
-  - enabled: 0
-    path: Assets/Scenes/CoopTest.unity
-    guid: ad208164343a32a42876094bb025e69e
   - enabled: 1
     path: Assets/Scenes/Stage2.unity
     guid: 3f8f7e61f79bbdd4b923c260e61a38d8

@@ -51035,7 +51035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150173108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.474, y: -1.222, z: 0}
+  m_LocalPosition: {x: 0, y: -0.95, z: 0}
   m_LocalScale: {x: 0.22054207, y: 0.22054207, z: 0.22054207}
   m_Children:
   - {fileID: 1121053781}
@@ -51625,7 +51625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175156493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.859, y: 0.98, z: 0}
+  m_LocalPosition: {x: -1.26, y: 0.56, z: 0}
   m_LocalScale: {x: 0.9944188, y: 0.9944188, z: 0.9944188}
   m_Children:
   - {fileID: 150173109}
@@ -51656,7 +51656,10 @@ MonoBehaviour:
   followTarget: {fileID: 1136734187}
   offsetY: 1
   offsetX: -1.5
-  bubbleParticle: {fileID: 0}
+  bubbleParticle: {fileID: 8771287169465948654, guid: 93393a6910181f241a3a10d47bddfa98,
+    type: 3}
+  firePoint: {fileID: 1665372893}
+  bullet: {fileID: 1788100654174717121, guid: 2c06499f3110b1a488e900ef4c64973a, type: 3}
   RotationX: {fileID: 1261517975}
   RotationY: {fileID: 723305159}
   RotationZ: {fileID: 154035389}
@@ -80963,7 +80966,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 11.109741, y: 1.01}
+  m_Size: {x: 10.998915, y: 1.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -80977,7 +80980,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398741205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -222.07625, y: 201.69022, z: 0}
+  m_LocalPosition: {x: -222.05, y: 201.69022, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 435368639}
@@ -104439,7 +104442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384586408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.444, y: -0.314, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.21438478, y: 0.2143848, z: 0.2143848}
   m_Children:
   - {fileID: 1297578330}
@@ -113913,6 +113916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutscene: {fileID: 211991810}
+  thingstoHide: {fileID: 175156493}
 --- !u!1 &1773343016
 GameObject:
   m_ObjectHideFlags: 0

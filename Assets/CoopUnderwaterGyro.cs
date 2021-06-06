@@ -40,6 +40,8 @@ namespace EasyWiFi.ServerControls
 
         public GameObject bubbleParticle;
 
+        public Transform firePoint;
+        public GameObject bullet;
 
         float P2Calories;
 
@@ -198,22 +200,22 @@ namespace EasyWiFi.ServerControls
 
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z > 0.75 && PunchTimer <= 0 && charged == true) //detect punch
                 {
-                    if (DataManager.Instance.playerData.punchCombo == 1 && Player.combo < 3)
-                    {
-                        comboTimer = 3f;
-                        Player.combo += 1;
-                    }
+
+                    //Reset Gauge
                     charged = false;
+                    idleTimer = 0;
+                    gauge.size = new Vector2(0, gaugeHeight);
+                    hamMedal.SetActive(false);
+
+                    Instantiate(bullet, firePoint.position, Quaternion.identity);
 
                     Speed = 0;
                     PunchTimer = 1;
                     P2Calories += 0.04f;
-
-                    idleTimer = 0;
-
-                    gauge.size = new Vector2(0, gaugeHeight);
-                    hamMedal.SetActive(false);
-
+                    //spawn and detect bullet
+                    //GameObject hamBullet = Instantiate(bullet, firePoint.position, Quaternion.Euler(0, 0, 90));
+                    //Rigidbody2D hamBulletRB = hamBullet.GetComponent<Rigidbody2D>();
+                    //hamBulletRB.AddForce(new Vector2(0, 20f), ForceMode2D.Impulse);
                 }
 
                 if (orientation.z < 0.4 && PunchTimer <= 0) //detect punch

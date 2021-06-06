@@ -101,10 +101,17 @@ public class Health : MonoBehaviour
             {
                 invincibilityTimer = 0;
                 health -=  1;
-                if (Player.underwater == false)
+
+                if (Player.underwater == false && info.gameObject.transform.position.x <= playerObject.transform.position.x)
+                {
+                    rb.velocity = new Vector2(20, rb.velocity.y);
+                }
+
+                else if (Player.underwater == false && info.gameObject.transform.position.x > playerObject.transform.position.x)
                 {
                     rb.velocity = new Vector2(-20, rb.velocity.y);
                 }
+
                 else if (Player.underwater == true)
                 {
                     rb.velocity = new Vector2(0, -10);
@@ -141,7 +148,17 @@ public class Health : MonoBehaviour
             }
 
             shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
-            rb.velocity = new Vector2(-20, rb.velocity.y);
+
+            if(info.gameObject.transform.position.x > playerObject.transform.position.x)
+            {
+                rb.velocity = new Vector2(20, rb.velocity.y);
+            }
+
+            else if (info.gameObject.transform.position.x <= playerObject.transform.position.x)
+            {
+                rb.velocity = new Vector2(-20, rb.velocity.y);
+            }
+
             Instantiate(shieldBreak, transform.position, Quaternion.identity);
         }
 
@@ -184,6 +201,7 @@ public class Health : MonoBehaviour
             shieldActive = false;
             invincibilityTimer = 0;            
             shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
+
             if(Player.underwater == false)
             {
                 rb.velocity = new Vector2(-20, rb.velocity.y);
@@ -192,6 +210,7 @@ public class Health : MonoBehaviour
             {
                 rb.velocity = new Vector2(0, -10);
             }
+
             Destroy(shieldSphere);
             Instantiate(shieldBreak, transform.position, Quaternion.identity);
         }
