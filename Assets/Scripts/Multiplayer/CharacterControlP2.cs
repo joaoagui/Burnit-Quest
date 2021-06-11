@@ -41,6 +41,8 @@ namespace EasyWiFi.ServerControls
         bool RunDown_low = false;
         private float PunchTimer = 0;
         private float comboTimer = 0;
+        private float runTimer = 0.2f;
+
 
         //runtime variables
         GyroControllerType[] gyro = new GyroControllerType[EasyWiFiConstants.MAX_CONTROLLERS];
@@ -51,7 +53,6 @@ namespace EasyWiFi.ServerControls
         public Text RotationX;
         public Text RotationY;
         public Text RotationZ;
-
 
         void OnEnable()
         {
@@ -155,6 +156,9 @@ namespace EasyWiFi.ServerControls
             {
                 Player.combo = 0;
             }
+
+            runTimer -= Time.deltaTime;
+
         }
 
         private void FixedUpdate()
@@ -214,6 +218,7 @@ namespace EasyWiFi.ServerControls
                     Speed += 0.8f;
                     P2Calories += 0.04f;
                     timerStop = 0;
+                    runTimer = 0.2f;
 
                 }
 
@@ -236,6 +241,7 @@ namespace EasyWiFi.ServerControls
                     Speed += 0.8f;
                     P2Calories += 0.04f;
                     timerStop = 0;
+                    runTimer = 0.2f;
 
                 }
 
@@ -286,7 +292,7 @@ namespace EasyWiFi.ServerControls
                     P2Calories += 0.04f;
                 }
 
-                if (orientation.z < 0.4 && PunchTimer <= 0) //detect punch
+                if (orientation.z < 0.5 && PunchTimer <= 0) //detect punch
                 {
                     PunchTimer = 0;
                 }

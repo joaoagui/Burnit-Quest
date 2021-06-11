@@ -279,7 +279,7 @@ public void GoSplash()//GoTo Splash page
     }
 
 
-    public void GoStage2_5()//GoTo Stage4
+    public void GoStage2_5()//GoTo Stage5
     {
         StoreVariables();
         DataManager.Instance.playerData.currentStage = 10;

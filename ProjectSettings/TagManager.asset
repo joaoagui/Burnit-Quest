@@ -15,6 +15,7 @@ TagManager:
   - Key
   - SuperBullet
   - Shield
+  - Hamspotter
   layers:
   - Default
   - TransparentFX

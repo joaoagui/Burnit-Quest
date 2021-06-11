@@ -5,13 +5,17 @@ using UnityEngine;
 public class CoopManager : MonoBehaviour
 {
     public static bool CoopEnabled = false;
-    public bool hamSpawned = false;
+    public bool hamSpawned = true;
     
 
     public GameObject hamspotter;
     public GameObject P2Interface;
 
     public GameObject spawnParticles;
+
+    private GameObject[] hamsters;
+    private float timerToggle;
+
 
     public GameObject regata;
     //public GameObject riponga;
@@ -21,27 +25,35 @@ public class CoopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(CoopEnabled == false)
-        {
-            Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
-            hamspotter.SetActive(false);
-            P2Interface.SetActive(false);
+        //if(CoopEnabled == false && regata.activeInHierarchy == true)
+        //{
+        //    Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
+        //    hamspotter.SetActive(false);
+        //    P2Interface.SetActive(false);
+        //}
 
-        }
-        else if(CoopEnabled == true)
-        {
-            Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
-            hamspotter.SetActive(true);
-            P2Interface.SetActive(true);
-
-        }
+        //else if(CoopEnabled == true && regata.activeInHierarchy == false)
+        //{
+        //    Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
+        //    hamspotter.SetActive(true);
+        //    P2Interface.SetActive(true);
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(hamspotter.activeInHierarchy == true)
+        {
+            hamSpawned = true;
+        }
+        else if (hamspotter.activeInHierarchy == false)
+        {
+            hamSpawned = false;
+        }
 
-        if(CoopEnabled == true && hamSpawned == false)
+
+        if (CoopEnabled == true && hamSpawned == false && regata.activeInHierarchy == false)
         {
             hamSpawned = true;
             Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
@@ -51,7 +63,7 @@ public class CoopManager : MonoBehaviour
         }
 
 
-        else if (CoopEnabled == false && hamSpawned == true)
+        else if (CoopEnabled == false && hamSpawned == true && regata.activeInHierarchy == true)
         {
             hamSpawned = false;
             Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);

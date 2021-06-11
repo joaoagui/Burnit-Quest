@@ -47,6 +47,8 @@ namespace EasyWiFi.ServerControls
         bool RunDown = false;
         bool RunUp_low = false;
         bool RunDown_low = false;
+
+        private float runTimer = 0.2f;
         private float PunchTimer = 0;
         private float comboTimer = 0;
 
@@ -92,6 +94,8 @@ namespace EasyWiFi.ServerControls
                 //gaugeAnimator.SetFloat("Speed", Speed/4);
 
                 gauge.size += new Vector2(Speed/5f, 0f) * Time.deltaTime;
+                runTimer -= Time.deltaTime;
+
 
                 if (gauge.size.x >= 4)
                 {
@@ -231,8 +235,10 @@ namespace EasyWiFi.ServerControls
 
                 }
                 //Mark one Step + Calories
-                if (RunUp == true && RunDown == true && Crouching == false)
+                if (RunUp == true && RunDown == true && Crouching == false && runTimer < 0)
                 {
+                    runTimer = 0.2f;
+
                     RunUp = false;
                     RunDown = false;
                     Speed += 0.8f;
@@ -255,8 +261,10 @@ namespace EasyWiFi.ServerControls
                 }
 
                 //Mark one Step + Calories when moving with arms lower
-                if (RunUp_low == true && RunDown_low == true && Crouching == false)
+                if (RunUp_low == true && RunDown_low == true && Crouching == false && runTimer < 0)
                 {
+                    runTimer = 0.2f;
+
                     RunUp_low = false;
                     RunDown_low = false;
                     Speed += 0.8f;
@@ -265,6 +273,7 @@ namespace EasyWiFi.ServerControls
                     idleTimer = 0;
 
                     idleTimer = 0;
+
                 }
 
 

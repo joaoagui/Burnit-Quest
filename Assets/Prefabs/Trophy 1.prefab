@@ -5101,3 +5101,4 @@ MonoBehaviour:
   TrophyUI: {fileID: 0}
   TrophyParticles: {fileID: 8726140030251348212, guid: 0962b0156da471443a6fef1c8f369e1f,
     type: 3}
+  pulling: 0

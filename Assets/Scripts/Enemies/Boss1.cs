@@ -40,6 +40,9 @@ public class Boss1 : MonoBehaviour
     public GameObject LifeBar;
     public Transform diePoint;
 
+    public GameObject Trophy;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -172,6 +175,11 @@ public class Boss1 : MonoBehaviour
 
     public void Die()
     {
+        if (Health.health >= DataManager.Instance.playerData.numOfHearts)
+        {
+            Trophy.SetActive(true);
+        }
+
         Instantiate(BossDie, diePoint.position, Quaternion.identity);
         StageEnd.transform.position = new Vector2(rb.transform.position.x + 20, StageEnd.transform.position.y);
         Destroy(gameObject);

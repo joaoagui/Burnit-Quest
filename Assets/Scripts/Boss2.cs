@@ -1,52 +1,149 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
 public class Boss2 : MonoBehaviour
 {
-    public CinemachineVirtualCamera Camera;
-
     public SpriteRenderer sprite;
     private Material defaultMaterial;
     public Material dmgMaterial;
     private IEnumerator coroutine;
 
-    private Rigidbody2D rb;
-    public Rigidbody2D Prb;
+    public Rigidbody2D rb;
+    public Rigidbody2D PlayerRb;
     public float speed = 12f;
 
     public GameObject coin;
-    public GameObject enemyProjectile;
+    public GameObject spitPlatform;
+
+    private float gravityScale; 
+    public GameObject jumpDust;
+    public GameObject landDust;
+
+
     public Animator animator;
     public Transform firePoint;
-    public float cycles; //controls how many times each animation runs
+
+    public bool jumping;
+    public bool flying;
+    public bool spitting;
+    public bool tired;
+
+    public bool isGrounded;
+    public LayerMask player;
+    public LayerMask ground;
 
     //audio
     public AudioSource AudioSource;
+    public AudioClip spitClip;
+    public AudioClip flapWingsClip;
+    public AudioClip lickClip;
+    public AudioClip thudClip;
+    public AudioClip jumpClip;
     public AudioClip bossDamage;
 
     //die
-
     public GameObject StageEnd;
     public GameObject BossDie;
     public GameObject LifeBar;
     public Transform diePoint;
 
+    public GameObject Trophy;
+
+
+    private float turnTimer;
+
+    public float flySpeed = 10;
+
+    public MultipleTargetCamera multipleTargetCamera;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gravityScale = rb.gravityScale;
         defaultMaterial = sprite.material;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        animator.SetFloat("Cycles", cycles);
-        if (rb.transform.position.x - Prb.transform.position.x >= 30)
+        isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - 0.66f, transform.position.y - 3f), new Vector2(transform.position.x + 0.62f, transform.position.y + 3f), ground);
+        turnTimer -= Time.deltaTime;
+
+        if (PauseMenu.paused == false)
         {
-            cycles = 3;
+                if (isGrounded == true)
+            {
+                animator.SetBool("Grounded", true);
+            }
+
+            if(flying == true && rb.transform.position.x > PlayerRb.transform.position.x -20)
+            {
+                rb.velocity= new Vector2(-flySpeed, 0);
+            }
+
+            if(jumping == true)
+            {
+                rb.gravityScale = gravityScale;
+            }
+
+            if (flying == true && rb.transform.position.x <= PlayerRb.transform.position.x - 20)
+            {
+                flying = false;
+                jumping = true;
+                spitting = false;
+
+                if(turnTimer < 0)
+                {
+                    Turn();
+                }
+
+                rb.velocity = new Vector2(0, 0);
+                rb.gravityScale = gravityScale;
+            }
+        }
+        animator.SetBool("Jumping", jumping);
+        animator.SetBool("Spit", spitting);
+    }
+
+    public void JumpForward()
+    {
+        if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x < PlayerRb.transform.position.x +10)
+        {
+            rb.AddForce(new Vector2(140, 360), ForceMode2D.Impulse);
+            Instantiate(jumpDust, new Vector2(transform.position.x - 3, transform.position.y - 3), Quaternion.identity);
+            AudioSource.PlayOneShot(jumpClip, 1f);
+            rb.gravityScale = gravityScale;
+
+
+            animator.SetBool("Grounded", false);
+        }
+
+        else if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x >= PlayerRb.transform.position.x + 10)
+        {
+            jumping = false;
+            spitting = true;
+            animator.SetBool("Spit", true);
+        }
+    }
+
+    public void Turn()
+    {
+        turnTimer = 1;
+
+        if (PauseMenu.paused == false )
+        {
+            transform.localScale *= new Vector2(-1, 1);
+        }
+    }
+
+    public void Land()
+    {
+        if (PauseMenu.paused == false)
+        {
+            Instantiate(landDust, new Vector2(transform.position.x - 1, transform.position.y - 3), Quaternion.identity);
+            AudioSource.PlayOneShot(thudClip, 1f);
         }
     }
 
@@ -54,36 +151,49 @@ public class Boss2 : MonoBehaviour
     {
         if (PauseMenu.paused == false)
         {
-            rb.velocity = new Vector2(speed, 0);
-            cycles += 1f;
+            GameObject newSpitPlatform = Instantiate(spitPlatform, firePoint.position, Quaternion.identity);
+            Rigidbody2D spitPlatformRB = newSpitPlatform.GetComponent<Rigidbody2D>();
+            spitPlatformRB.AddForce(new Vector2(-40, 8), ForceMode2D.Impulse);
+            AudioSource.PlayOneShot(spitClip, 1f);
 
         }
-
     }
 
-    public void Shoot()
+    public void TakeOff()
     {
         if (PauseMenu.paused == false)
         {
-            Instantiate(enemyProjectile, firePoint.position, Quaternion.identity);
+            rb.gravityScale = 0;
+            AudioSource.PlayOneShot(flapWingsClip, 1f);
+            rb.AddForce(new Vector2(0,60), ForceMode2D.Impulse);
         }
     }
 
-    public void Move()
+    public void Tongue()
     {
         if (PauseMenu.paused == false)
         {
-            rb.velocity = new Vector2(speed, 0);
+            AudioSource.PlayOneShot(lickClip, 1f);
         }
     }
 
-    public void Rest()
+
+    public void FlyBack()
     {
-        cycles = 0f;
+        if (PauseMenu.paused == false)
+        {
+            flying = true;
+            rb.gravityScale = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.CompareTag("Player") && isGrounded == false)
+        {
+            rb.AddForce(new Vector2(100, 200), ForceMode2D.Impulse);
+        }
+
 
         if (collision.gameObject.CompareTag("Bullet") && BossHealth.health > 0)
         {
@@ -127,9 +237,17 @@ public class Boss2 : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(BossDie, diePoint.position, Quaternion.identity);
-        StageEnd.transform.position = new Vector2(rb.transform.position.x + 20, StageEnd.transform.position.y);
-        Destroy(gameObject);
-        Destroy(LifeBar, 2f);
+        if (Health.health >= DataManager.Instance.playerData.numOfHearts)
+        {
+            Trophy.SetActive(true);
+        }
+
+        if (PauseMenu.paused == false)
+        {
+            Instantiate(BossDie, diePoint.position, Quaternion.identity);
+            StageEnd.transform.position = new Vector2(rb.transform.position.x + 20, StageEnd.transform.position.y);
+            gameObject.SetActive(false);
+            Destroy(LifeBar, 2f);
+        }
     }
 }

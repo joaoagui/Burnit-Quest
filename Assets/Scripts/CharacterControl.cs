@@ -39,6 +39,9 @@ namespace EasyWiFi.ServerControls
         bool RunDown = false;
         bool RunUp_low = false;
         bool RunDown_low = false;
+
+        //timers
+        private float runTimer = 0.2f;
         private float PunchTimer = 0;
         private float comboTimer = 0;
 
@@ -150,12 +153,16 @@ namespace EasyWiFi.ServerControls
 
             if (comboTimer > 0) //punching cooldown
             {
-                comboTimer -= 1 * (Time.deltaTime * 1f);
+                comboTimer -= Time.deltaTime;
             }
-            if (comboTimer == 0) //punching cooldown
+            if (comboTimer <= 0) //punching cooldown
             {
                 Player.combo = 0;
             }
+
+            runTimer -= Time.deltaTime;
+
+
         }
 
         private void FixedUpdate()
@@ -204,22 +211,24 @@ namespace EasyWiFi.ServerControls
                 {
                     RunUp = true;
                 }
+
                 //Run arm DOWN
                 if (orientation.x < -0.35 && orientation.z < 0.5 && RunDown == false)
                 {
                     RunDown = true;
 
                 }
+
                 //Mark one Step + Calories
-                if (RunUp == true && RunDown == true && Crouching == false)
+                if (RunUp == true && RunDown == true && Crouching == false && runTimer < 0)
                 {
                     RunUp = false;
                     RunDown = false;
-                     DataManager.Instance.playerData.stepsNumber++;
+                    DataManager.Instance.playerData.stepsNumber++;
                     Speed += 0.8f;
-                     DataManager.Instance.playerData.stageCalories += 0.04f;
+                    DataManager.Instance.playerData.stageCalories += 0.04f;
                     timerStop = 0;
-
+                    runTimer = 0.2f;
                 }
 
                 //Run arm UP (for people that move their arms lower)
@@ -234,7 +243,7 @@ namespace EasyWiFi.ServerControls
 
                 }
                 //Mark one Step + Calories when moving with arms lower
-                if (RunUp_low == true && RunDown_low == true && Crouching == false)
+                if (RunUp_low == true && RunDown_low == true && Crouching == false && runTimer < 0)
                 {
                     RunUp_low = false;
                     RunDown_low = false;
@@ -242,7 +251,7 @@ namespace EasyWiFi.ServerControls
                     Speed += 0.8f;
                      DataManager.Instance.playerData.stageCalories += 0.04f;
                     timerStop = 0;
-
+                    runTimer = 0.2f;
                 }
 
 
@@ -294,7 +303,7 @@ namespace EasyWiFi.ServerControls
                      DataManager.Instance.playerData.punches++;
                 }
 
-                if (orientation.z < 0.4) //detect getting out of punch
+                if (orientation.z < 0.5) //detect getting out of punch
                 {
                     PunchTimer = 0;
                 }

@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f8ec792807c705d42b148dd4fdef5acb, type: 3}
-    totalSpriteSurfaceArea: 44644604
+    totalSpriteSurfaceArea: 44648828
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -344,6 +344,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 95db7a1d6a3b2c747a06a70b8fe027e2, type: 3}
   - {fileID: 21300000, guid: c9ec963d5785f31459a7df92e8200bed, type: 3}
   - {fileID: 21300000, guid: bdeea24d75f5a3d4d856eed1ba38707d, type: 3}
+  - {fileID: 21300000, guid: 6a7dc84df3aecc7468708ae67962a519, type: 3}
   - {fileID: 21300000, guid: 0977ba4d74c0cac4a80f3883c7676a12, type: 3}
   - {fileID: 21300000, guid: 71abdb4d840cada44b6db03f661c1643, type: 3}
   - {fileID: 21300000, guid: 14ff815d643652c40aeb7b8e013312c6, type: 3}
@@ -712,6 +713,7 @@ SpriteAtlas:
   - Schlaf_enter_00006
   - Schlaf_walk_00002
   - Chay_Jump_00003
+  - Burnit_Enemies_Brog_eyeDead
   - Sylvy_Talk_00007
   - Sylvy_Walk_00005
   - Chay_Talk_00011
