@@ -120,8 +120,6 @@ namespace EasyWiFi.ServerControls
             orientation.y = gyro[index].GYRO_Y;
             orientation.z = gyro[index].GYRO_Z;
 
-            transform.localRotation = orientation;        
-
             RotationX.text = "X" + orientation.x.ToString();
             RotationY.text = "Y" + orientation.y.ToString();
             RotationZ.text = "Z" + orientation.z.ToString();

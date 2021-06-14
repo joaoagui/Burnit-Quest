@@ -10,7 +10,7 @@ public class SlingshotManager : MonoBehaviour
 {
     [Header("Game End")]
     public int waves;
-    public Text goalText;
+    public TextMeshProUGUI goalText;
 
 
     public GameObject finishScreen;

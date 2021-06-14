@@ -34,7 +34,9 @@ public class EndStage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && Won == false)
         {
-            Destroy(pauseButton);            Destroy(skipButton);
+            Destroy(pauseButton);
+            Destroy(skipButton);
+            PauseMenu.paused = true;
             Won = true;
             UILastBtn.lastselect = button;
             pyre.SetActive(true);

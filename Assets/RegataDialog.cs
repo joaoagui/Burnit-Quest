@@ -20,7 +20,7 @@ public class RegataDialog : MonoBehaviour
     public GameObject SpeechBubbleSassy;
     public GameObject SpeechBubbleSad;
 
-    public TextMeshPro QuoteText;
+    public TextMeshProUGUI QuoteText;
 
     [Header("Walk Quotes")]
     public string WalkQuote1;
@@ -91,45 +91,49 @@ public class RegataDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DataManager.Instance.playerData.stepsNumber > stepGoal && talking == false)
+        if(PauseMenu.paused == false)
         {
-            talking = true;
-            stepGoal += 120;
-            coroutine = QuoteWalk();
-            StartCoroutine(coroutine);
+            if (DataManager.Instance.playerData.stepsNumber > stepGoal && talking == false)
+            {
+                talking = true;
+                stepGoal += 120;
+                coroutine = QuoteWalk();
+                StartCoroutine(coroutine);
+            }
+
+            else if (DataManager.Instance.playerData.jumpingJacks >= JumpingJackGoal && talking == false)
+            {
+                talking = true;
+                JumpingJackGoal += 10;
+                coroutine = QuoteJJ();
+                StartCoroutine(coroutine);
+            }
+
+            else if (DataManager.Instance.playerData.punches >= punchGoal && talking == false)
+            {
+                talking = true;
+                punchGoal += 5;
+                coroutine = QuotePunch();
+                StartCoroutine(coroutine);
+            }
+
+            else if (DataManager.Instance.playerData.sitUps >= situpGoal && talking == false)
+            {
+                talking = true;
+                situpGoal += 5;
+                coroutine = QuoteSitUp();
+                StartCoroutine(coroutine);
+            }
+
+            else if (DataManager.Instance.playerData.Squats >= squatGoal && talking == false)
+            {
+                talking = true;
+                squatGoal += 4;
+                coroutine = QuoteSquat();
+                StartCoroutine(coroutine);
+            }
         }
 
-        else if (DataManager.Instance.playerData.jumpingJacks >= JumpingJackGoal && talking == false)
-        {
-            talking = true;
-            JumpingJackGoal += 10;
-            coroutine = QuoteJJ();
-            StartCoroutine(coroutine);
-        }
-
-        else if (DataManager.Instance.playerData.punches >= punchGoal && talking == false)
-        {
-            talking = true;
-            punchGoal += 5;
-            coroutine = QuotePunch();
-            StartCoroutine(coroutine);
-        }
-
-        else if (DataManager.Instance.playerData.sitUps >= situpGoal && talking == false)
-        {
-            talking = true;
-            situpGoal += 5;
-            coroutine = QuoteSitUp();
-            StartCoroutine(coroutine);
-        }
-
-        else if (DataManager.Instance.playerData.Squats >= squatGoal && talking == false)
-        {
-            talking = true;
-            squatGoal += 4;
-            coroutine = QuoteSquat();
-            StartCoroutine(coroutine);
-        }
     }
 
     void ClearBubbles()
@@ -147,6 +151,8 @@ public class RegataDialog : MonoBehaviour
 
     public IEnumerator QuoteWalk()
     {
+        ClearBubbles();
+
         randomizer = Random.Range(0, 3);
         SpeechBubble.SetActive(true);
         SpeechBubbleHappy.SetActive(true);
@@ -178,6 +184,8 @@ public class RegataDialog : MonoBehaviour
 
     public IEnumerator QuotePunch()
     {
+        ClearBubbles();
+
         randomizer = Random.Range(0, 3);
         SpeechBubble.SetActive(true);
         SpeechBubbleSassy.SetActive(true);
@@ -209,6 +217,8 @@ public class RegataDialog : MonoBehaviour
 
     public IEnumerator QuoteSquat()
     {
+        ClearBubbles();
+
         randomizer = Random.Range(0, 3);
         SpeechBubble.SetActive(true);
         SpeechBubbleHappy.SetActive(true);
@@ -241,6 +251,8 @@ public class RegataDialog : MonoBehaviour
 
     public IEnumerator QuoteSitUp()
     {
+        ClearBubbles();
+
         randomizer = Random.Range(0, 3);
         SpeechBubble.SetActive(true);
         SpeechBubbleSassy.SetActive(true);
@@ -273,6 +285,8 @@ public class RegataDialog : MonoBehaviour
 
     public IEnumerator QuoteJJ()
     {
+        ClearBubbles();
+
         randomizer = Random.Range(0, 3);
         SpeechBubble.SetActive(true);
         SpeechBubbleHappy.SetActive(true);

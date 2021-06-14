@@ -6,10 +6,10 @@ using TMPro;
 public class UIStats : MonoBehaviour
 {
 
-    public TextMeshPro lifeTxt;
-    public TextMeshPro damageTxt;
-    public TextMeshPro jumpTxt;
-    public TextMeshPro speedTxt;
+    public TextMeshProUGUI lifeTxt;
+    public TextMeshProUGUI damageTxt;
+    public TextMeshProUGUI jumpTxt;
+    public TextMeshProUGUI speedTxt;
 
     // Start is called before the first frame update
     void Start()

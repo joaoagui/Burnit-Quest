@@ -12,6 +12,7 @@ public class Boss2 : MonoBehaviour
     public Rigidbody2D rb;
     public Rigidbody2D PlayerRb;
     public float speed = 12f;
+    private float bonusSpeed = 0;
 
     public GameObject coin;
     public GameObject spitPlatform;
@@ -109,19 +110,21 @@ public class Boss2 : MonoBehaviour
 
     public void JumpForward()
     {
-        if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x < PlayerRb.transform.position.x +10)
+        if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x < PlayerRb.transform.position.x +20)
         {
-            rb.AddForce(new Vector2(140, 360), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2((140 + bonusSpeed), 360), ForceMode2D.Impulse);
             Instantiate(jumpDust, new Vector2(transform.position.x - 3, transform.position.y - 3), Quaternion.identity);
             AudioSource.PlayOneShot(jumpClip, 1f);
             rb.gravityScale = gravityScale;
 
+            bonusSpeed += 30;
 
             animator.SetBool("Grounded", false);
         }
 
-        else if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x >= PlayerRb.transform.position.x + 10)
+        else if (PauseMenu.paused == false && isGrounded == true && jumping == true && rb.transform.position.x >= PlayerRb.transform.position.x + 20)
         {
+            bonusSpeed = 0;
             jumping = false;
             spitting = true;
             animator.SetBool("Spit", true);

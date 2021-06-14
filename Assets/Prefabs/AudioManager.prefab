@@ -163,5 +163,12 @@ MonoBehaviour:
     randomPitch: 0
     loop: 0
     source: {fileID: 0}
+  - name: error
+    clip: {fileID: 8300000, guid: ff7b99a7d6367d64eaec6f34975ba4cb, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
   audioMixer: {fileID: -2792711260354897763, guid: 490ab88530266004cb478498e169c64e,
     type: 2}

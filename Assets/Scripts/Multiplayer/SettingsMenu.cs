@@ -18,9 +18,11 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
-
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(focusButton);
+
+
+
         //resolutions = Screen.resolutions;
 
         //resolutionDropdown.ClearOptions();
