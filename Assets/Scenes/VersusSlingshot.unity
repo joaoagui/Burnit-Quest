@@ -23805,11 +23805,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8198090510996252761, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
-        type: 3}
-      propertyPath: progressText
-      value: 
-      objectReference: {fileID: 2109582233}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc4ccb9011a662e49b03fc9fd6cf6884, type: 3}
 --- !u!114 &2109582232 stripped
@@ -23822,18 +23817,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45dad6fc16f1f484587aae3102dc664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2109582233 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 854213848455612131, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
-    type: 3}
-  m_PrefabInstance: {fileID: 2109582231}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &19024199799942781
@@ -29198,10 +29181,10 @@ RectTransform:
   m_Father: {fileID: 6850178966168025711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 850.1, y: -461.2}
-  m_SizeDelta: {x: 198.36, y: 62.75}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -109.8999, y: -461.2}
+  m_SizeDelta: {x: 198.35999, y: 62.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6850178966212291742
 MonoBehaviour:

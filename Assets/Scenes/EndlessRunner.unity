@@ -6964,7 +6964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &37671523
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6977,12 +6977,12 @@ RectTransform:
   m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
   m_Children:
   - {fileID: 1303987267}
-  m_Father: {fileID: 1702197788}
-  m_RootOrder: 17
+  m_Father: {fileID: 1346569679}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -678, y: -265}
+  m_AnchoredPosition: {x: 127.40015, y: 196.70007}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &38577965
@@ -19461,7 +19461,7 @@ MonoBehaviour:
   SpeechBubbleHappy: {fileID: 400661916}
   SpeechBubbleSassy: {fileID: 2059821516}
   SpeechBubbleSad: {fileID: 1768966428}
-  QuoteText: {fileID: 1674731075}
+  QuoteText: {fileID: 0}
   WalkQuote1: Woah!  You're doing great!
   WalkQuote2: Look at you going!
   WalkQuote3: Fantastic! Keep up the pace!
@@ -25702,6 +25702,7 @@ RectTransform:
   - {fileID: 1516045625}
   - {fileID: 365774783}
   - {fileID: 7338783}
+  - {fileID: 37671523}
   m_Father: {fileID: 1702197788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36418,7 +36419,6 @@ RectTransform:
   - {fileID: 1825174165}
   - {fileID: 1195439703}
   - {fileID: 1152888302}
-  - {fileID: 37671523}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

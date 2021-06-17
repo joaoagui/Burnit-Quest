@@ -15,6 +15,8 @@ public class SlingshotManager : MonoBehaviour
 
     public GameObject finishScreen;
     public GameObject pauseButton;
+    public GameObject skipButton;
+
     public GameObject button;
 
     public GameObject TutorialScreen;
@@ -86,7 +88,7 @@ public class SlingshotManager : MonoBehaviour
             PauseMenu.paused = true;
 
             sitUpText.text = "" + DataManager.Instance.playerData.sitUps;
-            caloryText.text = "" + DataManager.Instance.playerData.stageCalories;
+            caloryText.text = "" + DataManager.Instance.playerData.stageCalories.ToString("F2");
             coinText.text = "" + CoinsScript.stageCoins;
 
             finishScreen.SetActive(true);
@@ -164,8 +166,7 @@ public class SlingshotManager : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("whistle");
 
             Destroy(pauseButton);
-
-
+            Destroy(skipButton);
 
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(button);

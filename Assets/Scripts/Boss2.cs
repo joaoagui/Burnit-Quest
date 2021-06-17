@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+
 
 public class Boss2 : MonoBehaviour
 {
@@ -51,14 +53,18 @@ public class Boss2 : MonoBehaviour
 
     public GameObject Trophy;
 
-
     private float turnTimer;
 
     public float flySpeed = 10;
-
-    public MultipleTargetCamera multipleTargetCamera;
+    private CinemachineImpulseSource source;
 
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        source = GetComponent<CinemachineImpulseSource>();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -69,12 +75,14 @@ public class Boss2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - 0.66f, transform.position.y - 3f), new Vector2(transform.position.x + 0.62f, transform.position.y + 3f), ground);
+        isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - 2f, transform.position.y - 3f), new Vector2(transform.position.x + 2f, transform.position.y + 3f), ground);
         turnTimer -= Time.deltaTime;
 
         if (PauseMenu.paused == false)
         {
-                if (isGrounded == true)
+            animator.speed = 1;
+
+            if (isGrounded == true)
             {
                 animator.SetBool("Grounded", true);
             }
@@ -104,6 +112,12 @@ public class Boss2 : MonoBehaviour
                 rb.gravityScale = gravityScale;
             }
         }
+
+        else if (PauseMenu.paused == true)
+        {
+            animator.speed = 0;
+        }
+
         animator.SetBool("Jumping", jumping);
         animator.SetBool("Spit", spitting);
     }
@@ -147,6 +161,8 @@ public class Boss2 : MonoBehaviour
         {
             Instantiate(landDust, new Vector2(transform.position.x - 1, transform.position.y - 3), Quaternion.identity);
             AudioSource.PlayOneShot(thudClip, 1f);
+            source.GenerateImpulse();
+
         }
     }
 

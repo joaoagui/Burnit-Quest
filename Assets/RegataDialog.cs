@@ -301,14 +301,14 @@ public class RegataDialog : MonoBehaviour
         if (randomizer >= 1 && randomizer < 2)
         {
             QuoteText.text = "" + JJQuote2;
-            audioSource.PlayOneShot(JJClip3, 1f);
+            audioSource.PlayOneShot(JJClip2, 1f);
 
         }
 
         if (randomizer >= 2)
         {
             QuoteText.text = "" + JJQuote3;
-            audioSource.PlayOneShot(JJClip2, 1f);
+            audioSource.PlayOneShot(JJClip3, 1f);
 
         }
 
