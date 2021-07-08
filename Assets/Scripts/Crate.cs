@@ -22,8 +22,11 @@ public class Crate : MonoBehaviour
     public bool OverPlayer;
     public LayerMask Player;
 
+    public Animator animator;
+
     private void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -64,5 +67,11 @@ public class Crate : MonoBehaviour
             }
             Destroy(gameObject);
         }
+    }
+
+
+    public void FinishedSpawning()
+    {
+        animator.SetBool("Spawned", false);
     }
 }

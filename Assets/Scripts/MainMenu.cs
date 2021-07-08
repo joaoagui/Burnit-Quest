@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public float transitionTime = 2f;
 
-    //public PlayerData playerData;
+    public PlayerData playerData;
 
     public Image loadingBar;
     public TextMeshProUGUI progressText;
@@ -54,12 +54,16 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        DataManager.Instance.LoadFromFile();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        
         tipRandomizer = Random.Range(0f, 5f);
-        DataManager.Instance.LoadFromFile();
-        DataManager.Instance.SaveFile();
     }
 
     private void Update()
@@ -88,7 +92,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()//startgame from the splash screen
     {
-        //StoreVariables();
+        StoreVariables();
         StartCoroutine(LoadLevel("StageSelect"));
         FindObjectOfType<AudioManager>().Play("Select");
         //SceneManager.LoadScene("StageSelect");
@@ -101,8 +105,6 @@ public class MainMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Select");
         //SceneManager.LoadScene("EndlessSettings");
         //SceneManager.GetSceneByName("EndlessSettings");
-
-
     }
 
     public void GoEndlessRunner()//startgame from the splash screen
@@ -553,6 +555,7 @@ public class MainMenu : MonoBehaviour
         DataManager.Instance.playerData.totalCalories += DataManager.Instance.playerData.stageCalories;
         DataManager.Instance.playerData.stageCalories = 0;
         DataManager.Instance.SaveFile();
+        DataManager.Instance.LoadFromFile();
     }
 
 

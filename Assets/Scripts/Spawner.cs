@@ -23,7 +23,8 @@ public class Spawner : MonoBehaviour
             if(cooldown <= 0)
         {
             cooldown = startcooldown;
-            Instantiate(gameObj, transform.position, Quaternion.identity);
+            GameObject newObj = Instantiate(gameObj, transform.position, Quaternion.identity);
+            newObj.GetComponent<Animator>().SetBool("Spawned", true);
         }
     }
 }

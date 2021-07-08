@@ -127,7 +127,7 @@ public class Health : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("ouch");
 
                 Instantiate(playerLose, playerObject.transform.position, Quaternion.identity);
-                Destroy(playerObject);
+                Destroy(playerObject, 0.1f);
 
                 loseScreen.SetActive(true);
                 EventSystem.current.SetSelectedGameObject(null);

@@ -60,6 +60,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage2-5.unity
     guid: c3e12795bc4fab640957c2af60887f8d
   - enabled: 1
+    path: Assets/Scenes/Stage3.unity
+    guid: 29d9a39620726364a9bbe298600ce592
+  - enabled: 1
+    path: Assets/Scenes/Stage3-1.unity
+    guid: 27a397b3cf5fb374d8ffa9c77519fe7e
+  - enabled: 1
+    path: Assets/Scenes/Stage3-2.unity
+    guid: f22dfa4d0654c34438bf5b041d6f2257
+  - enabled: 1
+    path: Assets/Scenes/Stage3-3.unity
+    guid: 129740ef63c5f304eac389147a887e08
+  - enabled: 1
     path: Assets/Scenes/EndlessRunner.unity
     guid: bf19d82c48f64e94d8f05bc68f0d2a16
   - enabled: 1

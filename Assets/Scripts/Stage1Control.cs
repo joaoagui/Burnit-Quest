@@ -25,8 +25,6 @@ public class Stage1Control : MonoBehaviour
     public GameObject Trophy1_5;
 
     public AudioSource start;
-    public AudioSource select;
-
 
     void Start()
     {

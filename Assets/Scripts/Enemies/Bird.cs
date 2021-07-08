@@ -17,7 +17,8 @@ public class Bird : MonoBehaviour
             birdAnimator.SetBool("Flying", true);
             FindObjectOfType<AudioManager>().Play("birdFly");
             rb.velocity = new Vector2(speed, speed);
+            Destroy(gameObject, 3f);
+
         }
-        Destroy(gameObject, 3f);
     }
 }

@@ -130,6 +130,7 @@ MonoBehaviour:
   Player:
     serializedVersion: 2
     m_Bits: 2048
+  animator: {fileID: 1398985540424334040}
 --- !u!95 &1398985540424334040
 Animator:
   serializedVersion: 3
