@@ -11,7 +11,7 @@ public class EnemySpit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(rotationSpeed > 0)
+        if(rotationSpeed > 0 && transform.rotation.z < 50)
         {
             transform.Rotate(0, 0, 1 * rotationSpeed);
         }

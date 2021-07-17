@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8171794809285392797}
   - component: {fileID: 7697024060970010905}
   - component: {fileID: 6715719808701740417}
+  - component: {fileID: 4531700116590735369}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Crate
@@ -104,13 +105,17 @@ MonoBehaviour:
   coin: {fileID: 2675642895819350066, guid: b77f8c9125f12bb4dade7f989f42900d, type: 3}
   key: {fileID: 4070085233956157002, guid: 800a9585490cd044ab88600885e8b44e, type: 3}
   heart: {fileID: 2531111607162451721, guid: 600197c5e0ee43142b3d6970de4e9f64, type: 3}
+  trophy: {fileID: 2478723926820469043, guid: 7092828bbd05948439f63d6982581624, type: 3}
+  trophyStage: 0
   hasHeart: 0
   hasCoin: 1
   hasKey: 0
+  hasTrophy: 0
   OverPlayer: 0
   Player:
     serializedVersion: 2
     m_Bits: 0
+  animator: {fileID: 4531700116590735369}
 --- !u!50 &7906898940934855757
 Rigidbody2D:
   serializedVersion: 4
@@ -198,6 +203,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0.040153265, y: -0.03754838}
   m_Size: {x: 5.3993044, y: 3.3267066}
   m_Direction: 1
+--- !u!95 &4531700116590735369
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32324441227754093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1be969cb88f27ba4985fe754a6598432, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8809995577671628989
 GameObject:
   m_ObjectHideFlags: 0

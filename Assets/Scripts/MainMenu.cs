@@ -197,10 +197,24 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void GoCutscene2()//GoTo Stage1
+    public void GoCutscene2()//GoTo Cutscene2
     {
         StartCoroutine(LoadLevel("Cutscene_2"));
         DataManager.Instance.playerData.Cutscene2 = true;
+
+        FindObjectOfType<AudioManager>().Play("Select");
+
+        //SceneManager.LoadScene("Cutscene_2");
+        //SceneManager.GetSceneByName("Cutscene_2");
+
+    }
+
+
+    public void GoCutscene3()//GoTo Cutscene3
+    {
+        StartCoroutine(LoadLevel("Cutscene_3"));
+        DataManager.Instance.playerData.Cutscene3 = true;
+
         FindObjectOfType<AudioManager>().Play("Select");
 
         //SceneManager.LoadScene("Cutscene_2");

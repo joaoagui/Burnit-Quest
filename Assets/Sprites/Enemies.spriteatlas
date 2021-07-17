@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f8ec792807c705d42b148dd4fdef5acb, type: 3}
-    totalSpriteSurfaceArea: 48883174
+    totalSpriteSurfaceArea: 49018732
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -88,6 +88,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 40fe0ae18f8b0fb4e8434656c9c30421, type: 3}
   - {fileID: 21300000, guid: 74871fe1bbd876443824be5252335005, type: 3}
   - {fileID: 21300000, guid: c466b8f1af1758744a8c834702dc2403, type: 3}
+  - {fileID: 21300000, guid: b339e2021a873dd489a5dda26f3b0c59, type: 3}
   - {fileID: 21300000, guid: 1c781c121a0f15146a72c87e4d99e65c, type: 3}
   - {fileID: 21300000, guid: 97e5ed1206e88f84e90ae812a6bab756, type: 3}
   - {fileID: 21300000, guid: ea2c4f12ed656d3489fbcc271d9201e0, type: 3}
@@ -174,6 +175,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0764e3a44eab19947aed585f0b9ba417, type: 3}
   - {fileID: 21300000, guid: f93195a4ede16c3499cc4ab283269578, type: 3}
   - {fileID: 21300000, guid: f81292b4025b75e41b77d0651faaf108, type: 3}
+  - {fileID: 21300000, guid: 308bf4b4d5d6660488755fd909d9cbaa, type: 3}
   - {fileID: 21300000, guid: 4c4f65b40bfd9a14ab16729825f06a4e, type: 3}
   - {fileID: 21300000, guid: 85c5e9b45e381604b9de2062aa13bc4b, type: 3}
   - {fileID: 21300000, guid: 303d3cb467a4cf74fbc689b02c611c36, type: 3}
@@ -212,6 +214,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1ea07c26932ff654ca9549f71e99c06c, type: 3}
   - {fileID: 21300000, guid: 023b8c2616397a94da28d0c8876dcc67, type: 3}
   - {fileID: 21300000, guid: e6d05b363182ab041bfce303891dccd5, type: 3}
+  - {fileID: 21300000, guid: 4777cb363978ca444a88ff1131abca81, type: 3}
   - {fileID: 21300000, guid: d79c51666bfb3d0478bb3254db51b3d6, type: 3}
   - {fileID: 21300000, guid: b9fc69669b826f04aaf6f2644d0ea2e8, type: 3}
   - {fileID: 21300000, guid: 28038276fcdc9234c880585cb2c25ba3, type: 3}
@@ -270,6 +273,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: faec61189629a5644882604fccb1fc68, type: 3}
   - {fileID: 21300000, guid: 523e94183d658a5449697bf12f832b33, type: 3}
   - {fileID: 21300000, guid: e4e7fd280c4fbc84ab29338231b083de, type: 3}
+  - {fileID: 21300000, guid: 80b92e38c1f829e4484dd3606a386699, type: 3}
   - {fileID: 21300000, guid: ad4d5a58782a96c4c917704797a55e5e, type: 3}
   - {fileID: 21300000, guid: 39598d58313f593499c0e054ba53ce90, type: 3}
   - {fileID: 21300000, guid: 9c5ec1684c323224a889d2ce1ebdea1a, type: 3}
@@ -414,6 +418,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 16c5c29dc8d90cc4baf59e96dc6e4fde, type: 3}
   - {fileID: 21300000, guid: f793e4ad462d0ef4f873ab4b34200df5, type: 3}
   - {fileID: 21300000, guid: 7344f2ddb25a155468a18955aa558704, type: 3}
+  - {fileID: 21300000, guid: bad3cfdd2ed7aab4e8e629c9f3d33749, type: 3}
   - {fileID: 21300000, guid: 5ade47fd1caabb54198a65bab8bf2479, type: 3}
   - {fileID: 21300000, guid: 9e1468fd03c7d034390dd073ba0c069c, type: 3}
   - {fileID: 21300000, guid: 7cd0211efc2540d4fa367aa573671e63, type: 3}
@@ -421,6 +426,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0541232e1c21b7843bc38087b5262d75, type: 3}
   - {fileID: 21300000, guid: fba9232e30156264b87c3d6e2d6f636e, type: 3}
   - {fileID: 21300000, guid: e9513e2ef72590444950f64c6015184e, type: 3}
+  - {fileID: 21300000, guid: 5c0b663e6bbdfe54aa1cd7d69ae878f8, type: 3}
   - {fileID: 21300000, guid: 25851f3efe48ba64a983db58c3b986ff, type: 3}
   - {fileID: 21300000, guid: ffdee34ea140fb941a471004158ea56f, type: 3}
   - {fileID: 21300000, guid: bba4f55e892fc92409e47c1b67a6786b, type: 3}
@@ -522,6 +528,7 @@ SpriteAtlas:
   - Chay_Point_00007
   - Burnit_Enemies_Fatty_Arm
   - Yuzu_idle_00000
+  - Burnit_Enemies_Squid_mouthTop
   - Chay_Point_00006
   - Ngu_Dead
   - Chay_Jump_00010
@@ -608,6 +615,7 @@ SpriteAtlas:
   - Schlaf_walk_00013
   - NukuaDie5
   - NukuaDie3
+  - Burnit_Enemies_Squid_tentacle
   - Schlaf_walk_00000
   - Burnit_Enemies_Fatty_HandShield
   - Burnit_Enemies_MouthT_3
@@ -646,6 +654,7 @@ SpriteAtlas:
   - Bird_Fly_00000
   - Burnit_Enemies_Yuzu_die5
   - Burnit_Enemies_MouthT_2
+  - Burnit_Enemies_Squid_Eye
   - Sylvy_Punch_00005
   - Schlaf_walk_00011
   - NukuaShoot2
@@ -704,6 +713,7 @@ SpriteAtlas:
   - Ngu_move_00002
   - Spor_walk_00007
   - Sylvy_Talk_00003
+  - Burnit_Enemies_Squid_body
   - Burnit_Enemies_Spitlizard_TailIdle
   - Sylvy_Walk_00006
   - Chay_Punch_00002
@@ -848,6 +858,7 @@ SpriteAtlas:
   - Burnit_Enemies_Schlaf_die2
   - NukuaShoot6
   - Spor_walk_00009
+  - Burnit_Enemies_Squid_Sleep
   - Burnit_Enemies_Spitlizard_Iris
   - Chay_Talk_00003
   - Bird_FlyEgg_00005
@@ -855,6 +866,7 @@ SpriteAtlas:
   - Burnit_Enemies_Fatty_mouthTop
   - Schlaf_enter_00012
   - Chay_Jump_00009
+  - Burnit_Enemies_SquidMouth
   - Chay_Talk_00009
   - Chay_Lose_00007
   - Chay_Run_00007

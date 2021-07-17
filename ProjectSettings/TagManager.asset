@@ -16,6 +16,7 @@ TagManager:
   - SuperBullet
   - Shield
   - Hamspotter
+  - UI
   layers:
   - Default
   - TransparentFX
