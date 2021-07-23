@@ -62,7 +62,7 @@ public class PlayerData {
     public bool Cutscene1, Cutscene2, Cutscene3, Cutscene4, Cutscene5, Cutscene6, Cutscene7, Cutscene8, Cutscene9, Cutscene10;
 
     //trophies
-    public int Trophy1, Trophy2, Trophy3, Trophy4, Trophy5, Trophy6, Trophy7, Trophy8, Trophy9, Trophy10, Trophy11, Trophy12, Trophy13, Trophy14, Trophy15, Trophy16, Trophy17, Trophy18, Trophy19, Trophy20;
+    public int Trophy1, Trophy2, Trophy3, Trophy4, Trophy5, Trophy6, Trophy7, Trophy8, Trophy9, Trophy10, Trophy11, Trophy12, Trophy13, Trophy14, Trophy15, Trophy16, Trophy17, Trophy18, Trophy19, Trophy20, Trophy21, Trophy22, Trophy23, Trophy24, Trophy25, Trophy26, Trophy27, Trophy28, Trophy29, Trophy30;
 
     public int amulet1, amulet2, amulet3, amulet4, amulet5, amulet6, amulet7, amulet8, amulet9, amulet10, amulet11, amulet12;
 

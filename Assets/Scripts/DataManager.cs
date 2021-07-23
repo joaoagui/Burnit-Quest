@@ -78,11 +78,23 @@ public class DataManager : MonoBehaviour
         Instance.playerData.Trophy4 = data.Trophy4;
         Instance.playerData.Trophy5 = data.Trophy5;
 
-        Instance.playerData.Trophy1 = data.Trophy6;
-        Instance.playerData.Trophy2 = data.Trophy7;
-        Instance.playerData.Trophy3 = data.Trophy8;
-        Instance.playerData.Trophy4 = data.Trophy9;
-        Instance.playerData.Trophy5 = data.Trophy10;
+        Instance.playerData.Trophy6 = data.Trophy6;
+        Instance.playerData.Trophy7 = data.Trophy7;
+        Instance.playerData.Trophy8 = data.Trophy8;
+        Instance.playerData.Trophy9 = data.Trophy9;
+        Instance.playerData.Trophy10 = data.Trophy10;
+
+        Instance.playerData.Trophy11 = data.Trophy11;
+        Instance.playerData.Trophy12 = data.Trophy12;
+        Instance.playerData.Trophy13 = data.Trophy13;
+        Instance.playerData.Trophy14 = data.Trophy14;
+        Instance.playerData.Trophy15 = data.Trophy15;
+
+        Instance.playerData.Trophy16 = data.Trophy16;
+        Instance.playerData.Trophy17 = data.Trophy17;
+        Instance.playerData.Trophy18 = data.Trophy18;
+        Instance.playerData.Trophy19 = data.Trophy19;
+        Instance.playerData.Trophy20 = data.Trophy20;
 
         //Skill unlocks
         Instance.playerData.SpeedLvl1 = data.SpeedLvl1;
@@ -166,11 +178,35 @@ public class DataManager : MonoBehaviour
         playerData.Trophy4 = Instance.playerData.Trophy4;
         playerData.Trophy5 = Instance.playerData.Trophy5;
 
-        playerData.Trophy1 = Instance.playerData.Trophy6;
-        playerData.Trophy2 = Instance.playerData.Trophy7;
-        playerData.Trophy3 = Instance.playerData.Trophy8;
-        playerData.Trophy4 = Instance.playerData.Trophy9;
-        playerData.Trophy5 = Instance.playerData.Trophy10;
+        playerData.Trophy6 = Instance.playerData.Trophy6;
+        playerData.Trophy7 = Instance.playerData.Trophy7;
+        playerData.Trophy8 = Instance.playerData.Trophy8;
+        playerData.Trophy9 = Instance.playerData.Trophy9;
+        playerData.Trophy10 = Instance.playerData.Trophy10;
+
+        playerData.Trophy11 = Instance.playerData.Trophy11;
+        playerData.Trophy12 = Instance.playerData.Trophy12;
+        playerData.Trophy13 = Instance.playerData.Trophy13;
+        playerData.Trophy14 = Instance.playerData.Trophy14;
+        playerData.Trophy15 = Instance.playerData.Trophy15;
+
+        playerData.Trophy16 = Instance.playerData.Trophy16;
+        playerData.Trophy17 = Instance.playerData.Trophy17;
+        playerData.Trophy18 = Instance.playerData.Trophy18;
+        playerData.Trophy19 = Instance.playerData.Trophy19;
+        playerData.Trophy20 = Instance.playerData.Trophy20;
+
+        playerData.Trophy21 = Instance.playerData.Trophy21;
+        playerData.Trophy22 = Instance.playerData.Trophy22;
+        playerData.Trophy23 = Instance.playerData.Trophy23;
+        playerData.Trophy24 = Instance.playerData.Trophy24;
+        playerData.Trophy25 = Instance.playerData.Trophy25;
+
+        playerData.Trophy26 = Instance.playerData.Trophy26;
+        playerData.Trophy27 = Instance.playerData.Trophy27;
+        playerData.Trophy28 = Instance.playerData.Trophy28;
+        playerData.Trophy29 = Instance.playerData.Trophy29;
+        playerData.Trophy30 = Instance.playerData.Trophy30;
 
         playerData.SpeedLvl1 = Instance.playerData.SpeedLvl1;
         playerData.SpeedLvl2 = Instance.playerData.SpeedLvl2;

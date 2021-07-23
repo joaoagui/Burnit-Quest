@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ecbcbd4d8c43a534d84db4426f9b5a2d, type: 3}
-    totalSpriteSurfaceArea: 97792154
+    totalSpriteSurfaceArea: 97901740
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -215,6 +215,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a8e3f669bb9635044b8c0bd357539c62, type: 3}
   - {fileID: 21300000, guid: 95192079525d7224cb1d37cee97c1680, type: 3}
   - {fileID: 21300000, guid: 11469079630d21b4e8ac4db27d99197a, type: 3}
+  - {fileID: 21300000, guid: d8cacd79fc8f55b4c8384a0cd3d10871, type: 3}
   - {fileID: 7008279905332046063, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: -1412203240312215362, guid: ed78da895955d614db94e9ba06c672be, type: 3}
   - {fileID: 954537540002575018, guid: ed78da895955d614db94e9ba06c672be, type: 3}
@@ -565,6 +566,7 @@ SpriteAtlas:
   - Burnit_Underwater_BubblesFront2
   - Burnit_Underwater_gull_fly1
   - Burnit_Forest_Pine2
+  - Burnit_Underwater_Bonfire
   - Burnit_Forest_LeafBurning_4
   - Burnit_Forest_LeafBurning_5
   - Burnit_Forest_LeafBurning_6
