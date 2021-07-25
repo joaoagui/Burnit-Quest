@@ -5495,8 +5495,8 @@ MonoBehaviour:
   - {fileID: 4643553429713326687}
   - {fileID: 4643553428732382507}
   m_Bounds:
-    m_Center: {x: 0.000045016408, y: -1.4500002, z: 0}
-    m_Extent: {x: 0.22995502, y: 1.4500002, z: 0}
+    m_Center: {x: 0.000047564507, y: -1.4500003, z: 0}
+    m_Extent: {x: 0.229955, y: 1.4500005, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553428732382516
 GameObject:
@@ -5706,8 +5706,8 @@ MonoBehaviour:
   - {fileID: 4643553428204826664}
   - {fileID: 4643553429197517444}
   m_Bounds:
-    m_Center: {x: 0.00004503131, y: -1.4500002, z: 0}
-    m_Extent: {x: 0.22995505, y: 1.4500002, z: 0}
+    m_Center: {x: 0.000047564507, y: -1.4500002, z: 0}
+    m_Extent: {x: 0.229955, y: 1.4500004, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553429036417109
 GameObject:
@@ -6068,6 +6068,7 @@ GameObject:
   - component: {fileID: 4643553429800395528}
   - component: {fileID: 4643553429800395531}
   - component: {fileID: 3949497177356734594}
+  - component: {fileID: 8579774604314132038}
   m_Layer: 13
   m_Name: Pospan_Die
   m_TagString: Enemy
@@ -6178,6 +6179,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63557d054f800948b435f22bfc48760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &8579774604314132038
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643553429800395540}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5f2bcc675c9054842876d825ff4fd1a1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.62
+  m_Pitch: 1.6
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 7.5044613
+  MaxDistance: 11.744337
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4643553429857093523
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,8 +6391,8 @@ MonoBehaviour:
   - {fileID: 4643553429750600493}
   - {fileID: 4643553428209503451}
   m_Bounds:
-    m_Center: {x: 0.000045016408, y: -1.45, z: 0}
-    m_Extent: {x: 0.22995503, y: 1.45, z: 0}
+    m_Center: {x: 0.000047564507, y: -1.4500002, z: 0}
+    m_Extent: {x: 0.229955, y: 1.4500004, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553429931125855
 GameObject:
@@ -6475,8 +6572,8 @@ MonoBehaviour:
   - {fileID: 4643553429036417108}
   - {fileID: 4643553429766268356}
   m_Bounds:
-    m_Center: {x: 0.00004503131, y: -1.45, z: 0}
-    m_Extent: {x: 0.22995505, y: 1.45, z: 0}
+    m_Center: {x: 0.00004759431, y: -1.45, z: 0}
+    m_Extent: {x: 0.22995499, y: 1.4500003, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553430219644897
 GameObject:

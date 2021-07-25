@@ -6035,7 +6035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 2
   levelTxt: {fileID: 7676940110477598914}
-  speed: 3
+  speed: 2
   Health: 3
   rb: {fileID: 7676940110616983202}
   dmgText: {fileID: 5687076634602637916, guid: 4512eaa88b5c57840a6cc128dfc21d43, type: 3}

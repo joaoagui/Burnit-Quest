@@ -22,7 +22,7 @@ public class Bonfire : MonoBehaviour
         if (fire.transform.localScale.x > 0.1)
         {
             fire.transform.localScale -= new Vector3(1, 1, 1) * Time.deltaTime * fadeSpeed;
-            illumination.intensity -= Time.deltaTime * fadeSpeed;
+            illumination.intensity -= Time.deltaTime * fadeSpeed * 1.5f;
         }
 
         if (fire.transform.localScale.x < 0.1)

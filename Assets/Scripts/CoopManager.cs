@@ -14,6 +14,7 @@ public class CoopManager : MonoBehaviour
     public GameObject spawnParticles;
 
     private GameObject[] hamsters;
+    private GameObject player;
     private float timerToggle;
 
 
@@ -25,6 +26,7 @@ public class CoopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
         //if(CoopEnabled == false && regata.activeInHierarchy == true)
         //{
         //    Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
@@ -56,6 +58,10 @@ public class CoopManager : MonoBehaviour
         if (CoopEnabled == true && hamSpawned == false && regata.activeInHierarchy == false)
         {
             hamSpawned = true;
+            if(player !=null)
+            {
+                hamspotter.transform.position = new Vector2(player.transform.position.x - 2, player.transform.position.y + 1);
+            }
             Instantiate(spawnParticles, hamspotter.transform.position, Quaternion.identity);
             hamspotter.SetActive(true);
             P2Interface.SetActive(true);
