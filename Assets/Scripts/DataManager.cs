@@ -96,6 +96,18 @@ public class DataManager : MonoBehaviour
         Instance.playerData.Trophy19 = data.Trophy19;
         Instance.playerData.Trophy20 = data.Trophy20;
 
+        Instance.playerData.Trophy21 = data.Trophy21;
+        Instance.playerData.Trophy22 = data.Trophy22;
+        Instance.playerData.Trophy23 = data.Trophy23;
+        Instance.playerData.Trophy24 = data.Trophy24;
+        Instance.playerData.Trophy25 = data.Trophy25;
+
+        Instance.playerData.Trophy26 = data.Trophy26;
+        Instance.playerData.Trophy27 = data.Trophy27;
+        Instance.playerData.Trophy28 = data.Trophy28;
+        Instance.playerData.Trophy29 = data.Trophy29;
+        Instance.playerData.Trophy30 = data.Trophy30;
+
         //Skill unlocks
         Instance.playerData.SpeedLvl1 = data.SpeedLvl1;
         Instance.playerData.SpeedLvl2 = data.SpeedLvl2;

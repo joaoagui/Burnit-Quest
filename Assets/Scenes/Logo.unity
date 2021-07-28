@@ -1580,6 +1580,16 @@ PrefabInstance:
       propertyPath: m_isTextTruncated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8198090510996252761, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
+        type: 3}
+      propertyPath: playerData.currentStage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198090510996252761, guid: fc4ccb9011a662e49b03fc9fd6cf6884,
+        type: 3}
+      propertyPath: playerData.stageComplete
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc4ccb9011a662e49b03fc9fd6cf6884, type: 3}
 --- !u!114 &1445503671 stripped
@@ -2106,6 +2116,16 @@ PrefabInstance:
     - target: {fileID: 4509241553952836125, guid: e31e2ec4a90c0a14280cf88640d4f32f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191881185672797713, guid: e31e2ec4a90c0a14280cf88640d4f32f,
+        type: 3}
+      propertyPath: playerData.stageComplete
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191881185672797713, guid: e31e2ec4a90c0a14280cf88640d4f32f,
+        type: 3}
+      propertyPath: playerData.currentStage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6929272235812748763, guid: e31e2ec4a90c0a14280cf88640d4f32f,

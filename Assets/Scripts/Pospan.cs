@@ -77,6 +77,7 @@ public class Pospan : MonoBehaviour
         if (player.position.y >= transform.position.y && wokeTriggered == false)
         {
             wokeTriggered = true;
+            AudioSource.Stop();
             AudioSource.PlayOneShot(wakeUp, 1f);
             animator.SetBool("Woke", true);
         }

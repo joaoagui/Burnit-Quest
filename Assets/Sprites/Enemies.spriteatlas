@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: f8ec792807c705d42b148dd4fdef5acb, type: 3}
-    totalSpriteSurfaceArea: 67418732
+    totalSpriteSurfaceArea: 67465820
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -383,6 +383,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: dfb826d9efdadba419a5dfb0bb371bd6, type: 3}
   - {fileID: 21300000, guid: bd9820e96a5b1174aadb1c3a70aaf1bb, type: 3}
   - {fileID: 21300000, guid: 3468c1e9392d6a744b7dfa1107352937, type: 3}
+  - {fileID: 21300000, guid: d170f4f9aeeadd74eb60413e31187f5a, type: 3}
   - {fileID: 21300000, guid: fd47821a81caedc4bb099f22cc980b51, type: 3}
   - {fileID: 21300000, guid: 66bc1e1a6b2448f45a4862694f9ef958, type: 3}
   - {fileID: 21300000, guid: 5080112ae26a73643b500a6b2d701c7c, type: 3}
@@ -915,6 +916,7 @@ SpriteAtlas:
   - Burnit_Enemies_Spitlizard_LegFront
   - Mello_Talk4
   - Yuzu_Jump&Fall_00023
+  - Burnit_NPCS_Mello_Ghost
   - Bird_FlyEgg_00006
   - Schlaf_loseCrate_00005
   - Burnit_Enemies_Mouth-66

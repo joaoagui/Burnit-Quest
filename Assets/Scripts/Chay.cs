@@ -8,7 +8,7 @@ public class Chay : MonoBehaviour
     // moving system
     static public float ChaySpeed = 0f;
     static public bool ChayMoving = true;
-
+    public float difficulty = 1;
 
     public Rigidbody2D rb;
     public float playerSpeed = 7;
@@ -49,7 +49,7 @@ public class Chay : MonoBehaviour
 
         if (PauseMenu.paused == false)
         {
-            rb.transform.Translate(new Vector2(ChaySpeed * Time.deltaTime, 0));
+            rb.transform.Translate(new Vector2(ChaySpeed * Time.deltaTime * difficulty, 0));
             animator.SetFloat("Speed", ChaySpeed);
 
 

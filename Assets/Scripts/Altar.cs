@@ -117,7 +117,7 @@ public class Altar : MonoBehaviour
     {
         audioSource.PlayOneShot(Lit, 1f);
         animator.SetBool("Lit", true);
-         DataManager.Instance.playerData.damageSkill += 1;
+        DataManager.Instance.playerData.damageSkill += 1;
         GameObject effectDmgUP = Instantiate(dmgUP, Player.transform.position, Quaternion.identity);
     }
 }
