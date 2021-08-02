@@ -4937,7 +4937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428077216257}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,7 +4968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428204826664}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4999,7 +4999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428209503451}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5030,7 +5030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4643553428211407042}
   - component: {fileID: 4643553428211407041}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Burnit_Enemies_Squid_mouthTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5110,7 +5110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428295812137}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5141,7 +5141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428365142580}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5175,7 +5175,7 @@ GameObject:
   - component: {fileID: 4643553428437070950}
   - component: {fileID: 4643553428437070951}
   - component: {fileID: 4643553428437070949}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: body
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5295,7 +5295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428507820448}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5326,7 +5326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428527872970}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5357,7 +5357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428639546945}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5391,7 +5391,7 @@ GameObject:
   - component: {fileID: 4643553428660843370}
   - component: {fileID: 4643553428660843371}
   - component: {fileID: 4643553428660843380}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Squid_tentacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5495,8 +5495,8 @@ MonoBehaviour:
   - {fileID: 4643553429713326687}
   - {fileID: 4643553428732382507}
   m_Bounds:
-    m_Center: {x: 0.000047564507, y: -1.4500003, z: 0}
-    m_Extent: {x: 0.229955, y: 1.4500005, z: 0}
+    m_Center: {x: 0.000045016408, y: -1.4500002, z: 0}
+    m_Extent: {x: 0.22995502, y: 1.4500002, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553428732382516
 GameObject:
@@ -5507,7 +5507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428732382507}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5537,7 +5537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428812540453}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5568,7 +5568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553428821300994}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5602,7 +5602,7 @@ GameObject:
   - component: {fileID: 4643553428951975887}
   - component: {fileID: 4643553428951975880}
   - component: {fileID: 4643553428951975881}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Squid_tentacle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5706,8 +5706,8 @@ MonoBehaviour:
   - {fileID: 4643553428204826664}
   - {fileID: 4643553429197517444}
   m_Bounds:
-    m_Center: {x: 0.000047564507, y: -1.4500002, z: 0}
-    m_Extent: {x: 0.229955, y: 1.4500004, z: 0}
+    m_Center: {x: 0.00004503131, y: -1.4500002, z: 0}
+    m_Extent: {x: 0.22995505, y: 1.4500002, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553429036417109
 GameObject:
@@ -5718,7 +5718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429036417108}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5749,7 +5749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429197517444}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5780,7 +5780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4643553429243781894}
   - component: {fileID: 4643553429243781893}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5860,7 +5860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429354101801}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5891,7 +5891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429713326687}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5923,7 +5923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4643553429722258131}
   - component: {fileID: 4643553429722258130}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Burnit_Enemies_SquidMouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6003,7 +6003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429750600493}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6034,7 +6034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429766268356}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6069,9 +6069,9 @@ GameObject:
   - component: {fileID: 4643553429800395531}
   - component: {fileID: 3949497177356734594}
   - component: {fileID: 8579774604314132038}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Pospan_Die
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6191,7 +6191,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f2bcc675c9054842876d825ff4fd1a1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.62
+  m_Volume: 0.81
   m_Pitch: 1.6
   Loop: 0
   Mute: 0
@@ -6287,7 +6287,7 @@ GameObject:
   - component: {fileID: 4643553429857093527}
   - component: {fileID: 4643553429857093520}
   - component: {fileID: 4643553429857093521}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Squid_tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6391,8 +6391,8 @@ MonoBehaviour:
   - {fileID: 4643553429750600493}
   - {fileID: 4643553428209503451}
   m_Bounds:
-    m_Center: {x: 0.000047564507, y: -1.4500002, z: 0}
-    m_Extent: {x: 0.229955, y: 1.4500004, z: 0}
+    m_Center: {x: 0.000045016408, y: -1.45, z: 0}
+    m_Extent: {x: 0.22995503, y: 1.45, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553429931125855
 GameObject:
@@ -6403,7 +6403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553429931125854}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6434,7 +6434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553430110348518}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6468,7 +6468,7 @@ GameObject:
   - component: {fileID: 4643553430157392170}
   - component: {fileID: 4643553430157392171}
   - component: {fileID: 4643553430157392180}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Squid_tentacle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6572,8 +6572,8 @@ MonoBehaviour:
   - {fileID: 4643553429036417108}
   - {fileID: 4643553429766268356}
   m_Bounds:
-    m_Center: {x: 0.00004759431, y: -1.45, z: 0}
-    m_Extent: {x: 0.22995499, y: 1.4500003, z: 0}
+    m_Center: {x: 0.00004503131, y: -1.45, z: 0}
+    m_Extent: {x: 0.22995505, y: 1.45, z: 0}
   m_UseBatching: 1
 --- !u!1 &4643553430219644897
 GameObject:
@@ -6584,7 +6584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643553430219644896}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

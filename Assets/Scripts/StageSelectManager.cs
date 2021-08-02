@@ -22,37 +22,11 @@ public class StageSelectManager : MonoBehaviour
     public GameObject Stage7Locked;
     public GameObject Stage8Locked;
 
+    public Text currentStage_Txt;
+
     // Start is called before the first frame update
     void Start()
     {
-        if ( DataManager.Instance.playerData.stageComplete <= 4)
-        {
-            //BtnStage2.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 9)
-        {
-            //BtnStage3.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 14)
-        {
-            //BtnStage4.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 19)
-        {
-            //BtnStage5.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 24)
-        {
-            //BtnStage6.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 29)
-        {
-            //BtnStage7.interactable = false;
-        }
-        if ( DataManager.Instance.playerData.stageComplete <= 34)
-        {
-            //BtnStage8.interactable = false;
-        }
 
         if (DataManager.Instance.playerData.stageComplete >= 5)
         {
@@ -84,4 +58,9 @@ public class StageSelectManager : MonoBehaviour
         }
     }
 
+
+    private void Update()
+    {
+        currentStage_Txt.text = "" + DataManager.Instance.playerData.stageComplete;
+    }
 }

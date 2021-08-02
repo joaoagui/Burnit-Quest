@@ -249,6 +249,16 @@ MonoBehaviour:
     Trophy18: 0
     Trophy19: 0
     Trophy20: 0
+    Trophy21: 0
+    Trophy22: 0
+    Trophy23: 0
+    Trophy24: 0
+    Trophy25: 0
+    Trophy26: 0
+    Trophy27: 0
+    Trophy28: 0
+    Trophy29: 0
+    Trophy30: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0
@@ -683,8 +693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.13, y: -2.4}
-  m_SizeDelta: {x: 81.86, y: 50}
+  m_AnchoredPosition: {x: -0.13, y: 0.0267}
+  m_SizeDelta: {x: 81.86, y: 26.1301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &784435641612761738
 CanvasRenderer:
@@ -758,7 +768,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -935,7 +945,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.54418564, y: 10.699959, z: -0.10440826, w: 21.127853}
+  m_margin: {x: 0.54418564, y: 0, z: -0.10440826, w: 21.127853}
   m_textInfo:
     textComponent: {fileID: 5817393508073452751}
     characterCount: 10

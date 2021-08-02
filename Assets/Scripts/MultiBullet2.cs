@@ -15,7 +15,7 @@ public class MultiBullet2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2 (8,2);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

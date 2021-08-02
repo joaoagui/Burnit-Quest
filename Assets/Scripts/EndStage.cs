@@ -34,10 +34,10 @@ public class EndStage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && Won == false)
         {
+            Won = true;
             Destroy(pauseButton);
             Destroy(skipButton);
             PauseMenu.paused = true;
-            Won = true;
             UILastBtn.lastselect = button;
             pyre.SetActive(true);
             Invoke("EndScreen", 2f);
@@ -55,22 +55,23 @@ public class EndStage : MonoBehaviour
 
     void EndScreen()
     {
-        endScreen.SetActive(true);
-        squatCount.text = "" +  DataManager.Instance.playerData.Squats;
-        caloryCount.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
-        stepCount.text = "" +  DataManager.Instance.playerData.stepsNumber.ToString();
-        punchCount.text = "" +  DataManager.Instance.playerData.punches.ToString();
-        situpCount.text = "" + DataManager.Instance.playerData.sitUps.ToString();
-        jumpingjackCount.text = "" + DataManager.Instance.playerData.jumpingJacks.ToString();
-        coinCount.text = "" + CoinsScript.stageCoins.ToString();
 
-        if ( DataManager.Instance.playerData.currentStage >=  DataManager.Instance.playerData.stageComplete)
-        {
-             DataManager.Instance.playerData.stageComplete =  DataManager.Instance.playerData.currentStage + 1;
-        }
+            endScreen.SetActive(true);
+            squatCount.text = "" + DataManager.Instance.playerData.Squats;
+            caloryCount.text = "" + DataManager.Instance.playerData.stageCalories.ToString("F2");
+            stepCount.text = "" + DataManager.Instance.playerData.stepsNumber.ToString();
+            punchCount.text = "" + DataManager.Instance.playerData.punches.ToString();
+            situpCount.text = "" + DataManager.Instance.playerData.sitUps.ToString();
+            jumpingjackCount.text = "" + DataManager.Instance.playerData.jumpingJacks.ToString();
+            coinCount.text = "" + CoinsScript.stageCoins.ToString();
 
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(button);
+            if (DataManager.Instance.playerData.currentStage >= DataManager.Instance.playerData.stageComplete)
+            {
+                DataManager.Instance.playerData.stageComplete = DataManager.Instance.playerData.currentStage;
+            }
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(button);
 
     }
 
