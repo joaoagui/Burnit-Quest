@@ -108,6 +108,7 @@ public class Schlaf : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet") && invincibilityTimer <= 0)
         {
             invincibilityTimer = 0.5f;
+            rb.AddForce(new Vector2(0.5f, 0), ForceMode2D.Impulse);
             TakeDamage();
         }
 
@@ -122,6 +123,7 @@ public class Schlaf : MonoBehaviour
     public IEnumerator Flash()
     {
         sprite.material = dmgMaterial;
+        rb.AddForce(new Vector2(0.5f, 0), ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.1f);
         sprite.material = defaultMaterial;
     }
@@ -210,7 +212,7 @@ public class Schlaf : MonoBehaviour
     {
         if (PauseMenu.paused == false)
         {
-                AudioSource.PlayOneShot(schlafMove, 0.8f);
+            AudioSource.PlayOneShot(schlafMove, 0.8f);
             if (walkLeft == true)
             {
                 rb.AddForce(new Vector2(-speed, 0), ForceMode2D.Impulse);

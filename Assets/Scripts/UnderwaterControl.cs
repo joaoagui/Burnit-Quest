@@ -23,7 +23,6 @@ namespace EasyWiFi.ServerControls
         public GameObject playerObject;
         public Rigidbody2D rb;
         public Text CaloriesText;
-        public Text SpeedText;
         public Animator animator;
 
         public GameObject dustPoint;
@@ -41,9 +40,9 @@ namespace EasyWiFi.ServerControls
         Quaternion orientation;
 
         //Text for debugging Rotation
-        public Text RotationX;
-        public Text RotationY;
-        public Text RotationZ;
+        //public Text RotationX;
+        //public Text RotationY;
+        //public Text RotationZ;
 
 
         void OnEnable()
@@ -113,6 +112,7 @@ namespace EasyWiFi.ServerControls
             }
         }
 
+
         public void mapDataStructureToAction(int index)
         {
             orientation.w = gyro[index].GYRO_W;
@@ -120,9 +120,9 @@ namespace EasyWiFi.ServerControls
             orientation.y = gyro[index].GYRO_Y;
             orientation.z = gyro[index].GYRO_Z;
 
-            RotationX.text = "X" + orientation.x.ToString();
-            RotationY.text = "Y" + orientation.y.ToString();
-            RotationZ.text = "Z" + orientation.z.ToString();
+            //RotationX.text = "X" + orientation.x.ToString();
+            //RotationY.text = "Y" + orientation.y.ToString();
+            //RotationZ.text = "Z" + orientation.z.ToString();
 
             if (PauseMenu.paused == false)
             {

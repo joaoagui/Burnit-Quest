@@ -102,6 +102,7 @@ public class Nukkua : MonoBehaviour
     public IEnumerator Flash()
     {
         sprite.material = dmgMaterial;
+        rb.AddForce(new Vector2(60, 0), ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.1f);
         sprite.material = defaultMaterial;
     }

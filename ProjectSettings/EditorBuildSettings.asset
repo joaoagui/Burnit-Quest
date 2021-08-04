@@ -5,97 +5,97 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Logo.unity
     guid: 0b3aa8b84333e1a47a66a5c378247218
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Splash.unity
     guid: 9972ecc4c4f82e4408382b95f68c7bae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StageSelect.unity
     guid: f1241c8c12ad3864084f83f4355111b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SkillTree.unity
     guid: cd28c184d920d67499177d4297e07fe4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage1.unity
     guid: 30e37004943f442469b5fb93ba1d525c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene_1.unity
     guid: 6633ecec12a264b488625bc33c863961
   - enabled: 1
     path: Assets/Scenes/Stage1-1.unity
     guid: d16a4bc1a82ed8245a985d2c0dddf106
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage1-2.unity
     guid: e738876e46b3f59439f7aaf63cbc526c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage1-3.unity
     guid: de45d997bdc0ee947abfb35d6b978b48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage1-4.unity
     guid: edde93d787d11d546a260b996587926d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage1-5.unity
     guid: acf685752e210744f80fe5c73cada9c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2.unity
     guid: 3f8f7e61f79bbdd4b923c260e61a38d8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene_2.unity
     guid: 3f69ad6dc7a50214787765bc811733ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2-1.unity
     guid: 32f6bbfa3c595e842a2d1a46d4e9e823
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2-2.unity
     guid: 5977d2c3775cc1a4888bfd6d31855f90
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2-3.unity
     guid: fab18b76fe56e004cab203392e6cc6db
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2-4.unity
     guid: fea015e8bede28a4a8dd40c516e802a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage2-5.unity
     guid: c3e12795bc4fab640957c2af60887f8d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3.unity
     guid: 29d9a39620726364a9bbe298600ce592
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3-1.unity
     guid: 933279dede06f5d46b16e92e9f6db201
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3-2.unity
     guid: f22dfa4d0654c34438bf5b041d6f2257
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3-3.unity
     guid: 129740ef63c5f304eac389147a887e08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3-4.unity
     guid: 683e0571eea31bf4e91444fadbde28dc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage3-5.unity
     guid: 6a51c80144c7bf94c9036852b086b8f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EndlessRunner.unity
     guid: bf19d82c48f64e94d8f05bc68f0d2a16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EndlessSettings.unity
     guid: 4f5801bbb54beb9438d4ec0f98bc56dd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VersusSettings.unity
     guid: 2b67cf96c352708469e5f8ffc01885a5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VersusRace.unity
     guid: d6950dce5c8bb344a91b16de4a2d9039
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VersusSlingshot.unity
     guid: 83629b4bec86c884295fa408d4352643
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VersusTokenFrenzy.unity
     guid: 1bf77b37dd7be5143a81030895041612
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VersusLastStanding.unity
     guid: 43c78bdc8428a0d48973059f4d2d03f6
   m_configObjects: {}

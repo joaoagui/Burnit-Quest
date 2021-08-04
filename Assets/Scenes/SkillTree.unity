@@ -2522,7 +2522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Flame Dash
+  m_text: Flame Ghost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf5d9b0d6989b840ba7eb164fb5982d, type: 2}
   m_sharedMaterial: {fileID: -5199018035078868476, guid: 6cf5d9b0d6989b840ba7eb164fb5982d,
@@ -2592,7 +2592,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -11.220621, w: 0}
   m_textInfo:
     textComponent: {fileID: 257690503}
-    characterCount: 10
+    characterCount: 11
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -12289,7 +12289,7 @@ GameObject:
   - component: {fileID: 811307097}
   - component: {fileID: 811307100}
   m_Layer: 5
-  m_Name: Btn_SuperJump
+  m_Name: Btn_FlameGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12418,8 +12418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleTxt: {fileID: 1007488974}
   descriptionTxt: {fileID: 1208480932}
-  title: Flame Dash
-  description: Engulf in flames that damage enemies while at max speed!
+  title: Flame Ghost
+  description: Pass through enemies and damage them while at maximum speed!
 --- !u!1 &821137028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19915,6 +19915,16 @@ MonoBehaviour:
     Trophy18: 0
     Trophy19: 0
     Trophy20: 0
+    Trophy21: 0
+    Trophy22: 0
+    Trophy23: 0
+    Trophy24: 0
+    Trophy25: 0
+    Trophy26: 0
+    Trophy27: 0
+    Trophy28: 0
+    Trophy29: 0
+    Trophy30: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0

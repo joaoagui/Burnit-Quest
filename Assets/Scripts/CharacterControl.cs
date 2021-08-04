@@ -7,7 +7,7 @@ using System;
 namespace EasyWiFi.ServerControls
 {
 
-    [AddComponentMenu("EasyWiFiController/Server/UserControls/Match Orientation Gyro")]
+    [AddComponentMenu("EasyWiFiController/Server/UserControls/Player1Ground")]
     public class CharacterControl : MonoBehaviour, IServerController
     {
 
@@ -22,7 +22,7 @@ namespace EasyWiFi.ServerControls
 
         public Rigidbody2D rb;
         public Text CaloriesText;
-        public Text SpeedText;
+        //public Text SpeedText;
         public Animator animator;
 
         public GameObject speedParticle;
@@ -40,6 +40,8 @@ namespace EasyWiFi.ServerControls
         bool RunUp_low = false;
         bool RunDown_low = false;
 
+        private bool crouchComplete = false;
+
         //timers
         private float runTimer = 0.2f;
         private float PunchTimer = 0;
@@ -50,10 +52,6 @@ namespace EasyWiFi.ServerControls
         int currentNumberControllers = 0;
         Quaternion orientation;
 
-        //Text for debugging Rotation
-        public Text RotationX;
-        public Text RotationY;
-        public Text RotationZ;
 
 
         void OnEnable()
@@ -67,6 +65,7 @@ namespace EasyWiFi.ServerControls
                 EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
             }
         }
+
 
         void OnDestroy()
         {
@@ -85,7 +84,7 @@ namespace EasyWiFi.ServerControls
                 }
             }
 
-            SpeedText.text = "" + Speed.ToString();
+            //SpeedText.text = "" + Speed.ToString();
             CaloriesText.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
 
             if (Speed <= 0.1)
@@ -159,10 +158,7 @@ namespace EasyWiFi.ServerControls
             {
                 Player.combo = 0;
             }
-
             runTimer -= Time.deltaTime;
-
-
         }
 
         private void FixedUpdate()
@@ -189,6 +185,20 @@ namespace EasyWiFi.ServerControls
             }
         }
 
+        public void CrouchComplete()
+        {
+            animator.SetBool("CrouchComplete", true);
+            crouchComplete = true;
+        }
+
+
+        void JumpFinished()
+        {
+            animator.SetBool("Jumping", false);
+            animator.SetBool("CrouchComplete", false);
+        }
+
+
         public void mapDataStructureToAction(int index)
         {
             orientation.w = gyro[index].GYRO_W;
@@ -196,12 +206,12 @@ namespace EasyWiFi.ServerControls
             orientation.y = gyro[index].GYRO_Y;
             orientation.z = gyro[index].GYRO_Z;
 
-            transform.localRotation = orientation;
+            //transform.localRotation = orientation;
 
 
-            RotationX.text = "X" + orientation.x.ToString();
-            RotationY.text = "Y" + orientation.y.ToString();
-            RotationZ.text = "Z" + orientation.z.ToString();
+            //RotationX.text = "X" + orientation.x.ToString();
+            //RotationY.text = "Y" + orientation.y.ToString();
+            //RotationZ.text = "Z" + orientation.z.ToString();
 
             if (PauseMenu.paused == false)
             {
@@ -216,7 +226,6 @@ namespace EasyWiFi.ServerControls
                 if (orientation.x < -0.35 && orientation.z < 0.5 && RunDown == false)
                 {
                     RunDown = true;
-
                 }
 
                 //Mark one Step + Calories
@@ -236,12 +245,13 @@ namespace EasyWiFi.ServerControls
                 {
                     RunUp_low = true;
                 }
+
                 //Run arm DOWN (for people that move their arms lower)
                 if (orientation.x < -0.7 && orientation.z < 0.5 && RunDown_low == false)
                 {
                     RunDown_low = true;
-
                 }
+
                 //Mark one Step + Calories when moving with arms lower
                 if (RunUp_low == true && RunDown_low == true && Crouching == false && runTimer < 0)
                 {
@@ -259,22 +269,28 @@ namespace EasyWiFi.ServerControls
                 {
                     JJUp = false;
                     Crouching = false;
-                     DataManager.Instance.playerData.Squats++;
-                     DataManager.Instance.playerData.stageCalories += 0.2f;
+                    DataManager.Instance.playerData.Squats++;
+                    DataManager.Instance.playerData.stageCalories += 0.2f;
 
-                    if( DataManager.Instance.playerData.superJump == 0)
+                    if(crouchComplete == true)
                     {
                         Instantiate(jumpDust, new Vector2(dustPoint.transform.position.x, dustPoint.transform.position.y), dustPoint.transform.rotation);
                         rb.velocity = new Vector2(0, jumpForce +  DataManager.Instance.playerData.jumpSkill);
                         FindObjectOfType<AudioManager>().Play("hup");
                         Invoke("MoveForward", 0.2f);
+                        animator.SetBool("Crouch", false);
+                        animator.SetBool("Jumping", true);
+                        animator.SetBool("CrouchComplete", true);
+                        crouchComplete = false;
+                        PunchTimer = 2;
                     }
 
-                    animator.SetTrigger("Jump");
-                    animator.SetBool("Crouch", false);
-                    animator.SetBool("Jumping", true);
-                    PunchTimer = 2;
-
+                    else if(crouchComplete == false)
+                    {
+                        animator.SetBool("Crouch", false);
+                        animator.SetBool("Jumping", false);
+                        animator.SetBool("CrouchComplete", false);
+                    }
                 }
 
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z < -0.8 && Crouching == false) //detect Crouch

@@ -58,9 +58,9 @@ namespace EasyWiFi.ServerControls
         Quaternion orientation;
 
         //Text for debugging Rotation
-        public Text RotationX;
-        public Text RotationY;
-        public Text RotationZ;
+        //public Text RotationX;
+        //public Text RotationY;
+        //public Text RotationZ;
 
 
         void OnEnable()
@@ -216,9 +216,9 @@ namespace EasyWiFi.ServerControls
             orientation.y = gyro[index].GYRO_Y;
             orientation.z = gyro[index].GYRO_Z;
 
-            RotationX.text = "X" + orientation.x.ToString();
-            RotationY.text = "Y" + orientation.y.ToString();
-            RotationZ.text = "Z" + orientation.z.ToString();
+            //RotationX.text = "X" + orientation.x.ToString();
+            //RotationY.text = "Y" + orientation.y.ToString();
+            //RotationZ.text = "Z" + orientation.z.ToString();
 
             if (PauseMenu.paused == false)
             {

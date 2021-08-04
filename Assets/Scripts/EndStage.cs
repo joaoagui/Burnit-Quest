@@ -11,7 +11,7 @@ public class EndStage : MonoBehaviour
     public GameObject skipButton;
     public GameObject player;
     public GameObject playerWin;
-    private bool Won = false;
+    public bool Won = false;
 
     //public characterControl characterControl;
 

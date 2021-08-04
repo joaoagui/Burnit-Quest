@@ -6,6 +6,9 @@ using TMPro;
 
 public class Regata : MonoBehaviour
 {
+    private GameObject Finish;
+    private EndStage EndStage;
+
     public GameObject hamShot;
     public GameObject specialShot;
     public AudioClip AttackClip;
@@ -21,9 +24,30 @@ public class Regata : MonoBehaviour
 
     private float timer = 2f;
 
+    public GameObject regataWin;
+    public GameObject regataLose;
+
+    private void Start()
+    {
+        Finish = GameObject.FindWithTag("Finish");
+        EndStage = Finish.GetComponent<EndStage>();
+    }
+
     private void Update()
     {
         timer -= Time.deltaTime;
+
+        if(Health.health <= 0)
+        {
+            regataLose.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
+        if (EndStage.Won == true)
+        {
+            regataWin.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 
     public void FireShot()

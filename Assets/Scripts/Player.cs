@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     public float swimSpeed = 16;
     public GameObject bubblesParticle;
 
-
     public CircleCollider2D magnet;
 
     public static bool isGrounded;
@@ -37,11 +36,13 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+
         magnet.radius =    DataManager.Instance.playerData.magnetRange;
     }
 
     void FixedUpdate()
-    {
+    {      
+
         isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - 0.66f, transform.position.y - 2.2f), new Vector2(transform.position.x + 0.62f, transform.position.y + 0.2f), WhatIsGround);
         if (rb.velocity.y < 0)
 
@@ -59,11 +60,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void JumpFinished()
-    {
-        animator.SetBool("Jumping", false);
-    }
-
     void PunchFinished()
     {
         animator.SetBool("Punch", false);
@@ -74,7 +70,7 @@ public class Player : MonoBehaviour
         rb.AddForce(new Vector2(0, swimSpeed), ForceMode2D.Impulse);
         Instantiate(bubblesParticle, new Vector2(transform.position.x, transform.position.y) , Quaternion.identity);
     }
-    
+
 
     void FireProjectile()
     {
