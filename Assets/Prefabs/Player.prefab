@@ -10072,6 +10072,12 @@ MonoBehaviour:
   rb: {fileID: 7991263406233285411}
   CaloriesText: {fileID: 0}
   animator: {fileID: 771488565839615738}
+  sr: {fileID: 7991263406233285409}
+  defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  flameGhost: {fileID: 2100000, guid: a88c88eeef1b19e449a0f729aec7090f, type: 2}
+  collider1: {fileID: 2295047430919537214}
+  collider2: {fileID: 7991263406233285439}
+  collider3: {fileID: 6639162308209270543}
   speedParticle: {fileID: 6011753994551020029}
   walkingDust: {fileID: 2331481766962366776, guid: 7979efdf4de837148b6e98f6b9e978f7,
     type: 3}

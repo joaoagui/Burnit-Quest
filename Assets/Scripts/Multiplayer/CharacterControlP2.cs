@@ -7,7 +7,7 @@ using System;
 namespace EasyWiFi.ServerControls
 {
 
-    [AddComponentMenu("EasyWiFiController/Server/UserControls/P2Gyro")]
+    [AddComponentMenu("EasyWiFiController/Server/UserControls/MultiplayerGyroP2")]
     public class CharacterControlP2 : MonoBehaviour, IServerController
     {
 
@@ -39,10 +39,11 @@ namespace EasyWiFi.ServerControls
         bool RunDown = false;
         bool RunUp_low = false;
         bool RunDown_low = false;
+        private bool crouchComplete = false;
+
         private float PunchTimer = 0;
         private float comboTimer = 0;
         private float runTimer = 0.2f;
-
 
         //runtime variables
         GyroControllerType[] gyro = new GyroControllerType[EasyWiFiConstants.MAX_CONTROLLERS];
@@ -50,9 +51,9 @@ namespace EasyWiFi.ServerControls
         Quaternion orientation;
 
         //Text for debugging Rotation
-        public Text RotationX;
-        public Text RotationY;
-        public Text RotationZ;
+        //public Text RotationX;
+        //public Text RotationY;
+        //public Text RotationZ;
 
         void OnEnable()
         {
@@ -166,7 +167,7 @@ namespace EasyWiFi.ServerControls
             if (Speed > 0  && Health.invincibilityTimerP2 > 1 && Player.isGrounded) //Move character according to speed
             {
                 //rb.velocity = new Vector2(Speed *  DataManager.Instance.playerData.speedSkill, rb.velocity.y) * Time.deltaTime; 
-                rb.transform.Translate(Vector2.right * Time.deltaTime * Speed *  DataManager.Instance.playerData.speedSkill, Space.World);
+                rb.transform.Translate(Vector2.right * Time.deltaTime * Speed, Space.World);
                 //rb.AddForce(new Vector2(Time.deltaTime * Speed *  DataManager.Instance.playerData.speedSkill, 0), ForceMode2D.Force);
             }
             //Player hurt animation plays when Invincibility timer is reset:
@@ -192,9 +193,9 @@ namespace EasyWiFi.ServerControls
             orientation.y = gyro[index].GYRO_Y;
             orientation.z = gyro[index].GYRO_Z;
 
-            RotationX.text = "X" + orientation.x.ToString();
-            RotationY.text = "Y" + orientation.y.ToString();
-            RotationZ.text = "Z" + orientation.z.ToString();
+            //RotationX.text = "X" + orientation.x.ToString();
+            //RotationY.text = "Y" + orientation.y.ToString();
+            //RotationZ.text = "Z" + orientation.z.ToString();
 
             if (PauseMenu.paused == false)
             {
@@ -231,7 +232,6 @@ namespace EasyWiFi.ServerControls
                 if (orientation.x < -0.7 && orientation.z < 0.5 && RunDown_low == false)
                 {
                     RunDown_low = true;
-
                 }
                 //Mark one Step + Calories when moving with arms lower
                 if (RunUp_low == true && RunDown_low == true && Crouching == false)
@@ -242,7 +242,6 @@ namespace EasyWiFi.ServerControls
                     P2Calories += 0.04f;
                     timerStop = 0;
                     runTimer = 0.2f;
-
                 }
 
 
@@ -252,18 +251,25 @@ namespace EasyWiFi.ServerControls
                     Crouching = false;
                     P2Calories += 0.2f;
 
-                    if( DataManager.Instance.playerData.superJump == 0)
+                    if (crouchComplete == true)
                     {
                         Instantiate(jumpDust, new Vector2(dustPoint.transform.position.x, dustPoint.transform.position.y), dustPoint.transform.rotation);
-                        rb.velocity = new Vector2(0, jumpForce +  DataManager.Instance.playerData.jumpSkill);
+                        rb.velocity = new Vector2(0, jumpForce + DataManager.Instance.playerData.jumpSkill);
                         FindObjectOfType<AudioManager>().Play("hup");
                         Invoke("MoveForward", 0.2f);
+                        animator.SetBool("Crouch", false);
+                        animator.SetBool("Jumping", true);
+                        animator.SetBool("CrouchComplete", true);
+                        crouchComplete = false;
+                        PunchTimer = 2;
                     }
 
-                    animator.SetTrigger("Jump");
-                    animator.SetBool("Crouch", false);
-                    animator.SetBool("Jumping", true);
-                    PunchTimer = 2;
+                    else if (crouchComplete == false)
+                    {
+                        animator.SetBool("Crouch", false);
+                        animator.SetBool("Jumping", false);
+                        animator.SetBool("CrouchComplete", false);
+                    }
 
                 }
 
@@ -297,6 +303,18 @@ namespace EasyWiFi.ServerControls
                     PunchTimer = 0;
                 }
             }
+        }
+
+        public void CrouchComplete()
+        {
+            animator.SetBool("CrouchComplete", true);
+            crouchComplete = true;
+        }
+
+        void JumpFinished()
+        {
+            animator.SetBool("Jumping", false);
+            animator.SetBool("CrouchComplete", false);
         }
 
         public void MoveForward()

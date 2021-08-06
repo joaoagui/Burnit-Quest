@@ -11,9 +11,6 @@ public class Crate : MonoBehaviour
     public GameObject key;
     public GameObject heart;
 
-    public GameObject trophy;
-    public int trophyStage;
-
     private bool broken = false;
 
     private Rigidbody2D rb;
@@ -21,7 +18,6 @@ public class Crate : MonoBehaviour
     public bool hasHeart = false;
     public bool hasCoin = false;
     public bool hasKey = false;
-    public bool hasTrophy = false;
 
 
     public bool OverPlayer;
@@ -71,13 +67,7 @@ public class Crate : MonoBehaviour
             {
                 Instantiate(key, transform.position, Quaternion.identity);
             }
-            else if (hasTrophy == true)
-            {
-                GameObject newTrophy = Instantiate(trophy, transform.position, Quaternion.identity);
-                newTrophy.GetComponent<Trophy>().trophyStage = trophyStage;
-                newTrophy.GetComponent<Trophy>().TrophyUI = GameObject.FindWithTag("UI");
-                newTrophy.GetComponent<Trophy>().pulling = true;
-            }
+
 
             Destroy(gameObject);
         }

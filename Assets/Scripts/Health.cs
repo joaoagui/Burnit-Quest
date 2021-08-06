@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Health : MonoBehaviour
 {
     static public int health = 3;
+    static public bool ghosted = false;
 
     public PlayerData playerData;
 
@@ -15,7 +16,6 @@ public class Health : MonoBehaviour
 
     //for Multiplayer
     static public float invincibilityTimerP2 = 2;
-
 
     public GameObject loseScreen;
     public GameObject playerLose;
@@ -87,42 +87,40 @@ public class Health : MonoBehaviour
             shieldActive = true;
             GameObject NewSphere = Instantiate(shieldSphere, transform.position, Quaternion.identity);
             NewSphere.transform.SetParent(rb.transform);
-        }
-
-        
+        }       
 
     }
 
     private void OnTriggerEnter2D(Collider2D info)
     {
-        if (shieldActive == false)
+        if (ghosted == false)
         {
-            if (info.gameObject.CompareTag("Enemy") && health > 1 && invincibilityTimer >= 2)
+            if (shieldActive == false) 
             {
-                invincibilityTimer = 0;
-                health -=  1;
-
-                if (Player.underwater == false && info.gameObject.transform.position.x <= playerObject.transform.position.x)
+                if (info.gameObject.CompareTag("Enemy") && health > 1 && invincibilityTimer >= 2)
                 {
-                    rb.velocity = new Vector2(20, rb.velocity.y);
-                }
+                    invincibilityTimer = 0;
+                    health -=  1;
 
-                else if (Player.underwater == false && info.gameObject.transform.position.x > playerObject.transform.position.x)
+                    if (Player.underwater == false && info.gameObject.transform.position.x <= playerObject.transform.position.x)
+                    {
+                        rb.velocity = new Vector2(20, rb.velocity.y);
+                    }
+
+                    else if (Player.underwater == false && info.gameObject.transform.position.x > playerObject.transform.position.x)
+                    {
+                        rb.velocity = new Vector2(-20, rb.velocity.y);
+                    }
+
+                    else if (Player.underwater == true)
+                    {
+                        rb.velocity = new Vector2(0, -10);
+                    }
+                    FindObjectOfType<AudioManager>().Play("ouch");
+
+                }
+                else if (info.gameObject.CompareTag("Enemy") && health == 1 && invincibilityTimer >= 2)
                 {
-                    rb.velocity = new Vector2(-20, rb.velocity.y);
-                }
-
-                else if (Player.underwater == true)
-                {
-                    rb.velocity = new Vector2(0, -10);
-                }
-                FindObjectOfType<AudioManager>().Play("ouch");
-            }
-
-            else
-
-            if (info.gameObject.CompareTag("Enemy") && health == 1 && invincibilityTimer >= 2)
-            {
                 health = 0;
                 FindObjectOfType<AudioManager>().Play("ouch");
 
@@ -133,35 +131,36 @@ public class Health : MonoBehaviour
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(button);
                 UILastBtn.lastselect = button;
+                }
+            }
+  
+
+            else if (info.gameObject.CompareTag("Enemy") && shieldActive == true)
+            {
+                shieldActive = false;
+                invincibilityTimer = 0;
+
+                GameObject[] shields = GameObject.FindGameObjectsWithTag("Shield");
+                foreach (GameObject shield in shields)
+                {
+                    GameObject.Destroy(shield);
+                }
+
+                shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
+
+                if(info.gameObject.transform.position.x > playerObject.transform.position.x)
+                {
+                    rb.velocity = new Vector2(20, rb.velocity.y);
+                }
+
+                else if (info.gameObject.transform.position.x <= playerObject.transform.position.x)
+                {
+                    rb.velocity = new Vector2(-20, rb.velocity.y);
+                }
+
+                Instantiate(shieldBreak, transform.position, Quaternion.identity);
             }
         }
-
-        else if (info.gameObject.CompareTag("Enemy") && shieldActive == true)
-        {
-            shieldActive = false;
-            invincibilityTimer = 0;
-
-            GameObject[] shields = GameObject.FindGameObjectsWithTag("Shield");
-            foreach (GameObject shield in shields)
-            {
-                GameObject.Destroy(shield);
-            }
-
-            shieldRecharge =  DataManager.Instance.playerData.stageCalories - 10;
-
-            if(info.gameObject.transform.position.x > playerObject.transform.position.x)
-            {
-                rb.velocity = new Vector2(20, rb.velocity.y);
-            }
-
-            else if (info.gameObject.transform.position.x <= playerObject.transform.position.x)
-            {
-                rb.velocity = new Vector2(-20, rb.velocity.y);
-            }
-
-            Instantiate(shieldBreak, transform.position, Quaternion.identity);
-        }
-
     }
     private void OnTriggerStay2D(Collider2D info2)
     {
@@ -196,6 +195,7 @@ public class Health : MonoBehaviour
             }
 
         }
+
         else if(info2.gameObject.CompareTag("Enemy") && shieldActive == true)
         {
             shieldActive = false;

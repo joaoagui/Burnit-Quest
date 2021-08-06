@@ -654,7 +654,7 @@ Tilemap:
       - {fileID: 4349987119457221343, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 7013091017353089748, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 8097594666254530385, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -47, y: -1, z: 0}
@@ -664,7 +664,7 @@ Tilemap:
       - {fileID: 4349987119457221343, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 7013091017353089748, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 8097594666254530385, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -46, y: -1, z: 0}
@@ -694,7 +694,7 @@ Tilemap:
       - {fileID: 4349987119457221343, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 7013091017353089748, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
       - {fileID: 8097594666254530385, guid: 9a1bf4ac9a761f2439ecd3fc08f8b04d, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -43, y: -1, z: 0}
@@ -2299,65 +2299,6 @@ MeshRenderer:
   m_SortingLayerID: -1485929513
   m_SortingLayer: 4
   m_SortingOrder: 12
---- !u!1 &221298508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 221298511}
-  - component: {fileID: 221298509}
-  m_Layer: 0
-  m_Name: ControllerP1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &221298509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221298508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14454ba3225efe24b91f839f5ba1ee4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  control: Gyro
-  player: 0
-  jumpForce: 22
-  rb: {fileID: 1136734191}
-  CaloriesText: {fileID: 1904353885}
-  SpeedText: {fileID: 1041454048}
-  animator: {fileID: 7228923336623426102}
-  speedParticle: {fileID: 4433971757315134769}
-  walkingDust: {fileID: 2331481766962366776, guid: 7979efdf4de837148b6e98f6b9e978f7,
-    type: 3}
-  jumpDust: {fileID: 6778322675559837253, guid: 94a45eba25e4a1b40b73e6899715aa36,
-    type: 3}
-  dustPoint: {fileID: 5297851703878148486}
-  RotationX: {fileID: 1261517975}
-  RotationY: {fileID: 723305159}
-  RotationZ: {fileID: 154035389}
---- !u!4 &221298511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221298508}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8725015, y: 0.16558143, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245228298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,7 +2787,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308034866
 GameObject:
@@ -3368,7 +3309,7 @@ Transform:
   - {fileID: 1907948025}
   - {fileID: 253478167}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416794948
 GameObject:
@@ -3472,7 +3413,7 @@ Transform:
   m_Children:
   - {fileID: 308104750}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444312872
 GameObject:
@@ -3829,64 +3770,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &571028324
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 571028327}
-  - component: {fileID: 571028325}
-  m_Layer: 0
-  m_Name: ControllerP2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &571028325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571028324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab4fa5a38044f64fa25d749edab2d11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  control: Gyro
-  player: 1
-  jumpForce: 22
-  rb: {fileID: 8848062351976152693}
-  CaloriesText: {fileID: 2084663597}
-  animator: {fileID: 2204770049035738028}
-  speedParticle: {fileID: 5134666554971554987}
-  walkingDust: {fileID: 2331481766962366776, guid: 7979efdf4de837148b6e98f6b9e978f7,
-    type: 3}
-  jumpDust: {fileID: 6778322675559837253, guid: 94a45eba25e4a1b40b73e6899715aa36,
-    type: 3}
-  dustPoint: {fileID: 3697281412078006300}
-  RotationX: {fileID: 1261517975}
-  RotationY: {fileID: 723305159}
-  RotationZ: {fileID: 154035389}
---- !u!4 &571028327
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571028324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8725015, y: 0.16558143, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &630280376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6213,6 +6096,7 @@ GameObject:
   - component: {fileID: 7228923336623426102}
   - component: {fileID: 8160257270676725490}
   - component: {fileID: 1136734192}
+  - component: {fileID: 1136734194}
   m_Layer: 11
   m_Name: Player1
   m_TagString: Player
@@ -6301,7 +6185,7 @@ Transform:
   - {fileID: 2452099282548175625}
   - {fileID: 517147761}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1136734191
 Rigidbody2D:
@@ -6415,6 +6299,16 @@ MonoBehaviour:
     Trophy18: 0
     Trophy19: 0
     Trophy20: 0
+    Trophy21: 0
+    Trophy22: 0
+    Trophy23: 0
+    Trophy24: 0
+    Trophy25: 0
+    Trophy26: 0
+    Trophy27: 0
+    Trophy28: 0
+    Trophy29: 0
+    Trophy30: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0
@@ -6443,7 +6337,7 @@ MonoBehaviour:
     type: 3}
   shieldBreak: {fileID: 5947499145880036498, guid: 1c2b7af8f6d0da949975b61fa6a1b21c,
     type: 3}
-  Player: {fileID: 0}
+  Player: {fileID: 1136734193}
 --- !u!114 &1136734193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6468,12 +6362,37 @@ MonoBehaviour:
   superProjectile: {fileID: 3516322763899113654, guid: cfd78ff44f487674faf4773c8226286a,
     type: 3}
   swimSpeed: 16
-  bubblesParticle: {fileID: 0}
+  bubblesParticle: {fileID: 8771287169465948654, guid: 93393a6910181f241a3a10d47bddfa98,
+    type: 3}
   magnet: {fileID: 8940385236005424369}
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 512
   underwater: 0
+--- !u!114 &1136734194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136734187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0c5c0cf9832ca49a524515e736af3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: Gyro
+  player: 0
+  jumpForce: 22
+  rb: {fileID: 1136734191}
+  CaloriesText: {fileID: 1904353885}
+  animator: {fileID: 7228923336623426102}
+  speedParticle: {fileID: 4433971757315134769}
+  walkingDust: {fileID: 2331481766962366776, guid: 7979efdf4de837148b6e98f6b9e978f7,
+    type: 3}
+  jumpDust: {fileID: 6778322675559837253, guid: 94a45eba25e4a1b40b73e6899715aa36,
+    type: 3}
+  dustPoint: {fileID: 5297851703878148486}
 --- !u!58 &1136734195
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12911,7 +12830,7 @@ RectTransform:
   - {fileID: 1716842188}
   - {fileID: 814904543}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14077,7 +13996,7 @@ Transform:
   - {fileID: 170490166}
   - {fileID: 1780310341}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907948024
 GameObject:
@@ -29581,7 +29500,7 @@ RectTransform:
   - {fileID: 6850178965172700544}
   - {fileID: 6850178965301209152}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31120,7 +31039,8 @@ MonoBehaviour:
   superProjectile: {fileID: 3516322763899113654, guid: cfd78ff44f487674faf4773c8226286a,
     type: 3}
   swimSpeed: 16
-  bubblesParticle: {fileID: 0}
+  bubblesParticle: {fileID: 8771287169465948654, guid: 93393a6910181f241a3a10d47bddfa98,
+    type: 3}
   magnet: {fileID: 493145077255413099}
   WhatIsGround:
     serializedVersion: 2
@@ -31145,6 +31065,7 @@ GameObject:
   - component: {fileID: 2204770049035738028}
   - component: {fileID: 861787406120423272}
   - component: {fileID: 8848062351976152691}
+  - component: {fileID: 8848062351976152694}
   m_Layer: 11
   m_Name: Player2
   m_TagString: Chay
@@ -31257,6 +31178,16 @@ MonoBehaviour:
     Trophy18: 0
     Trophy19: 0
     Trophy20: 0
+    Trophy21: 0
+    Trophy22: 0
+    Trophy23: 0
+    Trophy24: 0
+    Trophy25: 0
+    Trophy26: 0
+    Trophy27: 0
+    Trophy28: 0
+    Trophy29: 0
+    Trophy30: 0
     amulet1: 0
     amulet2: 0
     amulet3: 0
@@ -31285,7 +31216,7 @@ MonoBehaviour:
     type: 3}
   shieldBreak: {fileID: 5947499145880036498, guid: 1c2b7af8f6d0da949975b61fa6a1b21c,
     type: 3}
-  Player: {fileID: 0}
+  Player: {fileID: 8848062351976152683}
 --- !u!4 &8848062351976152692
 Transform:
   m_ObjectHideFlags: 0
@@ -31303,7 +31234,7 @@ Transform:
   - {fileID: 6398835080836194963}
   - {fileID: 2133616633}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8848062351976152693
 Rigidbody2D:
@@ -31326,6 +31257,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &8848062351976152694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848062351976152689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab4fa5a38044f64fa25d749edab2d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: Gyro
+  player: 1
+  jumpForce: 22
+  rb: {fileID: 8848062351976152693}
+  CaloriesText: {fileID: 2084663597}
+  animator: {fileID: 2204770049035738028}
+  speedParticle: {fileID: 5134666554971554987}
+  walkingDust: {fileID: 2331481766962366776, guid: 7979efdf4de837148b6e98f6b9e978f7,
+    type: 3}
+  jumpDust: {fileID: 6778322675559837253, guid: 94a45eba25e4a1b40b73e6899715aa36,
+    type: 3}
+  dustPoint: {fileID: 3697281412078006300}
 --- !u!212 &8848062351976152695
 SpriteRenderer:
   m_ObjectHideFlags: 0

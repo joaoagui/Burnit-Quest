@@ -25,6 +25,17 @@ namespace EasyWiFi.ServerControls
         //public Text SpeedText;
         public Animator animator;
 
+        //Colliders&Materials for Flame Ghost Skill
+        public SpriteRenderer sr;
+        public Material defaultMaterial;
+        public Material flameGhost;
+        public EdgeCollider2D collider1;
+        public CircleCollider2D collider2;
+        public BoxCollider2D collider3;
+
+
+
+        //Speed Particle for Max Speed
         public GameObject speedParticle;
         private float speedParticleTimer;
 
@@ -72,6 +83,7 @@ namespace EasyWiFi.ServerControls
             EasyWiFiController.On_ConnectionsChanged -= checkForNewConnections;
         }
 
+
         // Update is called once per frame
         void Update()
         {
@@ -84,7 +96,6 @@ namespace EasyWiFi.ServerControls
                 }
             }
 
-            //SpeedText.text = "" + Speed.ToString();
             CaloriesText.text = "" +  DataManager.Instance.playerData.stageCalories.ToString("F2");
 
             if (Speed <= 0.1)
@@ -111,15 +122,24 @@ namespace EasyWiFi.ServerControls
                 if(speedParticleTimer < 0f)
                 {
                     speedParticle.SetActive(true);
+                    if(DataManager.Instance.playerData.superJump >= 1)
+                    {
+                        sr.material = flameGhost;
+                        Health.ghosted = true;
+                    }
                 }
             }
+
+            //turn off speed particles and flame ghost
             else if (Speed < 5.5f)
             {
                 speedParticle.SetActive(false);
                 speedParticleTimer = 2f;
+                sr.material = defaultMaterial;
+                Health.ghosted = false;
             }
 
-            //Decellarte player and stop after a while
+            //Decellerate player and stop after a while
             timerDecelleration += Time.deltaTime * 2f; //set timer for decreasing speed
             timerStop += Time.deltaTime * 1.0f; //set timer for stopping character
 
@@ -161,6 +181,22 @@ namespace EasyWiFi.ServerControls
             runTimer -= Time.deltaTime;
         }
 
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag == "Enemy" && Health.ghosted == true)
+            {                
+                Physics2D.IgnoreCollision(collision.collider, collider1);
+                Physics2D.IgnoreCollision(collision.collider, collider2);
+                Physics2D.IgnoreCollision(collision.collider, collider3);
+            }
+            if (collision.gameObject.tag == "Bumper" && Health.ghosted == true)
+            {
+                Physics2D.IgnoreCollision(collision.collider, collider1);
+                Physics2D.IgnoreCollision(collision.collider, collider2);
+                Physics2D.IgnoreCollision(collision.collider, collider3);
+            }
+        }
+
         private void FixedUpdate()
         {
             if (Speed > 0  && Health.invincibilityTimer > 1 && Player.isGrounded) //Move character according to speed
@@ -170,7 +206,7 @@ namespace EasyWiFi.ServerControls
                 //rb.AddForce(new Vector2(Time.deltaTime * Speed *  DataManager.Instance.playerData.speedSkill, 0), ForceMode2D.Force);
             }
             //Player hurt animation plays when Invincibility timer is reset:
-            if (Health.invincibilityTimer <= 1f)
+            if (Health.invincibilityTimer <= 1f && Health.invincibilityTimer >= -1)
             {
                 animator.SetBool("Hurt", true);
             }
@@ -264,7 +300,6 @@ namespace EasyWiFi.ServerControls
                     runTimer = 0.2f;
                 }
 
-
                 if (orientation.x < 0.1 && orientation.y < -0.8 && orientation.z > -0.7 && JJUp == false && Crouching == true && Player.isGrounded == true) //detect getting up from crouch
                 {
                     JJUp = false;
@@ -301,8 +336,6 @@ namespace EasyWiFi.ServerControls
                     Speed = 0;
                 }
 
-
-
                 if (orientation.x < 0.1 && orientation.y < 0.1 && orientation.z > 0.75 && PunchTimer <= 0) //detect punch
                 {
                     if ( DataManager.Instance.playerData.punchCombo == 1 && Player.combo <= 4)
@@ -329,7 +362,6 @@ namespace EasyWiFi.ServerControls
         public void MoveForward()
         {
             rb.AddForce(new Vector2(9f +  DataManager.Instance.playerData.jumpSkill/2, 0), ForceMode2D.Impulse);
-            //rb.transform.Translate(Vector2.right * 20, Space.World);
         }
 
         public void checkForNewConnections(bool isConnect, int playerNumber)
