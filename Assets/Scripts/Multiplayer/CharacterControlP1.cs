@@ -75,6 +75,12 @@ namespace EasyWiFi.ServerControls
         // Update is called once per frame
         void Update()
         {
+            if(PunchTimer <= 0)
+            {
+                animator.SetBool("Punch", false);
+            }
+
+
             //iterate over the current number of connected controllers
             for (int i = 0; i < currentNumberControllers; i++)
             {
@@ -112,6 +118,7 @@ namespace EasyWiFi.ServerControls
                     speedParticle.SetActive(true);
                 }
             }
+
             else if (Speed < 5.5f)
             {
                 speedParticle.SetActive(false);
@@ -292,7 +299,6 @@ namespace EasyWiFi.ServerControls
                     }
 
                     animator.SetBool("Punch", true);
-                    animator.SetTrigger("Attack");
                     Speed = 0;
                     PunchTimer = 1;
                     P2Calories += 0.04f;

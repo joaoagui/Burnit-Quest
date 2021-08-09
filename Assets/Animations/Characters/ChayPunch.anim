@@ -21,15 +21,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 60f5e7df21741fb4487693527f0e4694, type: 3}
-    - time: 0.11666667
+    - time: 0.1
       value: {fileID: 21300000, guid: a4eba7962e0a1714ab4ee4d8728bc111, type: 3}
     - time: 0.21666667
       value: {fileID: 21300000, guid: 9c5ec1684c323224a889d2ce1ebdea1a, type: 3}
     - time: 0.33333334
       value: {fileID: 21300000, guid: 6b00eb788169b0a48ad99bd995a04fd5, type: 3}
-    - time: 0.41666666
+    - time: 0.43333334
       value: {fileID: 21300000, guid: 5b135df41bdb7a04f9235860bc6d1474, type: 3}
-    - time: 0.5
+    - time: 0.51666665
       value: {fileID: 21300000, guid: e6b14303866d9e141ab3569a536d0b70, type: 3}
     attribute: m_Sprite
     path: 
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.53333336
+    m_StopTime: 0.55
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,7 +88,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.53333336
+  - time: 0.55
     functionName: PunchFinished
     data: 
     objectReferenceParameter: {fileID: 0}
