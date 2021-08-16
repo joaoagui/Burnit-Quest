@@ -17,14 +17,14 @@ public class Boss3 : MonoBehaviour
     public GameObject enemyProjectile;
     public Animator animator;
     public Transform firePoint;
-    public float cycles; //controls how many times each animation runs
+    public float shotNumber; //controls how many times each animation runs
 
     //audio
     public AudioSource AudioSource;
     public AudioClip bossMove;
     public AudioClip bossDamage;
-    public AudioClip bossFart;
-    public AudioClip bossSpit;
+    public AudioClip bossTentacleAttack;
+    public AudioClip bossShoot;
 
     //die
 
@@ -43,33 +43,11 @@ public class Boss3 : MonoBehaviour
         defaultMaterial = sprite.material;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        animator.SetFloat("Cycles", cycles);
-        if (rb.transform.position.x - Prb.transform.position.x >= 30)
-        {
-            cycles = 3;
-        }
-    }
-
-    public void Spit()
-    {
-        if (PauseMenu.paused == false)
-        {
-            AudioSource.PlayOneShot(bossMove, 0.8f);
-            rb.velocity = new Vector2(speed, 0);
-            cycles += 1f;
-
-        }
-
-    }
-
     public void Shoot()
     {
         if (PauseMenu.paused == false)
         {
-            AudioSource.PlayOneShot(bossFart, 0.8f);
+            AudioSource.PlayOneShot(bossShoot, 0.8f);
             Instantiate(enemyProjectile, firePoint.position, Quaternion.identity);
         }
     }
@@ -79,13 +57,17 @@ public class Boss3 : MonoBehaviour
         if (PauseMenu.paused == false)
         {
             AudioSource.PlayOneShot(bossMove, 0.8f);
-            rb.velocity = new Vector2(speed, 0);
+            rb.AddForce(new Vector2(0, speed), ForceMode2D.Impulse);
         }
     }
 
-    public void Rest()
+    public void TentacleAttack()
     {
-        cycles = 0f;
+        if (PauseMenu.paused == false)
+        {
+            AudioSource.PlayOneShot(bossMove, 0.8f);
+            rb.AddForce(new Vector2(0, speed), ForceMode2D.Impulse);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
