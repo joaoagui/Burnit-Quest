@@ -1635,7 +1635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.10096097, y: 1.3615484}
+  m_AnchoredPosition: {x: 0, y: 1.3615484}
   m_SizeDelta: {x: 27.733, y: 26.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838214374
@@ -2209,7 +2209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.10096097, y: -3.9326866}
+  m_AnchoredPosition: {x: 0, y: -3.9326866}
   m_SizeDelta: {x: 27.733, y: 26.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387027614
@@ -2230,8 +2230,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You must find the 8 guardians of Pok island. Make allies out of them, only
-    then you'll have enough strength to defeat Somno.
+  m_text: You must find the <color=#FEA244>8 guardians of Pok island</color>. Make
+    allies out of them, only then you'll have enough strength to defeat Somno.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf5d9b0d6989b840ba7eb164fb5982d, type: 2}
   m_sharedMaterial: {fileID: -5199018035078868476, guid: 6cf5d9b0d6989b840ba7eb164fb5982d,
@@ -3212,7 +3212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.10096097, y: 2.0605574}
+  m_AnchoredPosition: {x: 0, y: 2.0605574}
   m_SizeDelta: {x: 27.733, y: 26.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735399662
@@ -3418,7 +3418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.10096097, y: 1.2642953}
+  m_AnchoredPosition: {x: 0, y: 1.2642953}
   m_SizeDelta: {x: 27.733, y: 26.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764004202
@@ -3439,8 +3439,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Your next destination is the Lauf Forest. \r\nFind their pyres and befriend
-    its noble guardian."
+  m_text: "Your next destination is the <color=#FEA244>Lauf Forest</color>. \r\nFind
+    their pyres and befriend its noble guardian."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf5d9b0d6989b840ba7eb164fb5982d, type: 2}
   m_sharedMaterial: {fileID: -5199018035078868476, guid: 6cf5d9b0d6989b840ba7eb164fb5982d,
