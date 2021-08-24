@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ecbcbd4d8c43a534d84db4426f9b5a2d, type: 3}
-    totalSpriteSurfaceArea: 89826846
+    totalSpriteSurfaceArea: 91329754
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -86,7 +86,9 @@ SpriteAtlas:
   - {fileID: -8013404332118543450, guid: ca92a8b1ff69ff249bd0afe1fb9e011f, type: 3}
   - {fileID: -5143011298828513150, guid: ca92a8b1ff69ff249bd0afe1fb9e011f, type: 3}
   - {fileID: 21300000, guid: 963921c1a40337541a4e3cb7caf2e5ce, type: 3}
+  - {fileID: 21300000, guid: 93bf2fd18089b6645a4178d49dc35836, type: 3}
   - {fileID: 21300000, guid: 0cd035f11ed9a264c8301764563a6ede, type: 3}
+  - {fileID: 21300000, guid: 608668f144708c04b81552c8fde7b78d, type: 3}
   - {fileID: 21300000, guid: 8f28f8f10c0e36242a097890294234fc, type: 3}
   - {fileID: 21300000, guid: cb0a3ef1c066cc0448b828aab246f9d6, type: 3}
   - {fileID: 21300000, guid: 9e20991234252194ca4997bdc93161ec, type: 3}
@@ -144,6 +146,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a6f92d151a824c241a5ead95b5a87130, type: 3}
   - {fileID: 21300000, guid: a6edcc25c91f80e48be7ca8032762d7a, type: 3}
   - {fileID: 21300000, guid: 6e70d845db3705e459032ab12a715285, type: 3}
+  - {fileID: 21300000, guid: ebaeb35535e6693458fdcf4a5b3d20a8, type: 3}
   - {fileID: 21300000, guid: 7fb7ec550038e1a418e86c18349d2c74, type: 3}
   - {fileID: 21300000, guid: 30fd7aa5cff3dd9408aaef415c01c55f, type: 3}
   - {fileID: 21300000, guid: 184605c504f00974a9aa005bb941bb5c, type: 3}
@@ -164,6 +167,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f92c4e374ec58234da6c609e8ea1953e, type: 3}
   - {fileID: 21300000, guid: fcb406470e7bea245aa1b08ad6fe1492, type: 3}
   - {fileID: 21300000, guid: a2f57b77b30535f45bc1244bd5b5dfa0, type: 3}
+  - {fileID: 21300000, guid: 139fdd771c230ba4596f483156a9b08f, type: 3}
   - {fileID: 21300000, guid: 8e8a3c8730254a649bcab2df542492e1, type: 3}
   - {fileID: 21300000, guid: c78c88c72277f0c4591a45a1c97d5a8b, type: 3}
   - {fileID: 21300000, guid: cfe226d70e7193b47931c6275879c453, type: 3}
@@ -186,6 +190,7 @@ SpriteAtlas:
   - {fileID: -8627068929140562484, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
   - {fileID: 2661156532614257649, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
   - {fileID: -843121178137633126, guid: 2135ccc8d2b49d243aa184166e71921a, type: 3}
+  - {fileID: 21300000, guid: 51bf69d89d1c835429196a6ce2e0bb5b, type: 3}
   - {fileID: 21300000, guid: 251930e8d3a2db04eba49bac71bd4133, type: 3}
   - {fileID: 21300000, guid: dc7662e8f31aaee4aa499573525ae61f, type: 3}
   - {fileID: 21300000, guid: c0b999e8dbd1d8d4b9e56dc885444629, type: 3}
@@ -210,6 +215,7 @@ SpriteAtlas:
   - {fileID: 1029501196571662829, guid: 86505ae8d77f71f44ac66f6290f50a4b, type: 3}
   - {fileID: -6492425335204898768, guid: 86505ae8d77f71f44ac66f6290f50a4b, type: 3}
   - {fileID: -3523930987987817259, guid: 86505ae8d77f71f44ac66f6290f50a4b, type: 3}
+  - {fileID: 21300000, guid: c4f545f828dfeaa4c83b4742860a7f4a, type: 3}
   - {fileID: 21300000, guid: f3dfea1915595e84ab6e35ab89ae88bf, type: 3}
   - {fileID: 21300000, guid: 7d8e1139b2c108440b96a53faafa48e8, type: 3}
   - {fileID: 21300000, guid: a8e3f669bb9635044b8c0bd357539c62, type: 3}
@@ -231,7 +237,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2ae113e9ccb633b46aecc8bbbfe11992, type: 3}
   - {fileID: 21300000, guid: 15a5d3e90ec45974ca2a7a72a838c882, type: 3}
   - {fileID: 21300000, guid: 842b65e997281f044b79bf463899f307, type: 3}
+  - {fileID: 21300000, guid: 0bf517e921c2932429793b35e80aadaf, type: 3}
   - {fileID: 21300000, guid: a55b5b4a86658b8439a6d3b36903ce9c, type: 3}
+  - {fileID: 21300000, guid: 139db05a2155d484da9b060b71ecc5dc, type: 3}
   - {fileID: 21300000, guid: e72f725afd6e2c145bc347a497eebc74, type: 3}
   - {fileID: 21300000, guid: b402495a79042844eb047dc037df3c01, type: 3}
   - {fileID: 21300000, guid: fdf33c7a6d5c9864e87a41ccdb1fa6c4, type: 3}
@@ -438,7 +446,9 @@ SpriteAtlas:
   - FitHeroesAssets_tilemap_grass&Stones_6
   - FitHeroesAssets_tilemap_grass&Stones_7
   - Burnit_Assets_Rith'sHouse
+  - BurnitQuest_Plateau_DandelionHead
   - Burnit_Underwater_gull_fly2
+  - BurnitQuest_Plateau_Dandelion
   - Burnit_Underwater_AlgaePink1
   - Burnit_Village_Stairs
   - FitHeroesAssets_bush1
@@ -496,6 +506,7 @@ SpriteAtlas:
   - Burnit_Forest_HammerBase_B
   - Burnit_Village_WindowRound
   - Burnit_Assets_trees_dawn
+  - BurnitQuest_Plateau_Mesa_bg1b
   - Burnit_Forest_Hidden Wall
   - BurnitQuest_Plateau_Plant1
   - Burnit_Underwater_PalmTree_background
@@ -516,6 +527,7 @@ SpriteAtlas:
   - Burnit_Village_WindowHexagon
   - Burnit_Assets_gate_lock
   - Burnit_Assets_Stalagmite2
+  - BurnitQuest_Plateau_Mesa_bg1a
   - Burnit_Assets_Bush_Front4
   - Burnit_NPCS_sleepingFarmer2
   - FitHeroesAssets_House1
@@ -538,6 +550,7 @@ SpriteAtlas:
   - Burnit_Assets_Tilemap_Corners_1
   - Burnit_Assets_Tilemap_Corners_2
   - Burnit_Assets_Tilemap_Corners_3
+  - BurnitQuest_Plateau_Mesa_bg2a
   - Burnit_Assets_Gate_bg
   - Burnit_Underwater_Barrel
   - FitHeroesAssets_House2
@@ -562,6 +575,7 @@ SpriteAtlas:
   - Burnit_Assets_Tilemap_backgroundvisuals_13
   - Burnit_Assets_Tilemap_backgroundvisuals_18
   - Burnit_Assets_Tilemap_backgroundvisuals_19
+  - BurnitQuest_Plateau_Mesa_bg2b
   - Burnit_Forest_Pine4
   - Burnit_Underwater_gull_body
   - Burnit_Underwater_BubblesFront2
@@ -583,7 +597,9 @@ SpriteAtlas:
   - Burnit_Underwater_HermitCrab3
   - Burnit_Assets_bg_day
   - Burnit_Forest_PineTree1
+  - BurnitQuest_Plateau_DandelionParticle
   - ocean-01
+  - cave_bg-01
   - Burnit_Forest_Hammer
   - Burnit_Underwater_Dunnes_Middleground
   - Burnit_Forest_BackgroundForest
